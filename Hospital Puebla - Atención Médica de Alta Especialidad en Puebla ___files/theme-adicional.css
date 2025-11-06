@@ -1,0 +1,105 @@
+
+@media (max-width:1200px ) {
+.index-buscador-version  {
+    background-image: url("../img/index/index-busqueda-doctores.jpg");
+	height: 300px;
+    overflow: hidden;
+}
+.index_bloque_urgencias {
+    background-image: url("../img/index/index-urgencias-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+.index_bloque_clinica_mujer {
+    background-image: url("../img/index/index-clinica-mujer-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	} 
+ 	
+.index_bloque_unidad_quirurgica {
+    background-image: url("../img/index/index-quirurgico-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+			
+}
+
+@media (max-width:992px ) {
+.index-buscador-version  {
+    background-image: url("../img/index/index-busqueda-doctores.jpg");
+	height: 300px;
+    overflow: hidden;
+}	
+.index_bloque_urgencias {
+    background-image: url("../img/index/index-urgencias-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+.index_bloque_clinica_mujer {
+    background-image: url("../img/index/index-clinica-mujer-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+		
+.index_bloque_unidad_quirurgica {
+    background-image: url("../img/index/index-quirurgico-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}	
+		
+}
+@media (max-width:768px ) {
+.index-buscador-version {
+    background-image: url("../img/index/index-busqueda-doctoresh.jpg");
+	height: 256px;
+    overflow: hidden;
+	}
+.index_bloque_urgencias {
+    background-image: url("../img/index/index-urgencias-bloqueh.jpg");
+	height: 256px;
+    overflow: hidden;
+	}
+.index_bloque_clinica_mujer {
+    background-image: url("../img/index/index-clinica-mujer-bloqueh.jpg");
+	height: 256px;
+    overflow: hidden;
+	}
+		
+.index_bloque_unidad_quirurgica {
+    background-image: url("../img/index/index-quirurgico-bloqueh.jpg");
+	height: 256px;
+    overflow: hidden;
+	}	
+		
+}
+@media (max-width:576px ) {
+.index-buscador-version {
+    background-image: url("../img/index/index-busqueda-doctores.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+.index_bloque_urgencias {
+    background-image: url("../img/index/index-urgencias-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+.index_bloque_clinica_mujer {
+    background-image: url("../img/index/index-clinica-mujer-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}	
+	
+.index_bloque_unidad_quirurgica {
+    background-image: url("../img/index/index-quirurgico-bloque.jpg");
+	height: 300px;
+    overflow: hidden;
+	}
+
+}
+
+@media (min-width:1200px ) {
+.index-buscador-version  {
+    background-image: url("../img/index/index-busqueda-doctores.jpg");
+	height: 300px;
+    overflow: hidden;
+}

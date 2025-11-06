@@ -1,0 +1,236 @@
+
+
+
+
+#iview {
+	display: block;
+/*	max-width: 1600px;*/
+	background: #fff;
+	background: rgba(255, 255, 255, 0.7);
+	position: relative;
+	margin: 0px auto;
+	overflow: hidden;
+	top: -146px;
+}
+
+#iview .iviewSlider {
+	display: block;
+	width: 1600px;
+	height: 600px;
+	overflow: hidden;
+
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.registro-dentro-imagen{
+    position: absolute;
+    top: 76%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#contenedor-slider-index #iview .iviewSlider {
+	display: block;
+	width: 1600px;
+	height: 777px;
+	overflow: hidden;
+}
+
+#contenedor-slider-index-bebe #iview .iviewSlider {
+	display: block;
+	width: 1600px;
+	height: 710px;
+	overflow: hidden;
+}
+
+
+
+#iview div.iview-directionNav {
+display: none;
+	top: 60px;
+    position: absolute;
+    right: 0;
+    width: 122px;
+    z-index: 9;
+}
+#iview div.iview-directionNav a:hover{
+  background: none repeat scroll 0 0 #526aff;
+    border-color: #526aff;
+}
+
+#iview div.iview-directionNav a:after {
+	color:#000;
+}
+
+
+
+#iview div.iview-directionNav a {
+
+border: 2px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    position: absolute;
+    transition: all 0.3s ease-out 0s;
+    width: 40px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out
+}
+
+#iview div.iview-directionNav a.iview-prevNav:after {
+	  color: #fff;
+    content: "";
+    display: inline-block;
+    font-family: "FontAwesome";
+ font-size: 22px !important;
+    height: 30px;
+    left: 14px !important;
+    position: relative;
+    top: 2px !important;
+    width: 30px;
+}
+#iview div.iview-directionNav a.iview-nextNav:after {
+	color: #fff;
+    content: "";
+display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 22px !important;
+    height: 30px;
+    left: 15px !important;
+    position: relative;
+    top: 2px !important;
+    width: 30px;
+}
+
+#iview div.iview-directionNav a.iview-nextNav {
+	right: -27px;
+	background-position: 27px 0px;
+}
+
+#iview div.iview-directionNav a.iview-prevNav {
+	left: -27px;
+	background-position: 0px 0px
+}
+
+#iview.iview-hover div.iview-directionNav a.iview-nextNav {
+	right: 20px;
+}
+
+#iview.iview-hover div.iview-directionNav a.iview-prevNav {
+	left: 20px;
+}
+
+
+.iview-caption {
+	background: none !important;
+	position: relative;
+}
+.custom-caption * {
+	border: none !important;
+}
+/** tarjeta de textos sobre slider interior **/
+.custom-caption {
+	background-image: url("fondo-card.jpg");
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    height: 164px;
+    margin: 10px;
+    padding: 20px 30px;
+    width: 400px;
+}
+
+/** tarjeta de textos sobre slider interior **/
+.index-custom-caption {
+	background-color:rgba (255,255,255,0.8);
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    height: 164px;
+    margin: 10px;
+    padding: 20px 30px;
+    width: 400px;
+}
+
+.iview-caption.caption1 {
+	text-shadow: none;
+}
+.iview-caption.caption2 {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+}
+.iview-caption.caption3 {
+	background: #c4302b;
+	box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+	text-shadow: none;
+}
+
+#iview-preloader {
+	border: #666 1px solid;
+	width: 150px
+}
+
+#iview-preloader div {
+	background: #666;
+}
+#iview-timer {
+	border-radius: 10px;
+}
+
+#iview-timer div {
+	border-radius: 10px;
+}
+
+
+/* ------- Responsive Serv Diag max 991 ------- */	
+@media (max-width:991px ) {
+	#iview {
+    top: -170px;
+	}
+	.custom-caption {
+    background-size: 100%;
+    height: 196px;
+    width: 500px;
+	}
+}
+
+/* ------- Responsive Serv Diag max 767 ------- */	
+@media (max-width:767px) {
+	#iview {
+    top: -137px;
+	}
+	.custom-caption {
+    display: none;
+	}
+}
+
+/* ------- Responsive Serv Diag max 480 ------- */	
+@media (max-width:480px) {
+	#iview {
+    top: -153px;
+	}
+	
+}

@@ -1,0 +1,65 @@
+function nuevoAjax()
+{ 
+	/* Crea el objeto AJAX. Esta funcion es generica para cualquier utilidad de este tipo, por
+	lo que se puede copiar tal como esta aqui */
+	var xmlhttp=false; 
+	try 
+	{ 
+		// Creacion del objeto AJAX para navegadores no IE
+		xmlhttp=new ActiveXObject("Msxml2.XMLHTTP"); 
+	}
+	catch(e)
+	{ 
+		try
+		{ 
+			// Creacion del objet AJAX para IE 
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); 
+		} 
+		catch(E) { xmlhttp=false; }
+	}
+	if (!xmlhttp && typeof XMLHttpRequest!="undefined") { xmlhttp=new XMLHttpRequest(); } 
+
+	return xmlhttp; 
+}
+
+function func_contenido_directorio_telefonico(){
+	//especificamos en div donde se mostrará el resultado
+	var div_contenido_directorio_telefonico;	
+	
+	div_contenido_directorio_telefonico = document.getElementById('div_contenido_directorio_telefonico');	
+	
+	ajaxs=nuevoAjax();
+	//especificamos el archivo que realizará el listado
+	//y enviamos las dos variables: campo y orden
+	
+	ajaxs.open("GET", "directorio_telefonico.php?rand="+Math.random(),true);		
+	ajaxs.onreadystatechange=function() {
+		if (ajaxs.readyState==4) {	
+		
+			div_contenido_directorio_telefonico.innerHTML = ajaxs.responseText
+		}
+	}
+	
+	ajaxs.send(null)
+}
+
+function func_contenido_directorio_telefonico_en(){
+	//especificamos en div donde se mostrará el resultado
+	var div_contenido_directorio_telefonico;	
+	
+	div_contenido_directorio_telefonico = document.getElementById('div_contenido_directorio_telefonico');	
+	
+	ajaxs=nuevoAjax();
+	//especificamos el archivo que realizará el listado
+	//y enviamos las dos variables: campo y orden
+	
+	ajaxs.open("GET", "directorio_telefonico_en.php?rand="+Math.random(),true);		
+	ajaxs.onreadystatechange=function() {
+		if (ajaxs.readyState==4) {	
+		
+			div_contenido_directorio_telefonico.innerHTML = ajaxs.responseText
+		}
+	}
+	
+	ajaxs.send(null)
+}
