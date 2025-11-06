@@ -507,47 +507,19 @@
 
 
 
-	<script type="text/javascript">
+<script type="text/javascript">
+    // Seleciona o elemento de vídeo, se existir
+    var myVid = document.getElementById("video");
+    if (myVid) {
+        myVid.muted = true;
+        myVid.autoplay = false;
+    }
 
-
-
-		<!-
-		
-		
-		
-		myVid=document.getElementById("video");
-		
-		
-		
-			myVid.muted=true;
-		
-		
-		
-			myVid.autoplay=false;
-		
-		
-		
-		
-		
-		
-		
-		function MM_openBrWindow(theURL,winName,features) { //v2.0
-		
-		
-		
-		  window.open(theURL,winName,features);
-		
-		
-		
-		}
-		
-		
-		
-		//-->
-
-
-
-	</script>
+    // Função para abrir uma nova janela
+    function MM_openBrWindow(theURL, winName, features) { //v2.0
+        window.open(theURL, winName, features);
+    }
+</script>
 
 
 
@@ -1210,132 +1182,29 @@
 
 
 
-	<script>
+<script>
+// You can also use "$(window).load(function() {"
+$(function () {
+    // Slideshow 4
+    $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+            $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+            $('.events').append("<li>after event fired.</li>");
+        }
+    });
+});
 
-
-
-		<!-
-		
-		
-		
-		// You can also use "$(window).load(function() {"
-		
-		
-		
-			$(function () {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			  // Slideshow 4
-		
-		
-		
-			  $("#slider4").responsiveSlides({
-		
-		
-		
-				auto: true,
-		
-		
-		
-				pager: false,
-		
-		
-		
-				nav: true,
-		
-		
-		
-				speed: 500,
-		
-		
-		
-				namespace: "callbacks",
-		
-		
-		
-				before: function () {
-		
-		
-		
-				  $('.events').append("<li>before event fired.</li>");
-		
-		
-		
-				},
-		
-		
-		
-				after: function () {
-		
-		
-		
-				  $('.events').append("<li>after event fired.</li>");
-		
-		
-		
-				}
-		
-		
-		
-			  });
-		
-		
-		
-			  
-		
-		
-		
-			  
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			});
-		
-		
-		
-		
-		
-		
-		
-		function MM_callJS(jsStr) { //v2.0
-		
-		
-		
-		  return eval(jsStr)
-		
-		
-		
-		}
-		
-		
-		
-		//-->
-
-
-
-	</script>
-
+function MM_callJS(jsStr) { //v2.0
+    return eval(jsStr);
+}
+</script>
 
 
 	<link rel="stylesheet"
@@ -2496,31 +2365,19 @@ function MM_goToURL() { //v3.0
 
 
 									<form
-										action="https://www.hospitalpuebla.com.mx/directorio_bcapapellidook_con_url.php"
-										method="post" id="formulario_busqueda_apellido"
-										name="formulario_busqueda_apellido">
+    action="https://www.hospitalpuebla.com.mx/directorio_bcapapellidook_con_url.php"
+    method="post" id="formulario_busqueda_apellido"
+    name="formulario_busqueda_apellido">
 
+    <input type="text" placeholder="Búsqueda por apellidos" name="search2-box"
+        id="search2-box" class="form-filtro-medicos form-filtro-medicos-index"
+        style="font: 400 14px/23.8px 'Lato', sans-serif;">
 
+    <input name="tipo10" type="hidden" id="tipo10" value="4">
+    <input name="letra10" type="hidden" id="letra10" value="">
 
-										<input type="text" placeholder="Búsqueda por apellidos" name="search2-box"
-											id="search2-box" class="form-filtro-medicos form-filtro-medicos-index"
-											style="    font: 400 14px/23.8px &#39;Lato&#39;, sans-serif;">
-
-
-
-										<input name="tipo10" type="hidden" id="tipo10" value="4">
-
-
-
-										<input name="letra10" type="hidden" id="letra10" value="">
-
-
-
-										<div id="suggesstion-box2" style="z-index:9999999999; position:absolute"></div>
-
-
-
-									</form>
+    <div id="suggesstion-box2" style="z-index:9999999999; position:absolute"></div>
+</form>
 
 
 
@@ -2529,708 +2386,118 @@ function MM_goToURL() { //v3.0
 
 
 								<div>
-
-
-
-									<form action="https://www.hospitalpuebla.com.mx/directorio_bcapapellido_con_url.php"
-										method="post" style="    font: 400 14px/23.8px &#39;Lato&#39;, sans-serif;">
-
-
-
-
-
-
-
-										<input name="tipo" type="hidden" id="tipo" value="2">
-
-
-
-										<select name="letra" class="form-especialidades form-especialidades-index"
-											id="letra" onchange="this.form.submit()">
-
-
-
-											<option selected="" value="" style="color:#666"> -- Seleccione una
-												especialidad -- </option>
-
-
-
-
-
-
-											<option value="83">ACUPUNTURA HUMANA</option>
-
-
-
-
-
-
-											<option value="135">ALERGIA E INMUNOLOGIA CLINICA/ PEDIATRIA</option>
-
-
-
-
-
-
-											<option value="2">ALERGOLOGÍA</option>
-
-
-
-
-
-
-											<option value="3">ALERGOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="5">ANESTESIOLOGÍA</option>
-
-
-
-
-
-
-											<option value="6">ANGIOLOGÍA Y CIRUGIA VASCULAR</option>
-
-
-
-
-
-
-											<option value="117">ATENCION SEGURO MEDICO</option>
-
-
-
-
-
-
-											<option value="90">AUDIOLOGÍA, OTONEUROLOGÍA Y FONIATRÍA</option>
-
-
-
-
-
-
-											<option value="133">BIOLOGIA DE LA REPRODUCCIÓN HUMANA</option>
-
-
-
-
-
-
-											<option value="8">CARDIOLOGÍA</option>
-
-
-
-
-
-
-											<option value="140">CARDIOLOGIA INTERVENCIONISTA</option>
-
-
-
-
-
-
-											<option value="116">CARDIOLOGIA PEDIATRICA</option>
-
-
-
-
-
-
-											<option value="108">CIENCIAS MÉDICAS E INVESTIGACIÓN</option>
-
-
-
-
-
-
-											<option value="107">CIRUGIA BUCAL</option>
-
-
-
-
-
-
-											<option value="134">CIRUGIA CARDIOTORACICA</option>
-
-
-
-
-
-
-											<option value="101">CIRUGÍA CARDIOTORÁCICA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="12">CIRUGÍA GENERAL</option>
-
-
-
-
-
-
-											<option value="13">CIRUGÍA MAXILOFACIAL</option>
-
-
-
-
-
-
-											<option value="124">CIRUGÍA OFTALMOLÓGICA</option>
-
-
-
-
-
-
-											<option value="14">CIRUGÍA ONCOLÓGICA</option>
-
-
-
-
-
-
-											<option value="15">CIRUGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="16">CIRUGÍA PLÁSTICA</option>
-
-
-
-
-
-
-											<option value="118">CIRUGÍA UROLÓGICA </option>
-
-
-
-
-
-
-											<option value="18">COLOPROCTOLOGÍA</option>
-
-
-
-
-
-
-											<option value="19">DERMATOLOGÍA</option>
-
-
-
-
-
-
-											<option value="20">DERMATOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="112">DIAGNÓSTICO Y REHABILITACIÓN NEUROPSICOLÓGICA</option>
-
-
-
-
-
-
-											<option value="21">ENDOCRINOLOGÍA</option>
-
-
-
-
-
-
-											<option value="22">ENDOCRINOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="102">ENDOSCOPIA GASTROINTESTINAL</option>
-
-
-
-
-
-
-											<option value="95">ESTOMATOLOGIA</option>
-
-
-
-
-
-
-											<option value="94">ESTOMATOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="27">FISIOTERAPIA</option>
-
-
-
-
-
-
-											<option value="28">GASTROENTEROLOGÍA</option>
-
-
-
-
-
-
-											<option value="104">GASTROENTEROLOGIA ENDOSCOPICA</option>
-
-
-
-
-
-
-											<option value="29">GASTROENTEROLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="127">GASTROENTEROLOGÍA Y NUTRICIÓN PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="32">GERIATRÍA</option>
-
-
-
-
-
-
-											<option value="126">GINECOLOGÍA ONCOLÓGICA</option>
-
-
-
-
-
-
-											<option value="33">GINECOLOGÍA Y OBSTETRICIA</option>
-
-
-
-
-
-
-											<option value="34">HEMATOLOGÍA</option>
-
-
-
-
-
-
-											<option value="35">HEMATOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="138">IMAGENOLOGIA DIAGNOSTICA Y TERAPEUTICA</option>
-
-
-
-
-
-
-											<option value="36">INFECTOLOGÍA</option>
-
-
-
-
-
-
-											<option value="106">INMUNOLOGÍA CLÍNICA Y ALERGIA</option>
-
-
-
-
-
-
-											<option value="122">MEDICINA ANTIENVEJECIMIENTO</option>
-
-
-
-
-
-
-											<option value="38">MEDICINA CRÍTICA</option>
-
-
-
-
-
-
-											<option value="115">MEDICINA DEL DEPORTE</option>
-
-
-
-
-
-
-											<option value="114">MEDICINA DEL ENFERMO PEDIÁTRICO EN ESTADO CRÍTICO
-											</option>
-
-
-
-
-
-
-											<option value="125">MEDICINA FAMILIAR</option>
-
-
-
-
-
-
-											<option value="44">MEDICINA FÍSICA Y REHABILITACIÓN</option>
-
-
-
-
-
-
-											<option value="45">MEDICINA GENERAL</option>
-
-
-
-
-
-
-											<option value="46">MEDICINA INTERNA</option>
-
-
-
-
-
-
-											<option value="103">MEDICINA MATERNO FETAL</option>
-
-
-
-
-
-
-											<option value="120">MEDICINA REGENERATIVA</option>
-
-
-
-
-
-
-											<option value="132">MEDICINA REPRODUCTIVA Y ENDOCRINOLOGIA GINECOLOGICA
-											</option>
-
-
-
-
-
-
-											<option value="121">NATUROPATIA</option>
-
-
-
-
-
-
-											<option value="48">NEFROLOGÍA</option>
-
-
-
-
-
-
-											<option value="49">NEFROLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="98">NEONATOLOGIA</option>
-
-
-
-
-
-
-											<option value="51">NEUMOLOGÍA</option>
-
-
-
-
-
-
-											<option value="52">NEUMOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="53">NEUROCIRUGÍA</option>
-
-
-
-
-
-
-											<option value="54">NEUROLOGÍA</option>
-
-
-
-
-
-
-											<option value="55">NUTRICIÓN CLINICA</option>
-
-
-
-
-
-
-											<option value="109">NUTRICION DEPORTIVA</option>
-
-
-
-
-
-
-											<option value="57">ODONTOLOGÍA</option>
-
-
-
-
-
-
-											<option value="131">ODONTOLOGÍA INTEGRAL Y URGENCIAS</option>
-
-
-
-
-
-
-											<option value="58">ODONTOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="59">OFTALMOLOGÍA</option>
-
-
-
-
-
-
-											<option value="60">ONCOLOGÍA</option>
-
-
-
-
-
-
-											<option value="62">ONCOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="141">ONCOLOGIA QUIRURGICA</option>
-
-
-
-
-
-
-											<option value="110">ORIENTACION FAMILIAR</option>
-
-
-
-
-
-
-											<option value="64">ORTODONCIA</option>
-
-
-
-
-
-
-											<option value="99">ORTOPEDIA</option>
-
-
-
-
-
-
-											<option value="65">ORTOPEDIA Y TRAUMATOLOGÍA</option>
-
-
-
-
-
-
-											<option value="129">ORTOPEDIA Y TRAUMATOLOGÍA CON ALTA ESPECIALIDAD EN
-												CIRUGÍA ARTICULAR</option>
-
-
-
-
-
-
-											<option value="85">ORTOPEDIA Y TRAUMATOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="123">OSTEÓPATA PODÓLOGA</option>
-
-
-
-
-
-
-											<option value="67">OTORRINOLARINGOLOGÍA</option>
-
-
-
-
-
-
-											<option value="68">OTORRINOLARINGOLOGÍA PEDIÁTRICA</option>
-
-
-
-
-
-
-											<option value="100">OTORRINOLARINGOLOGIA Y CIRUGIA DE CABEZA Y CUELLO
-											</option>
-
-
-
-
-
-
-											<option value="130">OTORRINOLARINGOLOGÍA/CIRUGÍA DE CABEZA Y CUELLO</option>
-
-
-
-
-
-
-											<option value="70">PEDIATRÍA</option>
-
-
-
-
-
-
-											<option value="91">PERIODONCIA</option>
-
-
-
-
-
-
-											<option value="72">PSICOLOGÍA</option>
-
-
-
-
-
-
-											<option value="111">PSICOLOGIA Y PSICOTERAPIA</option>
-
-
-
-
-
-
-											<option value="75">REUMATOLOGÍA</option>
-
-
-
-
-
-
-											<option value="113">TERAPIA ENDOVASCULAR NEUROLÓGICA</option>
-
-
-
-
-
-
-											<option value="105">URGENCIAS MEDICO QUIRURGICAS</option>
-
-
-
-
-
-
-											<option value="79">UROLOGÍA</option>
-
-
-
-
-
-
-											<option value="139">UROLOGIA GINECOLOGICA</option>
-
-
-
-
-
-
-											<option value="119">UROLOGIA PEDIATRICA</option>
-
-
-
-
-
-
-										</select>
-
-
-
-									</form>
-
-
-
-
-
-
+<form 
+    action="https://www.hospitalpuebla.com.mx/directorio_bcapellido_con_url.php"
+    method="post"
+    style="font: 400 14px/23.8px 'Lato', sans-serif;">
+
+    <input name="tipo" type="hidden" id="tipo" value="2">
+
+    <select
+        name="letra"
+        class="form-especialidades form-especialidades-index"
+        id="letra"
+        onchange="this.form.submit()">
+
+        <option selected value="" style="color:#666">
+            -- Seleccione una especialidad --
+        </option>
+        <option value="83">ACUPUNTURA HUMANA</option>
+        <option value="135">ALERGIA E INMUNOLOGIA CLINICA/ PEDIATRIA</option>
+        <option value="2">ALERGOLOGÍA</option>
+        <option value="3">ALERGOLOGÍA PEDIÁTRICA</option>
+        <option value="5">ANESTESIOLOGÍA</option>
+        <option value="6">ANGIOLOGÍA Y CIRUGIA VASCULAR</option>
+        <option value="117">ATENCION SEGURO MEDICO</option>
+        <option value="90">AUDIOLOGÍA, OTONEUROLOGÍA Y FONIATRÍA</option>
+        <option value="133">BIOLOGIA DE LA REPRODUCCIÓN HUMANA</option>
+        <option value="8">CARDIOLOGÍA</option>
+        <option value="140">CARDIOLOGIA INTERVENCIONISTA</option>
+        <option value="116">CARDIOLOGIA PEDIATRICA</option>
+        <option value="108">CIENCIAS MÉDICAS E INVESTIGACIÓN</option>
+        <option value="107">CIRUGIA BUCAL</option>
+        <option value="134">CIRUGIA CARDIOTORACICA</option>
+        <option value="101">CIRUGÍA CARDIOTORÁCICA PEDIÁTRICA</option>
+        <option value="12">CIRUGÍA GENERAL</option>
+        <option value="13">CIRUGÍA MAXILOFACIAL</option>
+        <option value="124">CIRUGÍA OFTALMOLÓGICA</option>
+        <option value="14">CIRUGÍA ONCOLÓGICA</option>
+        <option value="15">CIRUGÍA PEDIÁTRICA</option>
+        <option value="16">CIRUGÍA PLÁSTICA</option>
+        <option value="118">CIRUGÍA UROLÓGICA </option>
+        <option value="18">COLOPROCTOLOGÍA</option>
+        <option value="19">DERMATOLOGÍA</option>
+        <option value="20">DERMATOLOGÍA PEDIÁTRICA</option>
+        <option value="112">DIAGNÓSTICO Y REHABILITACIÓN NEUROPSICOLÓGICA</option>
+        <option value="21">ENDOCRINOLOGÍA</option>
+        <option value="22">ENDOCRINOLOGÍA PEDIÁTRICA</option>
+        <option value="102">ENDOSCOPIA GASTROINTESTINAL</option>
+        <option value="95">ESTOMATOLOGIA</option>
+        <option value="94">ESTOMATOLOGÍA PEDIÁTRICA</option>
+        <option value="27">FISIOTERAPIA</option>
+        <option value="28">GASTROENTEROLOGÍA</option>
+        <option value="104">GASTROENTEROLOGIA ENDOSCOPICA</option>
+        <option value="29">GASTROENTEROLOGÍA PEDIÁTRICA</option>
+        <option value="127">GASTROENTEROLOGÍA Y NUTRICIÓN PEDIÁTRICA</option>
+        <option value="32">GERIATRÍA</option>
+        <option value="126">GINECOLOGÍA ONCOLÓGICA</option>
+        <option value="33">GINECOLOGÍA Y OBSTETRICIA</option>
+        <option value="34">HEMATOLOGÍA</option>
+        <option value="35">HEMATOLOGÍA PEDIÁTRICA</option>
+        <option value="138">IMAGENOLOGIA DIAGNOSTICA Y TERAPEUTICA</option>
+        <option value="36">INFECTOLOGÍA</option>
+        <option value="106">INMUNOLOGÍA CLÍNICA Y ALERGIA</option>
+        <option value="122">MEDICINA ANTIENVEJECIMIENTO</option>
+        <option value="38">MEDICINA CRÍTICA</option>
+        <option value="115">MEDICINA DEL DEPORTE</option>
+        <option value="114">MEDICINA DEL ENFERMO PEDIÁTRICO EN ESTADO CRÍTICO</option>
+        <option value="125">MEDICINA FAMILIAR</option>
+        <option value="44">MEDICINA FÍSICA Y REHABILITACIÓN</option>
+        <option value="45">MEDICINA GENERAL</option>
+        <option value="46">MEDICINA INTERNA</option>
+        <option value="103">MEDICINA MATERNO FETAL</option>
+        <option value="120">MEDICINA REGENERATIVA</option>
+        <option value="132">MEDICINA REPRODUCTIVA Y ENDOCRINOLOGIA GINECOLOGICA</option>
+        <option value="121">NATUROPATIA</option>
+        <option value="48">NEFROLOGÍA</option>
+        <option value="49">NEFROLOGÍA PEDIÁTRICA</option>
+        <option value="98">NEONATOLOGIA</option>
+        <option value="51">NEUMOLOGÍA</option>
+        <option value="52">NEUMOLOGÍA PEDIÁTRICA</option>
+        <option value="53">NEUROCIRUGÍA</option>
+        <option value="54">NEUROLOGÍA</option>
+        <option value="55">NUTRICIÓN CLINICA</option>
+        <option value="109">NUTRICION DEPORTIVA</option>
+        <option value="57">ODONTOLOGÍA</option>
+        <option value="131">ODONTOLOGÍA INTEGRAL Y URGENCIAS</option>
+        <option value="58">ODONTOLOGÍA PEDIÁTRICA</option>
+        <option value="59">OFTALMOLOGÍA</option>
+        <option value="60">ONCOLOGÍA</option>
+        <option value="62">ONCOLOGÍA PEDIÁTRICA</option>
+        <option value="141">ONCOLOGIA QUIRURGICA</option>
+        <option value="110">ORIENTACION FAMILIAR</option>
+        <option value="64">ORTODONCIA</option>
+        <option value="99">ORTOPEDIA</option>
+        <option value="65">ORTOPEDIA Y TRAUMATOLOGÍA</option>
+        <option value="129">ORTOPEDIA Y TRAUMATOLOGÍA CON ALTA ESPECIALIDAD EN CIRUGÍA ARTICULAR</option>
+        <option value="85">ORTOPEDIA Y TRAUMATOLOGÍA PEDIÁTRICA</option>
+        <option value="123">OSTEÓPATA PODÓLOGA</option>
+        <option value="67">OTORRINOLARINGOLOGÍA</option>
+        <option value="68">OTORRINOLARINGOLOGÍA PEDIÁTRICA</option>
+        <option value="100">OTORRINOLARINGOLOGIA Y CIRUGIA DE CABEZA Y CUELLO</option>
+        <option value="130">OTORRINOLARINGOLOGÍA/CIRUGÍA DE CABEZA Y CUELLO</option>
+        <option value="70">PEDIATRÍA</option>
+        <option value="91">PERIODONCIA</option>
+        <option value="72">PSICOLOGÍA</option>
+        <option value="111">PSICOLOGIA Y PSICOTERAPIA</option>
+        <option value="75">REUMATOLOGÍA</option>
+        <option value="113">TERAPIA ENDOVASCULAR NEUROLÓGICA</option>
+        <option value="105">URGENCIAS MEDICO QUIRURGICAS</option>
+        <option value="79">UROLOGÍA</option>
+        <option value="139">UROLOGIA GINECOLOGICA</option>
+        <option value="119">UROLOGIA PEDIATRICA</option>
+    </select>
+</form>
 
 								</div>
 
@@ -6351,11 +5618,11 @@ function MM_callJS(jsStr) { //v2.0
 								Directorio de <strong>Extensiones </strong></h2>
 						</div>
 						<div class="col-lg-2 col-md-2 col-sm-5 col-xs-5" align="right">
-							<img src="./Hospital Puebla - Atención Médica de Alta Especialidad en Puebla ___files/bandera_ingles.png"
-								border="0" class="img-responsive"
-								onclick="MM_callJS(&#39;func_contenido_directorio_telefonico_en()&#39;)"
-								style="padding-top:20px">
-						</div>
+    <img src="./hospital_files/bandera_ingles.png"
+        border="0" class="img-responsive"
+        onclick="MM_callJS('func_contenido_directorio_telefonico_en()')"
+        style="padding-top:20px">
+</div>
 					</div>
 
 					<div class=" row ">
