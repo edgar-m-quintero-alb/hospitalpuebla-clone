@@ -31,7 +31,7 @@
 }
 #bsc-chat-container .bsc-header {
   flex: 65px 0 0;
-  background-color: #142b57;
+  background-color: #f37121;
   padding: 15px 20px;
   border-radius: 15px 15px 0 0;
 }
@@ -60,16 +60,16 @@
   font-weight: 400;
 }
 #bsc-chat-container .bsc-header-action-minimize-icon {
-  mask-image: url("webchat/icons/minimize.svg");
-  -webkit-mask-image: url("webchat/icons/minimize.svg");
+  mask-image: url("../../webchat/icons/minimize.svg");
+  -webkit-mask-image: url("../../webchat/icons/minimize.svg");
   background-color: #fff;
 }
 #bsc-chat-container .bsc-header-action-minimize-icon:hover {
   opacity: 1;
 }
 #bsc-chat-container .bsc-header-action-close-icon {
-  mask-image: url("webchat/icons/close.svg");
-  -webkit-mask-image: url("webchat/icons/close.svg");
+  mask-image: url("../../webchat/icons/close.svg");
+  -webkit-mask-image: url("../../webchat/icons/close.svg");
   background-color: #fff;
 }
 #bsc-chat-container .bsc-header-action-close-icon:hover {
@@ -365,8 +365,8 @@
   background-color: #142b57;
   margin-right: 5px;
   margin-left: 10px;
-  mask-image: url("webchat/icons/send.svg");
-  -webkit-mask-image: url("webchat/icons/send.svg");
+  mask-image: url("../../webchat/icons/send.svg");
+  -webkit-mask-image: url("../../webchat/icons/send.svg");
   mask-repeat: no-repeat, no-repeat;
   -webkit-mask-repeat: no-repeat, no-repeat;
   mask-size: 15px;
