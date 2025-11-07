@@ -1,0 +1,380 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Global
+ - UI
+ - Helpers
+
+-------------------------------------------------------------------*/
+
+
+/* GLOBAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+
+	will-change: all;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+
+	will-change: all;
+}
+
+html {
+	cursor: default;
+	user-select: none;
+}
+
+
+body {
+	font: 400 14px/1.52857 'Lato'; 
+	background-color: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.main-content,
+.sidebar {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.section {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 45px;
+}
+
+.section-large {
+	background-color: #E8E8E8;
+    margin-top: -170px;
+    padding-bottom: 0;
+    padding-top: 47px;
+    position: relative;
+}
+.section-large-turismo {
+	background-color: #E8E8E8;
+    margin-top: -170px;
+    padding-bottom: 0;
+    padding-top: 47px;
+    position: relative;
+}
+.section-clinica-mujer {
+	background-color: #fff;
+    margin-top: -170px;
+    padding-bottom: 0;
+    padding-top: 47px;
+    position: relative;
+}
+.section-servicios-complementarios {
+	background-color: #E8E8E8;
+    margin-top: -170px;
+    -webkit-margin-top: 0px;
+    padding-bottom: 0;
+    padding-top:0px;
+    position: relative;
+}
+
+#section-galerias-servicios {
+    background-color: #E8E8E8;
+    padding: 40px 5%;
+}
+@media (max-width:767px ) {
+	#section-galerias-servicios {
+    background-color: #E8E8E8;
+    padding: 20px 2%;
+	}
+}
+
+.section-contacto {
+    margin-top: -170px;
+    -webkit-margin-top: 0px;
+    		margin-top: 0px;
+}
+
+.layout-theme-contacto {
+	background-color: #E8E8E8;
+}
+
+
+
+
+.section-acerca {
+    background-attachment: fixed;
+    background-image: url("../img/acerca/fondo-acerca.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -170px;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+}
+
+
+@media (max-width:991px ) {
+	.section-large {
+    padding-top: 160px;
+	}
+	.section-large-turismo {
+    padding-top: 160px;
+	}
+}
+
+@media (max-width:767px ) {
+	.section-servicios-complementarios {
+    margin-top: -146px;
+	}
+	.section-large-turismo {
+    margin-top: -45px;
+	}
+}
+
+
+
+
+/* UI */
+
+.ui-text {
+	font: 400 14px/23.8px 'Lato', sans-serif;
+	color: #777;
+}
+.ui-text-turismo {
+	font: 400 15px 'Source Sans Pro', sans-serif;
+	color: #777;
+}
+.text-cardiopulmonar {
+	margin-bottom: 20px;
+}
+
+.ui-title-page {
+	position: relative;
+	padding: 60px 0 130px;
+	font-family: Raleway;
+	color: #fff;
+}
+.ui-title-page h1 {
+	margin-bottom: 1px;
+	margin-left: 4px;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.ui-subtitle-page {
+	color: #F37121;
+    font-size: 18px;
+    font-weight: 400;
+    width: 310px;
+}
+
+.ui-title-block {
+	margin-bottom: 7px;
+	font: 26px 'Raleway';
+	color: #004b8d;
+	font-weight: 300;
+}
+
+.ui-title-block strong {
+	font-weight: 500;
+}
+
+.ui-title-block_small {
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.ui-title-block_small span {
+	font-weight: 500;
+}
+.ui-title-block_small span + span {
+	display: block;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.ui-subtitle-block {
+	padding-bottom: 55px;
+	font-family: 'Raleway';
+	font-size: 20px;
+	font-weight: 300;
+	color: #878787;
+	text-align: center;
+	letter-spacing: 0.21em;
+}
+.ui-subtitle-block_small {
+	padding-bottom: 20px;
+	font-size: 18px;
+	line-height: 21.6px;
+}
+.ui-subtitle-block_form {
+	margin-top: 50px;
+	padding-bottom: 10px;
+	color: #363636;
+	letter-spacing: normal;
+}
+.ui-title-inner {	
+	color: #333;
+	font-family:Source Sans Pro, sans-serif;
+	font-size:18px!important;
+}
+.ui-title-inner_small {
+	font-size: 16px;
+}
+
+.ui-form .input-group {
+	width: 100%;
+	margin-bottom: 8px;
+	font-size: 12px;
+	font-weight: 300;
+	color: #888;
+	border: 1px solid #eee;
+	/*border-radius: 25px;*/
+	overflow: hidden;
+}
+.ui-form .input-group input,
+.ui-form .input-group textarea {
+	width: 100%;
+	padding: 11px 30px;
+	border: none;
+	font-size: 13px;
+	border-radius: 25px;
+}
+.ui-form .input-group .icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 18px 20px 18px 0;
+	color: #f26529;
+}
+
+.ui-form .input-group input:focus,
+.ui-form .input-group textarea:focus {
+	outline-style: none;
+}
+.ui-form .input-group input::-webkit-input-placeholder,
+.ui-form .input-group textarea::-webkit-input-placeholder {
+	font-size: 13px;
+	font-family: Source Sans Pro,  sans-serif;
+	color: #000;
+}
+.ui-form .input-group input::-moz-placeholder,
+.ui-form .input-group textarea::-moz-placeholder {
+	font-size: 13px;
+	font-family: Source Sans Pro,  sans-serif;
+	color: #000;
+}
+
+
+
+/* --- Helpers --- */
+
+
+.separator_10 {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+	border: medium none;
+}
+.separator_20 {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: medium none;
+}
+.separator_30 {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+	border: medium none;
+}
+.separator_40 {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 40px;
+	border: medium none;
+}
+.separator_100 {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 100px;
+	border: medium none;
+}
+
+.unstyled {
+	list-style-type: none;
+}
+
+.helper,
+.helper:before {
+	display: inline-block;
+	vertical-align: middle;
+}
+.helper:before {
+	width: 0;
+	height: 100%;
+	content: '';
+}
+
+.no-spacing {
+	letter-spacing: 0;
+}
+.marca-de-agua {
+    background-image: url("https://hospitalpuebla.com.mx/img/paquetes_turismo/transparencia-paquetes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100%;
+    width: 100%;
+	height: 100%; margin: 0;
+    
+}
+.marca-de-agua img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.marca-de-agua-ficha-dr {
+    background-image: url("https://hospitalpuebla.com.mx/img/paquetes_turismo/transparencia-ficha-doctores.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100%;
+    width: 100%;
+	height: 100%; margin: 0;
+    
+}
+.marca-de-agua-ficha-dr img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+
+.marca-de-agua-aseguradoras {
+    background-image: url("https://hospitalpuebla.com.mx/img/paquetes_turismo/marca-agua-aseguradoras.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100%;
+    width: 100%;
+	height: 100%; margin: 0;
+    
+}
+.marca-de-agua-aseguradoras img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}

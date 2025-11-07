@@ -1,0 +1,8628 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Global
+ - UI
+ - Header
+ - Navigation
+ - Footer
+ - Section
+ - Sliders
+ - Other
+ - Directorio Médico
+- Servicios Complementarios
+-------------------------------------------------------------------*/
+
+/* ======= GLOBAL ======= */
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+/* ======= HEADER ======= */
+
+.top-header {
+	border-top: 4px solid #f37121;
+}
+.top-header__links a, .languages .btn {
+	font-size: 12px;
+	line-height: 14.4px;
+	color: #ffff;
+}
+.top-header__links {
+	padding-top: 6px;
+	text-align: right;
+}
+.top-header__links a {
+	display: inline-block;
+	margin-top: 14px;
+	padding-right: 20px;
+	padding-left: 16px;
+	vertical-align: top;
+	border-left: 1px solid #ffff;
+}
+.top-header__links a:hover {
+	text-decoration: none;
+}
+.top-header__links a:last-child {
+	padding-right: 0;
+}
+.top-header__links a.border-right {
+	padding-right: 20px;
+	border-right: 1px solid #ffff;
+}
+.top-header__links a:hover {
+	text-decoration: underline;
+}
+.btn_languages {
+	position: relative;
+	top: 2px;
+	margin-bottom: 0;
+	padding: 5px 12px 10px;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	background-color: transparent;
+	transition: all 0.3s;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.btn_languages:hover {
+	box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.42);
+	text-shadow: 0 1px 2px rgba(74, 74, 74, 1);
+	text-decoration: none;
+}
+.languages .btn .caret {
+	margin-left: 8px;
+}
+.languages .icon_globe-2 {
+	position: relative;
+	top: 3px;
+	left: -10px;
+	font-size: 18px;
+	color: #ccc;
+}
+.logo {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 25px;
+}
+.header-inner {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.header-block {
+	text-align: right;
+}
+.header-label {
+	display: inline-block;
+	margin-left: 3px;
+	padding: 15px 23px;
+	font-size: 12px;
+	line-height: 14.4px;
+	color: #535353;
+	vertical-align: middle;
+	border: 1px solid #eee;
+	border-radius: 25px;
+}
+.header-label a:hover {
+	text-decoration: underline;
+}
+.header-label_2 {
+	margin-left: 10px;
+	font-size: 14px;
+	letter-spacing: 0.035em;
+}
+.header-label_2 .icon-header {
+	padding-right: 11px;
+	font-size: 18px;
+}
+.header-label strong {
+	margin-left: 5px;
+	font-weight: 700;
+	color: #363636;
+}
+.header-label a:hover {
+	text-decoration: none;
+}
+.icon-header {
+	position: relative;
+	padding-right: 6px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+/*---*/
+
+.top-cart {
+	display: inline-block;
+	margin-right: 3px;
+	margin-left: 19px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.8px;
+	color: #363636;
+	vertical-align: middle;
+	text-align: left;
+}
+.top-cart:hover {
+	text-decoration: none;
+}
+.top-cart .icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 13px;
+	padding-top: 11px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+}
+.top-cart__price {
+	display: block;
+	margin-top: 3px;
+	font-weight: 400;
+}
+
+
+.col-conmutadores-head {
+	padding: 0;
+	margin-left: 26px;
+}
+
+.col-conmutadores-head p{
+	color: #004B8D;
+    display: block;
+    font-size: 14px;
+    font-variant: small-caps;
+    margin-bottom: 2px;
+}
+
+.col-conmutadores-head img{
+	display: block;
+    float: left;
+    height: 29px;
+    margin-right: 10px;
+}
+
+.numero-conmutador{
+	color: #004B8D;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.numero-urgencias{
+	color: #d81f00;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.links-menu-sup {
+	display: inline-block;
+    float: right;
+    margin-left: 38px;
+    font-size: 13px;
+}
+
+.helper a {
+    color: #545454;
+}
+
+
+/* ======= NAVIGATION ======= */
+
+.top-nav {
+	background-color: #024dbd;
+}
+.yamm .navbar-nav > li > .dropdown-menu {
+	background-color: #072d73;
+}
+.yamm .nav li ul li a {
+	font-size: 12px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.yamm .dropdown-menu ul {
+	margin: 0 0 25px;
+	padding: 0;
+	color: #fff;
+	list-style: outside none none;
+}
+.yamm-fw .dropdown-menu a {
+	padding: 5px 0 !important;
+}
+.yamm .dropdown-menu a {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #aaa;
+	text-transform: uppercase;
+}
+.yamm .dropdown-menu i {
+	margin-right: 10px;
+}
+.yamm .dropdown-menu a:hover {
+	color: #fff;
+}
+.yamm .dropdown-menu .thumbnail {
+	padding: 0 !important;
+	border: none !important;
+}
+.yamm .dropdown-menu .t1-title {
+	color: #fff;
+	font: 700 16px/19.2px "Raleway", sans-serif;
+}
+
+
+/* ======= NAVIGATION 2 ======= */
+#navigator {
+	position: relative;
+    z-index: 2005;
+}
+
+
+.caja-menu {
+	height: 146px;
+	display: block;
+	color: #fff;
+	padding: 0;
+}
+
+.menu-logos {
+	background-color: #063377;
+	height: 146px;
+	border-radius: 0 0 0 10px;
+}
+
+.menu-logos-ramblas {	
+	height: 220px;
+	border-radius: 0 0 0 0px;
+}
+
+.logo-menu {
+	margin: 10px 20px;
+}
+.logo-menu-2018 {
+  margin: 10px 1px;
+  max-width: 100%;
+}
+.logo-menu-hospital-mini {
+		display: none;
+}
+
+.logo_certificacion2018-responsive {
+  display: inline-block;
+  height: 70px;
+  margin: 15px 0px;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.menu-informativo {
+	height: 91px;
+	background-color: #142b57;
+}
+
+.menu-informativo-internacionales {
+	height: 91px;
+	background-color: #142b57;
+}
+
+.menu-icon1 {
+	display: inline-block;
+    margin: 30px 10px 0 35px;
+    vertical-align: top;
+}
+
+.tag-menu1{
+	display: inline-block;
+    font-size: 12px;
+    margin: 28px 10px 0;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 90px;
+}
+.tag-menu1 a {
+	color: #fff;
+}
+
+.tag-menu1-internacionales{
+	display: inline-block;
+    font-size: 12px;
+    margin: 28px 10px 0;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 90px;
+}
+.tag-menu1-internacionales a {
+	color: #fff;
+}
+.tag-menu1-internacionales2 a {
+	color: #fff;
+}
+
+.bloque-conmutadores {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.tag-menu2{
+	display: inline-block;
+    font-size: 11px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 110px;
+    vertical-align: top;
+}
+.tag-menu2-turismo{
+	display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 110px;
+    vertical-align: top;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+.menu-icon2 {
+	display: inline-block;
+    margin: 5px 0;
+    vertical-align: top;
+}
+.tel-menu, .tel-menu a {
+	color: #F37121;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 2px 0 0 11px;
+    vertical-align: top;
+}
+.tel-urgencias, .tel-urgencias a  {
+	color: #D81F00;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 2px 0 0 11px;
+    vertical-align: top;
+}
+
+
+.tel-menu-turismo, .tel-menu-turismo a {
+	color: #F37121;
+    display: inline-block;
+    font-size: 14px;
+    
+    line-height: normal;
+    margin: 2px 0 0 11px;
+    vertical-align: top;
+}
+.tel-urgencias-turismo, .tel-urgencias-turismo a  {
+	color: #D81F00;
+    display: inline-block;
+    font-size: 14px;
+    
+    line-height: normal;
+    margin: 2px 0 0 11px;
+    vertical-align: top;
+}
+
+
+
+
+
+.divisor-vertical{
+	display: inline-block;
+	border-right: 1px solid #fff;
+	margin: 15px 30px;
+	height: 61px;
+}
+
+.menu-principal {
+	height: 55px;
+	border-radius: 0 0 10px 0;
+	padding: 0;
+}
+
+
+ .ligacontactos, ligacontactos a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	.ligacontactosemail, ligacontactosemail a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+
+
+/* ------- Responsive Menu menor a 1200------- */
+@media (max-width:1199px ) {
+	.caja-datos-contacto {
+    display:block;
+	}
+
+	.logo-menu-hospital {
+	margin: 10px auto;
+	display: block;
+	}
+	.logo-menu-certificacion {
+	display: none;
+	}
+	.menu-icon1 {
+    margin: 32px 0 0 20px;
+    width: 23px;
+	}
+	.tag-menu1 {
+    font-size: 12px;
+    width: 119px;
+	}
+	.tag-menu1-internacionales {
+    font-size: 12px;
+    width: 119px;
+	}
+	.tel-menu, .tel-urgencias {
+    font-size: 22px;
+    margin-top: 1px;
+	}
+	.tag-menu2 {
+    width: 134px;
+	}
+	.yamm .nav li a {
+    padding-left: 8px;
+	}
+
+	.yamm2018 .nav li a {
+    padding-left: 5px;
+	}
+
+/*	.yamm .navbar-brand {
+	  display: none !important;
+	}*/
+
+    .yamm .nav .oculta{
+	display:none;
+    }
+	
+	 .ligacontactos, ligacontactos a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	.ligacontactosemail, ligacontactosemail a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	
+
+}
+
+/* ------- Responsive Menu menor a 992------- */
+@media (min-width: 768px) and (max-width: 991px) {
+	.caja-datos-contacto {
+    display:none;
+	}
+	.caja-menu {
+    color: #FFFFFF;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 330px;
+	}
+	.menu-logos {
+    text-align: center;
+    border-radius: 0px;
+    height: auto;
+	}
+	.menu-logos-ramblas {
+    text-align: center;
+    border-radius: 0px;
+    height: auto;
+	}
+	.logo-menu-hospital, .logo-menu-certificacion {
+	display: none;
+	}
+	.logo-menu-hospital-mini {
+	display: block;
+	margin: 5px auto;
+	}
+	.menu-icon1 {
+    margin: 33px 0 0 23px;
+    width: 30px;
+	}
+	.menu-icon2 {
+    margin: 3px 2px 0 0;
+	}
+	.tag-menu1 {
+    font-size: 11px;
+    width: 110px;
+	}
+	.tag-menu1-internacionales {
+    font-size: 11px;
+    width: 110px;
+	}
+	.tag-menu2 {
+    width: 160px;
+	}
+	.tel-menu, .tel-urgencias {
+    font-size: 22px;
+    margin-top: 1px;
+	}
+	.divisor-vertical {
+    margin: 15px 21px;
+	}
+	.yamm {
+    border-radius: 0;
+	}
+	.yamm .nav li a {
+    font-size: 12px;
+    padding-left: 18px;
+	}
+	.yamm2018 .nav li a {
+    font-size: 11px;
+    padding-left: 10px;
+	}
+	#iview {
+    top: -229px;
+	}
+	.ligacontactos, ligacontactos a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	.ligacontactosemail, ligacontactosemail a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }	
+ 
+}
+
+/* ------- Responsive Menu menor a 768------- */
+
+@media (max-width:767px ) {
+	.caja-datos-contacto {
+    display:none;
+	}
+
+	.caja-menu {
+    width: 100%;
+	}
+	
+	.menu-informativo {
+    height: 140px;
+	}
+	.menu-informativo-internacionales {
+    height: 140px;
+	}
+	.menu-icon1 {
+    display: none;
+	}
+	.tag-menu1 {
+    display: inline-block;
+    font-size: 13px;
+    margin: 13px 0;
+    text-align: center;
+    text-transform: none;
+    width: 49%;
+	}
+	.tag-menu1-internaciones {
+    display: inline-block;
+    font-size: 13px;
+    margin: 13px 0;
+    text-align: center;
+    text-transform: none;
+    width: 30%;
+	}
+	
+	.bloque-conmutadores {
+    margin-left: 2%;
+    text-align: center;
+    width: 45%;
+	}
+	.divisor-vertical {
+    display: none;
+    margin: 8px 2%;
+	}
+
+	.yamm .navbar-brand {
+	  display: block;
+	}
+
+	.yamm .navbar-nav > li > .dropdown-menu {
+    background-color: #FFFFFF;
+	}
+	.yamm .nav li a {
+    font-size: 14px;
+    padding-left: 25px;
+	}
+
+	.yamm .nav li ul li a {
+    color: #666666;
+    font-size: 11px;
+    margin-left: 0px;
+    padding-left: 10px;
+	}
+	.yamm .nav li ul li a:hover {
+    background-color: #dedede;}
+	
+	.yamm .nav .oculta{
+	display:block;
+    }
+
+    .menu-logos {
+	  border-radius: 0 !important;
+	  height: auto;
+	  text-align: center;
+	}
+	
+	.ligacontactos, ligacontactos a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	.ligacontactosemail, ligacontactosemail a{
+	 font-size:14px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	
+
+}
+
+/* ------- Responsive Menu menor a 480------- */
+@media (max-width:480px ) {
+
+.tag-menu1-internacionales{
+	display: inline-block;
+    font-size: 11px;
+    /*margin: 28px 10px 0;*/
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 84px;
+}
+.tag-menu1-internacionales2{
+	display: inline-block;
+    font-size: 11px;
+    margin: 28px 10px 0;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 94px;
+}
+
+	.caja-datos-contacto {
+    display:none;
+	}
+
+    .menu-logos {
+	  border-radius: 0 !important;
+	  height: auto;
+	  text-align: center;
+	}
+
+.yamm .nav li a {
+    padding-left: 15px;
+    font-size: 13px;
+	}
+	.yamm .nav li ul li a {
+    margin-left: 0px;
+    }
+    
+    .caja-menu {
+    height: 345px;
+	}
+
+
+    .yamm .nav .oculta{
+	display:block;
+    }
+	.ligacontactos, ligacontactos a{
+	 font-size:12px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+	.ligacontactosemail, ligacontactosemail a{
+	 font-size:10px;
+	 color:#FFFFFF!important;
+	 display:inline-block;
+    }
+}
+
+/* ======= INDEX ======= */
+
+
+.bloque-trio {
+    margin-top: -237px;
+    position: relative;
+    z-index: 1501;
+    display: block;
+}
+.flag-english{
+  margin: 20px 0 0 5px !important;
+  width: 24px !important;
+}
+
+.trio-index1 {
+	background-color: #000000;
+    background-image: url("../img/index/fondo-trio1.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 10px 10px;
+    height: 217px;
+    padding: 30px 20px 0 30px;
+}
+
+.trio-index2 {
+	background-image: url("../img/index/fondo-trio2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+
+.triov2-index2 {
+	background-image: url("../img/index/fondov2-trio2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.trio-video-institucional {
+	background-image: url("../img/index/fondo-video-institucional.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.trio-seminarios-web {
+	background-image: url("../img/index/fondo-seminarios-web.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.trio-mama-puebla {
+	background-image: url("../img/index/fondo-mama-puebla.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.trio-notas {
+	background-image: url("../img/index/fondo-notas.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.trio-index3 {
+	background-image: url("../img/index/fondo-trio3.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+
+.trio-index3-hospitalarios {
+	background-image: url("../img/index/fondo-hospitalarios.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+
+
+.triov2-index3 {
+	background-image: url("../img/index/fondo-trio2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+
+.triov2-index1 {
+	background-color: #000000;
+    background-image: url("../img/index/fondo-trio1.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 10px 10px;
+    height: 217px;
+    padding: 30px 20px 0 30px;
+}
+
+
+.triov2-index3 {
+	background-image: url("../img/index/fondo-trio2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+
+
+.triov2_2-index1 {
+	background-color: #000000;
+    background-image: url("../img/index/fondov2-trio2_1.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 10px 10px;
+    height: 217px;
+    padding: 30px 20px 0 30px;
+}
+
+.triov2_2-index2 {
+	
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.triov2_2-index3 {
+	background-image: url("../img/index/fondo-trio2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+
+.triocomunidad-index {
+	background-image: url("../img/index/boton beneficios index3.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+    height: 217px;
+}
+.index_bloque_urgencias {
+	background-image: url("../img/index/index-urgencias-bloque.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;	
+    height: 300px;
+}
+.index_bloque_clinica_mujer {
+	background-image: url("../img/index/index-clinica-mujer-bloque.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;	
+    height: 300px;
+}
+.index_bloque_unidad_quirurgica {
+	background-image: url("../img/index/index-quirurgico-bloque.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;	
+    height: 300px;
+}
+
+
+.titulos-trio {
+	background-color: #f37121;
+	padding: 10px 15px;
+	height: 70px;
+	color: #fff;
+	border-radius: 10px 10px 0 0;
+	font-family:Raleway, sans-serif; /*25 FEBRERO 2022*/
+}
+.fondo-azul {
+	background-color: #072d73;
+}
+.titulos-trio img{
+	display: inline-block;
+    margin: 5px 9px 0 30px;
+    vertical-align: top;
+}
+.titulos-trio h3{
+	display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 10px;
+    text-transform: uppercase;
+}
+.titulos-trio h3 span{
+	font-size: 14px;
+	font-weight: 300;
+	display: block;
+	text-transform: none;
+	margin-bottom: 4px;
+}
+.txt-seleccione-especialidad {
+	color: #343434;
+    float: right;
+    font-size: 13px;
+	font-family: 'Raleway';
+    text-align: center;
+}
+.txt-seleccione-especialidad2 {
+	color: #CC0000;
+    float: right;
+    font-size: 17px;
+	font-family: 'Raleway';
+    text-align: center;
+	font-variant:small-caps;
+}
+.txt-seleccione-especialidad3 {
+	color: #CC0000;
+    float: right;
+    font-size: 16px;
+	font-family: 'Raleway';
+    text-align: center;
+	font-style:italic;
+}
+
+.principal-index {
+    background-color: #E8E8E8;
+    margin-top: -218px;
+    padding-bottom: 20px;
+    padding-top: 208px;
+    position: relative;
+    z-index: 1500;
+}
+
+.bloque-3cajas {
+	margin-top: 50px;
+	display: block;
+}
+
+/*.acceso-laboratorio {
+	background-image: url("../img/index/fondo-acceso-laboratorio.jpg");
+	margin-bottom: 10px;
+	background-size: 100%;
+	height: 234px;
+	}*/
+
+
+
+/*.acceso-intranet {
+	background-image: url("../img/index/fondo-acceso-intranet.jpg");
+	background-size: 100%;
+	height: 234px;
+	margin-left: 10px;
+}*/
+
+
+.acceso-laboratorio, .acceso-intranet {
+  background-size: 100% auto;
+  height: 234px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.acceso-laboratorio h3, .acceso-intranet h3{
+	display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #072d73;
+    margin: 30px 0 0 55px;
+}
+.acceso-laboratorio h3 span, .acceso-intranet h3 span{
+	font-size: 18px;
+	font-weight: 500;
+	display: block;
+	text-transform: none;
+	color: #f37121;
+	margin-bottom: 5px;
+}
+.boton-accesos {
+	background-color: #072D73;
+    border-left: 28px solid #F37121;
+    display: block;
+    margin-left: 31px;
+    margin-top: 108px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.boton-accesos2 {
+    background-color: #072D73;
+    border-left: 28px solid #F37121;
+    display: block;
+    margin-left: 31px;
+    margin-top: 80px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+
+.boton-accesos a, .boton-accesos2 a{
+    color: #fff;
+}
+
+/* ------- Responsive  index max 1199 ------- */
+@media (max-width:1199px ) {
+	.caja-datos-contacto {
+    display:block;
+	}
+
+	.principal-index {
+    margin-top: -230px;
+    }
+    .bloque-trio {
+    margin-top: -178px;
+	}
+	.titulos-trio img {
+    margin: 5px 4px 0 0;
+    width: 35px;
+	}
+	.titulos-trio h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 10px 0 0 ;
+	}
+	.trio-index1 {
+    background-position: -39px 0;
+    padding: 25px 20px 0;
+	}
+	.txt-seleccione-especialidad {
+    line-height: normal;
+	}
+	.trio-index2, .trio-index3, .triov2-index2, .triov2-index3, .triocomunidad-index, .trio-video-institucional, .trio-seminarios-web, .trio-mama-puebla, .trio-notas  {
+    height: 171px;
+	}
+	
+}
+
+/* ------- Responsive index max 991 ------- */
+@media (max-width:991px) {
+	.caja-datos-contacto {
+    display:none;
+	}
+
+	.principal-index {
+    margin-top: -548px;
+	}
+	.bloque-trio {
+    margin-top: -155px;
+	}
+	.acceso-laboratorio, .acceso-intranet {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+    width: 48%;
+	}
+	.acceso-laboratorio {
+    margin-right: 3%;
+	}
+	.boton-accesos, .boton-accesos2 {
+    margin-left: 28px;
+	}
+
+}
+
+/* ------- Responsive index max 767 ------- */
+@media (max-width:767px) {
+    .caja-datos-contacto {
+    display:none;
+	}
+	.bloque-trio {
+    margin-top: -154px;
+    display: block !important; 
+	}
+
+	.trio-index1, .trio-index2, .trio-index3, .triov2-index2, .triov2-index3, .triocomunidad-index, .trio-video-institucional, .trio-seminarios-web, .trio-mama-puebla, .trio-notas {
+    margin-bottom: 20px;
+    display: block !important;
+    min-height: 230px;
+	}
+	.trio-index2 {
+    background-image: url("../img/index/fondo-trio2h.jpg");
+	}
+	.triov2-index2 {
+    background-image: url("../img/index/fondov2-trio2h.jpg");
+	}
+	.trio-video-institucional {
+    background-image: url("../img/index/fondo-video-institucionalh.jpg");
+	}
+	.trio-seminarios-web {
+    background-image: url("../img/index/fondo-seminarios-webh.jpg");
+	}
+	.trio-mama-puebla {
+    background-image: url("../img/index/fondo-mama-pueblah.jpg");
+	}
+	.trio-notas {
+    background-image: url("../img/index/fondo-notash.jpg");
+	}
+	.trio-index3 {
+    background-image: url("../img/index/fondo-trio3h.jpg");
+	}
+	.trio-index3-hospitalarios {
+    background-image: url("../img/index/fondo-hospitalariosh.jpg");
+	}
+	.triov2-index3 {
+    background-image: url("../img/index/boton beneficios index3_horizontal.jpg");
+	}
+	
+
+	
+	triocomunidad-index
+	.acceso-laboratorio, .acceso-intranet {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    background-size: cover;
+	}
+	.boton-accesos, .boton-accesos2 {
+    margin-left: 0;
+	}
+
+}
+
+
+/* ------- Responsive 3cards index max 480 ------- */	
+@media (max-width:480px) {
+    .caja-datos-contacto {
+    display:none;
+	}
+	.trio-index1 {
+    display: block !important;
+    min-height: 230px;
+	}
+	.trio-index2 {
+    background-image: url("../img/index/fondo-trio2.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	.triov2-index2 {
+    background-image: url("../img/index/fondov2-trio2.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	
+	.trio-video-institucional {
+    background-image: url("../img/index/fondo-video-institucional.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	
+	.trio-seminarios-web {
+    background-image: url("../img/index/fondo-seminarios-web.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	
+	.trio-mama-puebla {
+    background-image: url("../img/index/fondo-mama-puebla.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	.trio-notas {
+    background-image: url("../img/index/fondo-notas.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	
+	.trio-index3 {
+    background-image: url("../img/index/fondo-trio3.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	.trio-index3-hospitalarios {
+    background-image: url("../img/index/fondo-hospitalarios.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	.triov2-index3 {
+    background-image: url("../img/index/fondo-trio2.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	.triocomunidad-index {
+    background-image: url("../img/index/boton beneficios index3.jpg");
+    display: block !important;
+    min-height: 230px;
+	}
+	
+	index_bloque_urgencias {
+    background-image: url("../img/index/index-urgencias-bloque.jpg");
+	display: block !important;
+    min-height: 300px;
+	}
+	.index_bloque_clinica_mujer {
+    background-image: url("../img/index/index-clinica-mujer-bloque.jpg");
+	display: block !important;
+    min-height: 300px;
+	}
+	.index_bloque_unidad_quirurgica {
+    background-image: url("../img/index/index-quirurgico-bloque.jpg");
+	display: block !important;
+    min-height: 300px;
+	}
+	
+	
+	.acceso-laboratorio {
+    height: auto;
+	}
+	.acceso-intranet {
+    height: auto;
+	}
+	.principal-index {
+    padding-bottom: 8px;
+    display: block;
+	}
+}
+
+
+/* ======  DIRECTORIO TELEFÓNICO ======== */
+.bloque-directorio{
+	position: relative;
+	margin-top: -64px;
+	z-index: 1502;
+}
+
+.bloque-directorio-relacionados{
+	margin-top: 10px;
+}
+
+.bloque-directorio h3{
+	background-color: #e8e8e8
+}
+
+.bloque-directorio h3{
+	background-color: #072D73;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.directorio-1-4 {
+	background-image: url("../img/index/fondo-directorio-1-4.jpg");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	padding: 50px 0 0 135px;
+	height: 200px;
+	border-bottom: solid 1px #bebebe;
+}
+
+.directorio-2-4, .directorio-3-4, .directorio-4-4 {
+	height: 200px;
+	padding: 35px 24px;
+	border-bottom: solid 1px #bebebe;
+}
+
+.directorio-1-4:after, .directorio-2-4:after, .directorio-3-4:after {
+  content: '';
+  height: 76%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 12%; 
+  background-color: #bebebe;
+}
+
+.directorio-1-4 p{
+	color: #072D73;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+.directorio-1-4 h4{
+	color: #F37121;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+.bloque-directorio ul {
+	color: #072D73;
+    line-height: 25px;
+    list-style: none outside none;
+    text-align: left;
+    display: inline-block;
+    margin: 0 5px;
+}
+.nombre-directorio {
+	height: 24px;
+    overflow: hidden;
+    width: 182px;
+}
+
+
+.extension-directorio {
+	color: #f37121;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: right;
+}
+.caja-txt-soporte-index {
+    background-color: #FFFFFF;
+    border-top: 16px solid #F37121;
+    display: block;
+    height: 473px;
+}
+.index-barra-soporte{
+	background-color: #F37121;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 45px 12px 30px;
+}
+.index-barra-soporte a{
+    color: #FFFFFF;
+}
+.index-soporte-titulo span{
+	color: #F37121;
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+}
+.index-soporte-titulo {
+    color: #072D73;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 31px;
+    margin-top: 36px;
+}
+.index-soporte-textos {
+	color: #343434;
+    display: block;
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 10px 80px 30px 30px;
+}
+.img-soporte-index-md {
+	display: none;
+}
+
+/* ------- Responsive Soporte Clínico Index menor a 1200------- */
+@media (max-width:1199px ) {
+   .caja-datos-contacto {
+    display:block;
+	}
+	.caja-img-soporte-index {
+    background-color: #FFFFFF;
+    height: 476px;
+    position: relative;
+	}
+	.caja-txt-soporte-index {
+    border-top: 6px solid #F37121;
+    height: 476px;
+	}
+	.index-soporte-titulo {
+    margin-left: 0px;
+    margin-bottom: 15px;
+	}
+	.index-soporte-textos {
+    margin: 0 0 15px;
+	}
+	.img-soporte-index-lg {
+    bottom: 0;
+    left: 0;
+    right: 10px;
+	}
+}
+
+/* ------- Responsive Soporte Clínico menor a 992------- */
+@media (max-width: 991px ) {
+    .caja-datos-contacto {
+    display:none;
+	}
+	.caja-soporte-index {
+    margin-top: 24px;
+    background-color: 
+	}
+	.caja-img-soporte-index {
+    height: auto;
+	}
+	.img-soporte-index-md {
+	display: block;
+	}
+	.img-soporte-index-lg {
+	display: none;
+	}
+	.index-soporte-titulo {
+    margin: 30px;
+	}
+	.index-soporte-textos {
+    margin: 0 30px 30px;
+	}
+	.caja-txt-soporte-index {
+    border-top: 15px solid #F37121;
+    height: 379px;
+	}
+	.caja-txt-soporte-index .list-mark {
+    margin: 0 30px 30px;
+	}
+
+}
+
+/* ------- Responsive Soporte Clínico max 480------- */	
+@media (max-width:480px) {
+    .caja-datos-contacto {
+    display:none;
+	}
+	.caja-txt-soporte-index {
+    border-top: 8px solid #F37121;
+    height: 335px;
+	}
+}
+
+
+/* ------- Responsive Directorio Extensiones menor a 1200------- */
+@media (max-width:1199px ) {
+    .caja-datos-contacto {
+    display:block;
+	}
+
+	.nombre-directorio {
+    height: 24px;
+    overflow: hidden;
+    width: 349px;
+	}
+	.directorio-2-4:after {
+    width: 0;
+	}
+	.directorio-1-4 p {
+    display: inline-block;
+    font-weight: 600;
+    margin: 16px 14px;
+	}
+	.directorio-1-4 img, .directorio-1-4 h4 {
+    margin-left: 55px;
+	}
+	.index-soporte-titulo {
+    font-size: 24px;
+    margin-bottom: 22px;
+	}
+	.index-soporte-titulo span{
+    font-size: 18px;
+	}
+
+
+
+}
+
+/* ------- Responsive Directorio Extensiones menor a 992------- */
+@media (max-width: 991px ) {
+    .caja-datos-contacto {
+    display:none;
+	}
+
+	.directorio-2-4:after {
+    width: 0;
+	}
+	.directorio-nombres {
+    width: 74%;
+	}
+	.directorio-extensiones {
+    width: 19%;
+	}
+	
+}
+
+/* ======= PAQUETES ======= */
+
+
+
+.section-paquetes{
+	margin-top: 40px;
+}
+
+.tabs-paquetes {
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.header-paquetes{
+	background-color: #072D73;
+    background-image: url("../img/paquetes/fondo-header-paquetes.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border-bottom: 9px solid #F37121;
+    color: #FFFFFF;
+    font-size: 24px;
+    height: 170px;
+    padding: 25px 50px;
+}
+
+.header-paquetes span{
+	color: #f37121;
+}
+
+.header-paquetes h3{
+	color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.header-paquetes h3 a{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.paquete-maternidad-tab {
+	background-image: url("../img/paquetes/fondo-paquete-maternidad.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-cancer-de-mama-tab {
+	background-image: url("../img/paquetes/fondo-cancer-de-mama.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-checkup-basico-tab {
+	background-image: url("../img/paquetes/fondo-paquete-checkup-basico.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-checkup-menores-de-40-tab {
+	background-image: url("../img/paquetes/fondo-paquete-checkup-menores-de-40.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-checkup-escolar-tab {
+	background-image: url("../img/paquetes/fondo-paquete-checkup-escolar.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-checkup-pediatrico-tab {
+	background-image: url("../img/paquetes/fondo-paquete-checkup-pediatrico.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-checkup-mayores-de-40-tab {
+	background-image: url("../img/paquetes/fondo-paquete-checkup-mayores-de-40.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.paquete-checkup-ejecutivo-tab {
+	background-image: url("../img/paquetes/fondo-paquete-checkup-ejecutivo.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+#flotante {
+	background-color: #F37121;
+    border-radius: 4px 0 0 10px;
+    display: inline-block;
+    left: 96%;
+    margin-top: -300px;
+    position: relative;
+    top: -250px;
+    width: 4%;
+    z-index: 776;
+}
+
+#flotante-turismo {
+	background-color: #F37121;
+    border-radius: 4px 0 0 10px;
+    display: inline-block;
+    left: 96%;
+   
+    position: relative;
+    top: -250px;
+    width: 4%;
+    z-index: 776;
+}
+
+
+/* ------- Responsive Paquetes Index max 1199------- */	
+@media (max-width:1199px ) {
+
+}
+
+/* ------- Responsive Paquetes Index max 991------- */	
+@media (max-width:991px ) {
+	#container-paquetes{
+	margin-top: -80px;
+	}
+}
+
+@media (max-width:767px) {	
+	#container-paquetes{
+	margin-top: -40px;
+	}
+	.header-paquetes {
+    font-size: 18px;
+    height: 128px;
+    padding: 20px 25px;
+	}
+	.header-paquetes h3 a {
+    font-size: 22px;
+    font-weight: 500;
+	}
+}
+
+/* ------- Responsive Paquetes Index max 480------- */	
+@media (max-width:480px) {
+	.header-paquetes h3 a {
+    font-size: 18px;
+	}
+	#container-paquetes{
+	margin-top: -150px;
+	}
+}
+
+
+
+
+/* ------- Responsive Index max 1199------- */	
+@media (max-width:1199px ) {
+
+	#flotante {
+    top: -200px;
+	}
+
+}
+
+
+
+
+/* ------- Responsive Index max 991 ------- */	
+@media (max-width:991px ) {
+
+	#flotante {
+    display: none;
+	}
+
+}
+
+
+
+/* ======= SERVICIOS DE DIAGNÓSTICO ======= */
+
+/* ----- Resonancia Magnética ------ */
+
+.informacion-servicios {
+	padding-right: 70px;
+	overflow-y: scroll;
+	height: 550px;
+	overflow-x: hidden;
+}
+
+.informacion-servicios .list-mark {
+	margin: 10px 70px 10px 30px;
+}
+
+.bloque-cards {
+	font-size: 15px;
+	color: #fff;
+}
+.texto-card {
+    margin: 16px 0 20px;
+}
+.icon-card{
+	color: #F37121;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 8px 0 -18px;
+    padding: 0;
+}
+.bloque-cards{
+	padding: 0 15px 0 30px;	
+}
+
+.bloque-cards span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+}
+.bloque-cards h3 {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+.card-medicos-resonancia{
+	background-image: url("../img/servicios/resonancia-magnetica/especialistas.jpg");
+	height: 280px;
+	padding: 35px 50px;
+	display: block;
+}
+.card-beneficios-resonancia{
+	background-image: url("../img/servicios/resonancia-magnetica/beneficios.jpg");
+	height: 280px;
+	padding: 35px 50px;
+	display: block;
+}
+
+.card-botones{
+	height: 279px;
+	padding: 0 15px 0 0;
+	display: block;
+	overflow: hidden;
+}
+.boton-card-izq {
+    background-color: #062151;
+    height: 140px;
+    padding: 25px;
+}
+.boton-card-izq img {
+    display: block;
+    margin: 14% auto;
+}
+.boton-card-der {
+    background-color: #072D73;
+    border-bottom: 10px solid #F37121;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+    height: 140px;
+    padding: 25px;
+}
+.boton-card-der span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+}
+.boton-card-der a {
+    color: #fff;
+}
+
+.bloque-otros-servicios {
+	background-color: #e8e8e8;
+	font-size: 15px;
+	color: #333;
+}
+
+.intro-otros-servicios {
+	padding: 20px;
+}
+
+.diagonal {
+	color: #F37121;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 8px 0 -18px;
+    padding: 0;
+}
+
+.bloque-otros-servicios h3{
+	display: inline;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.bloque-otros-servicios span{
+	display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.bloque-soporte-clinico {
+	background-image: url("../img/soporte-clinico/fondo-soporte-clinico.jpg");
+	font-size: 15px;
+	color: #fff;
+	border-top: solid 10px #f37121;
+}
+
+.bloque-soporte-clinico span{
+	display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.bloque-soporte-clinico h3{
+	display: inline;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.card-soporte {
+	margin-top: 15px;
+}
+
+
+.card-soporte p a{
+	border-left: 5px solid #F37121;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 16px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/* ======= FICHAS SERVICIOS ======= */
+.icon-float{
+	margin: 15px auto;
+	display: block;
+	max-width: 100%;
+}
+.divisor-float{
+	display: block;
+	width:100%;
+}
+.div-bloque-titulo-dia{
+	background-color: #F37121;
+    display: inline-block;
+    height: 80px;
+    padding: 0 20px;
+}
+.div-bloque-submenu-diag {
+    border-right: 1px solid #0B45B0;
+    display: inline-block;
+    height: 80px;
+    padding: 0 20px 0 28px;
+}
+.div-bloque-submenu-diag:last-child{
+	border-right: none;
+}
+.inliner{
+	display: inline-block;
+	margin-right: 23px;
+}
+.inliner:last-child{
+	margin-right: 0;
+}
+.area_subheader{
+	background-color: #072d73;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: -213px;
+    position: relative;
+    z-index: 2000;
+}
+
+.area_subheader-turismo{
+	background-color: #072d73;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: -170px;
+    position: relative;
+    z-index: 2000;
+	font-family: Source Sans Pro, sans-serif;
+}
+.area_titulo {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 18px;
+    text-transform: uppercase;
+}
+
+.area_titulo-turismo {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 18px;
+    text-transform: uppercase;
+	font-family:Source Sans Pro, sans-serif!important;
+}
+.texto-conmutador{
+	font-size: 18px;
+    margin-top: -6px;
+}
+
+.texto-conmutador-turismo{
+	font-size: 18px;
+    margin-top: -6px;
+	font-family:Source Sans Pro, sans-serif;
+	color: #FFFFFF;
+}
+.minititulo{
+	font-size: 22px;
+	display: inline-block;
+}
+
+.minititulo-turismo{
+	font-size: 22px;
+	display: inline-block;
+	font-family: Source Sans Pro, sans-serif;
+}
+.ext-num {
+    color: #F37121;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+.ext-num-turismo {
+    color: #F37121;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+	font-family: Source Sans Pro, sans-serif;
+}
+.horario-subheader{
+	font-size: 14px;
+    font-weight: 400;
+}
+.horario-subheader-turismo{
+	font-size: 14px;
+    font-weight: 400;
+	font-family: Source Sans Pro, sans-serif;
+}
+.ubicacion-subheader {
+    display: inline-block;
+    height: 80px;
+    padding: 0 20px;
+    vertical-align: top;
+}
+.minititulo-sd {
+	font-size: 13px;
+	font-weight: 500;
+    margin-bottom: 2px;
+    margin-top: 14px;
+}
+
+.minititulo-sd-turismo {
+	font-size: 13px;
+	font-weight: 500;
+    margin-bottom: 2px;
+    margin-top: 14px;
+	font-family: Source Sans Pro, sans-serif;
+}
+.texto-minititulo {
+    font-size: 15px;
+    font-weight: 500;
+}
+.area_subheader a{
+	color: #FFFFFF;
+    font-weight: 200;
+    text-decoration: none;
+}
+.info-titulo span{
+	color: #F37121;
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+}
+.info-titulo {
+    color: #072D73;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+.info-textos {
+    color: #343434;
+    display: block;
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+.col-imagen-servicios{
+	overflow: hidden;
+	background-size: cover;
+}
+.dosbotones {
+    width: 100%;
+}
+
+
+
+/* ------- Responsive Serv Diag max 1200 ------- */	
+@media (max-width:1199px ) {
+	.div-bloque-titulo-dia {
+    padding: 0 10px;
+	}
+	.area_titulo {
+    text-align: center;
+	}
+	.div-bloque-submenu-diag {
+    padding: 0 18px;
+	}
+	.inliner {
+    margin-right: 15px;
+	}
+	.minititulo {
+    font-size: 18px;
+	}
+	.ext-num {
+    font-size: 17px;
+	}
+	.info-titulo {
+    margin-top: 24px;
+	}
+	.informacion-servicios {
+    padding-left: 60px;
+    padding-right: 40px;
+	}
+	.card-medicos-resonancia, .card-beneficios-resonancia  {
+    padding: 28px 30px;
+	}
+	.boton-card-izq {
+    padding: 38px 18px;
+	}
+	.boton-card-der {
+    font-size: 20px;
+    padding: 25px 29px;
+	}
+}
+
+
+/* ------- Responsive Serv Diag max 991 ------- */	
+@media (max-width:991px ) {
+	.area_subheader {
+    margin-top: -179px;
+	}
+	.div-bloque-submenu-diag {
+    border-top: 1px solid #0B45B0;
+    padding: 0 33px;
+    text-align: center;
+	}
+	.col-imagen-servicios{
+	overflow: hidden;
+	background-size: cover;
+	display: none;
+	min-height: 270px;
+	background-color:#dedede;
+	}
+	.informacion-servicios {
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 15px 40px;
+    overflow-y: auto;
+	}
+	.info-textos {
+    margin-bottom:30px;
+	}
+	.bloque-cards {
+    margin-top: 18px;
+    padding: 0;
+	}
+	.card-medicos-resonancia, .card-beneficios-resonancia {
+    padding: 20px 36px;
+    height: 242px;
+	}
+	.card-botones {
+    padding: 0;
+    height: auto;
+	}
+	.dosbotones {
+    float: right;
+    width: 50%;
+	}
+	.bloque-soporte-clinico p {
+    margin: 25px;
+	}
+	.bloque-soporte-clinico .diagonal {
+    margin: 5px;
+	}
+	
+
+}
+
+/* ------- Responsive Serv Diag max 767 ------- */	
+@media (max-width:767px) {
+	.div-bloque-titulo-dia {
+    height: auto;
+    padding: 0 10px;
+	}
+	.area_subheader {
+    margin-top: -144px;
+	}
+	.informacion-servicios {
+    padding: 10px 40px;
+	}
+	.col-imagen-servicios{
+	min-height: 210px;
+	}
+	.card-medicos-resonancia {
+    height: 226px;
+	}
+	.card-beneficios-resonancia {
+    height: auto;
+	}
+	.dosbotones {
+    float: none;
+    width: 100%;
+	}
+	.boton-card-izq {
+    padding: 10px 18px;
+	}
+	.bloque-otros-servicios {
+	display: none;
+	}
+	.card-soporte {
+    text-align: center;
+	}
+	.card-soporte p a {
+    display: inline-block;
+	}
+	.bloque-soporte-clinico {
+    border: none;
+    padding-top: 30px;
+	}
+}
+
+/* ------- Responsive Serv Diag max 480 ------- */	
+@media (max-width:480px) {
+	.col-imagen-servicios{
+	min-height: 170px;
+	}
+	.area_subheader {
+    margin-top: -180px;
+	}
+	.informacion-servicios {
+    padding: 10px 25px;
+	}
+	.card-medicos-resonancia {
+    height: 265px;
+	}
+	.card-soporte p a {
+    margin-top: 0;
+    margin-bottom: 25px;
+	}
+	.bloque-soporte-clinico .diagonal {
+    margin: 20px 12px 0 0;
+	}
+	
+	.section-turismo {   
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	}
+}
+
+
+
+/* ======= PLANTILLA CLÍNICA DE LA MUJER ======= */
+.titulo-paquetes-clinicamujer {
+    background-color: #d5cbe1;
+    color: #072d73;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin: 30px 0 0;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 98%;
+}
+.menu-paquetes-clinicamujer {
+    display: block;
+    margin: 0 0 50px;
+    min-height: 200px
+}
+.menu-paquetes-clinicamujer li {
+    border: 1px solid #d5cbe1;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    width: 49%;
+}
+.menu-paquetes-clinicamujer a {
+    color: #a0a0a0;
+}
+.menu-paquetes-clinicamujer a:hover {
+    color: #f37121;
+}
+
+.titulo-paquetes-clinicamujer, .menu-paquetes-clinicamujer {
+    display: none;
+}
+.break-mobile{
+	display: none;
+}
+.volver-clinica-mujer a {
+    background-color: #063377;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    margin: 20px 0;
+    padding-right: 25px;
+}
+.volver-clinica-mujer span {
+    background-color: #f37121;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+    padding: 11px;
+}
+.volver-clinica-mujer a:hover {
+    text-decoration: underline;
+    color: #f37121;
+}
+.volver-clinica-mujer a:hover span{
+    text-decoration: none;
+}
+
+@media (max-width:991px ) {
+	.titulo-paquetes-clinicamujer, .menu-paquetes-clinicamujer {
+	    display: block;
+	}
+	.sidebar-clinica-mujer {
+    display: none;
+	}
+
+}
+
+@media (max-width:687px ) {
+	.titulo-paquetes-clinicamujer {
+    margin: 115px 0 0;
+	}
+
+	.interior-paquetes-clinicamujer .titulo-paquetes-clinicamujer {
+    margin: 10px 0 0;
+	}
+
+}
+
+@media (max-width:480px ) {
+	.menu-paquetes-clinicamujer li {
+    padding: 15px 0;
+    width: 49%;
+	}
+	.break-mobile{
+	display: inline-block;
+	}
+
+}
+
+
+.area-titulo-clinica-mujer {
+    color: #3f4c62;
+}
+.area-titulo-clinica-rehabilitacion-cardio {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.div-bloque-titulo-mujer {
+	background-color: #d5cbe1;
+}
+.titulo-clinicamujer {
+    color: #072d73;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.titulo-clinicamujer-turismo {
+    color: #072d73;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+	font-family: Source Sans Pro, sans-serif;
+}
+.titulo-clinicamujer-turismo20 {
+    color: #072d73;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+	font-family: Source Sans Pro, sans-serif;
+}
+.titulo-turismonaranja {
+    color: #f37121;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+	font-family: Source Sans Pro, sans-serif;
+}
+.titulo-clinicamujer-big {
+    display: block;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 47px;
+}
+.titulo-clinicamujer-3 {
+	font-size: 20px;
+}
+.img-clinica-mujer{
+	margin-bottom: 25px;
+}
+.servicios-clinica-mujer {
+    background-color:#072d73;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.servicios-clinica-mujer-turismo {
+    background-color:#fff;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-top: 35px;
+    text-align: center;
+}
+.servicios-clinica-mujer-txt {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 40px 0 52px;
+    padding: 0 10%;
+}
+.servicios-clinica-mujer-txt span {
+    color: #f37121;
+    display: block;
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+
+.servicios-clinica-mujer-txt-turismo {
+    color: #f37121;
+    display: block;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 7px;
+	font-family: Source Sans Pro, sans-serif;
+	
+}
+.servicios-clinica-mujer-link {
+    background-color: #fff;
+    border-bottom: 6px solid #f37121;
+    color: #666;
+    font-size: 16px;
+    padding: 30px 20px;
+}
+.servicios-clinica-mujer-link a{
+    text-decoration: none;
+    color: #666;
+}
+.bloque-areas-clinica-mujer {
+    border-bottom: 1px dashed #e1e1e1;
+    margin-bottom: 30px;
+}
+.submenu-area-clinica-mujer {
+	margin: 40px 0;
+}
+.clinica-mujer-areas h2 {
+    border-bottom: 1px solid #e6e6e6;
+    color: #f37121;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.clinica-mujer-areas-turismo h2 {
+    border-bottom: 1px solid #e6e6e6;
+    color: #f37121;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+	font-family: Source Sans Pro, sans-serif;
+}
+.clinica-mujer-areas span {
+    color: #1446a2;
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+    margin: 52px 0 35px 14px;
+}
+.img-clinica-mujer-v {
+	display: block;
+}
+.img-clinica-mujer-h {
+	display: none;
+}
+.promociones-clinica-mujer h4, .promociones-clinica-mujer h5 {
+    color: #f37121;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+.promociones-clinica-mujer h5 {
+    color: #072d73;
+    font-size: 22px;
+    margin-bottom: 26px;
+}
+.contacto-clinica-mujer {
+    background-image: url("../img/clinica-de-la-mujer/fondo-contacto-clinica-de-la-mujer.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #f37121;
+    color: #fff;
+    margin-bottom: -22px;
+    margin-top: 25px;
+}
+.contacto-nuevos-servicios {
+    background-image: url("../img/servicios/imagenes_servicios_fondo-contacto-formularios.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #f37121;
+    color: #fff;
+    margin-bottom: -22px;
+    margin-top: 25px;
+}
+
+.contacto-turismo {
+    background-image: url("../img/fondo-contacto-turismo.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #f37121;
+    color: #fff;
+    margin-bottom: -22px;
+    /*margin-top: 25px;*/
+}
+.contacto-clinica-mujer h5 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.contacto-clinica-mujer span {
+    color: #f37121;
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.contacto-clinica-mujer p span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.contacto-clinica-mujer-txt {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.contacto-clinica-mujer a {
+    background-color: #f37121;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    margin: 15px 0 35px;
+    padding: 15px 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.contacto-clinica-mujer a:hover {
+    background-color: #e75b05;
+    text-decoration: underline;
+}
+.contacto-contenedor-div {
+    max-height: 460px;
+    overflow: hidden;
+    padding-top: 85px;
+    text-align: right;
+}
+
+
+/* ------- Responsive Serv Diag max 1200 ------- */	
+@media (max-width:1199px ) {
+	.contacto-contenedor-div {
+    max-height: 485px;
+    padding-top: 106px;
+}
+}
+
+/* ------- Responsive Serv Diag max 991 ------- */	
+@media (max-width:991px ) {
+	.section-turismo {   
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-right:20px;
+	}
+	.section-clinica-mujer {
+    padding: 0 5%;
+	}
+	.servicios-clinica-mujer-txt {
+    padding: 0;
+	}
+	.servicios-clinica-mujer-txt span {
+    font-size: 24px;
+    }
+	.servicios-clinica-mujer-link {
+    margin-bottom: 30px;
+	}
+	.bloque-areas-clinica-mujer {
+    padding: 0 5%;
+	}
+	.img-clinica-mujer-v {
+	display: none;
+	}
+	.img-clinica-mujer-h {
+	display: block;
+	}
+	.promociones-clinica-mujer img {
+	margin-bottom: 20px;
+	}
+	.submenu-area-clinica-mujer {
+    text-align: center;
+	}
+	.submenu-area-clinica-mujer img {
+    display: block;
+    margin: 0 auto;
+    max-width: 65px;
+	}
+	.contacto-clinica-mujer {
+    text-align: justify;
+	}
+	.contacto-contenedor-div {
+    padding-top: 0;
+    text-align: center;
+	}
+}
+
+/* ------- Responsive Serv Diag max 767 ------- */	
+@media (max-width:767px) {
+	.submenu-area-clinica-mujer {
+    margin: 30px 0 5px;
+	}
+	.clinica-mujer-areas h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 29px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px dashed #f4f4f4;
+    border-top: 1px solid #e6e6e6;
+    padding: 35px 0 30px;
+	}
+
+}
+
+
+/* ======= PLANTILLA PAQUETES ======= */
+
+.titulo-plantilla-paquetes {
+    color: #004B8D;
+    font: 400 24px 'Raleway';
+    margin-bottom: 7px;
+}
+.titulo-plantilla-paquetes-maternidad {
+    border-bottom: 2px solid #f37121;
+    color: #072E73;
+    display: inline-block;
+    font: 400 22px 'Raleway';
+    margin: 15px 0 0 15px;
+    padding-bottom: 12px;
+}
+
+.titulo-plantilla-paquetes span {
+    color: #F37121;
+    display: block;
+    font: 500 20px 'Raleway';
+    margin-top: 10px;
+} 
+.subtitulo-plantilla-paquetes {
+    color: #f37121;
+    font: 400 18px 'Raleway';
+    text-align: center;
+}
+.subtitulo-plantilla-paquetes-maternidad {
+    color: #005092;
+    font: 500 20px 'Raleway';
+    margin: 27px 0;
+    text-align: center;
+}
+#bloque-maternidad-incluye {
+    background-color: #FFFFFF;
+    border-bottom: 1px dashed #6A9F04;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+#bloque-maternidad-incluye h5 {
+  border-bottom: 1px solid #bababa;
+  color: #f37121;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-bottom: 9px;
+}
+.paquete-maternidad-incluye{
+	color: #005092;
+	font-size: 15px;
+	list-style: none;
+}
+.paquete-maternidad-incluye li{
+	line-height: 32px;
+}
+.paquete-maternidad-incluye span {
+    color: #f37121;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.paquete-maternidad-incluye a {
+    color: #4ecccb;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.bullet-incluye-maternidad {
+	margin-right: 5px;
+}
+
+#bloque-tablas-paquetes-maternidad > h2 {
+    background-color: #072D73;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 15px;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tabla-paquetes-maternidad {
+    color: #6b6b6b;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.tabla-paquetes-maternidad thead {
+  background: #f37121;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.tabla-paquetes-maternidad thead th{
+    text-align: center;
+}
+
+.tabla-paquetes-maternidad tr th {
+  padding: 13px 0;
+}
+
+.tabla-paquetes-maternidad tr td {
+  padding: 11px 0;
+  line-height: 20px;
+}
+
+.tabla-paquetes-maternidad span {
+    color: #072D73;
+    font-weight: 500;
+}
+
+.cita-tabla-maternidad {
+  color: #666 !important;
+  display: block;
+  font-size: 11px;
+  font-weight: 400 !important;
+  margin: 0;
+}
+
+.titulo-paquetes-maternidad-medicamentos {
+    background-color: #6A9F04;
+    border-radius: 21px 21px 21px 21px;
+    color: #FFFFFF;
+    display: block;
+    font: 500 19px 'Raleway';
+    margin: 20px 0 10px;
+    padding: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.titulo-habitaciones {
+    color: #004b8d;
+    font: 500 18px 'Raleway';
+}
+.icon-hojas-maternidad{
+	display: inline-block;
+	margin-left: 30px;
+}
+.intro-paquetes-texto {
+    color: #666666;
+    margin: 20px 15px;
+    font: 300 16px 'Raleway';
+}
+.aclaraciones-mli{
+  color: #888888;
+  font-weight: 300;
+}
+.aclaraciones-mli > a {
+  color: #f37121;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.aclaraciones-mli > h5 {
+  color: #f37121;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.intro-paquetes-texto-naranja {
+    color: #f37121; 
+	margin: 20px 15px;
+    font: 300 16px 'Raleway';   
+}
+
+.frase-paquetes-maternidad {
+    border-bottom: 1px dashed #005092;
+    border-top: 1px dashed #005092;
+    display: block;
+    margin: 46px 0 25px;
+    padding: 23px 0;
+}
+.resaltar-txt-paquetes {
+    border-left: 1px dashed #005092;
+    color: #f37121;
+    display: block;
+    font: italic 400 18px 'Raleway';
+    padding: 10px 16px;
+}
+.paquetes-habitaciones-texto {
+    color: #666;
+    font: 400 14px/24px 'Lato',sans-serif;
+}
+.paquetes-habitaciones-texto span {
+    color: #0057ba;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.paquetes-contacto {
+  color: #f37121;
+  font: 400 18px/25px "Lato",sans-serif;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  min-height: 200px;
+}
+.masinfo-nombre-dr {
+  color: #072d73;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.masinfo-especialidad {
+  font-weight: 400;
+  margin: 5px 0 10px;
+}
+.masinfo-consultorio {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+.masinfo-links {
+  color: #4f75bb !important;
+  font-size: 15px;
+  margin: 0;
+}
+
+.frase-paquetes .paquetes-contacto {
+  min-height: 30px !important;
+}
+
+@media (max-width:790px) {
+	.paquetes-contacto {
+	  min-height: 300px;
+	}	
+}
+@media (max-width:480px) {
+	.paquetes-contacto {
+	  min-height: 380px;
+	}
+	.paquetes-contacto-pequeno {
+	  display: block;
+	  min-height: auto !important;
+	  margin-bottom: 50px;
+	}	
+
+}
+
+.paquetes-contacto a {
+    color: #F37121;
+}
+.paquetes-contacto span {
+  color: #004b8d;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+.paquetes-contacto img {
+  margin-right: 10px;
+}
+
+.show-mobile{
+	display: none;
+}
+.paquetes-bloque-dos {
+    margin: 40px 0;
+}
+.icon-paquetes-checkup{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.frase-paquetes {
+	background-color: #f37121;
+	text-align: center;
+	padding: 30px;
+	bottom: 0;
+}
+.areas-paquetes-checkup {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.titulos-checkup-nuevos {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.lista-incluye-paquetes-checkup {
+	display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}
+.frase-paquetes span {
+	vertical-align: middle;
+	position: relative;
+	color: #fff;
+}
+
+.bloque-recomendaciones-paquetes {
+    margin: 50px 0 30px;
+    padding: 0;
+}
+.recoemndaciones-generales-titulo {
+    color: #F37121;
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+
+/* ------- Responsive Plantilla Paquetes max 1200 ------- */	
+@media (max-width:1199px ) {
+
+}
+/* ------- Responsive Plantilla Paquetes max 991 ------- */	
+@media (max-width:991px ) {	
+
+}
+
+/* ------- Responsive Plantilla Paquetes max 767 ------- */	
+@media (max-width:767px) {
+	.paquetes-contacto {
+    font-size: 16px;
+	}
+	.paquetes-contacto span {
+    display: block;
+	}
+	.hide-tavlet-v {
+	display: none;
+	}
+}
+
+/* ------- Responsive Plantilla Paquetes max 480 ------- */	
+@media (max-width:480px) {
+	.paquetes-contacto {
+    font-size: 16px;
+	}
+	.show-mobile{
+	display: inline-block;
+	}
+	.hide-mobile{
+	display: none;
+	}
+}
+
+
+/* ======= BANNERS MAMÁ PUEBLA ======= */
+
+.sec-mama-puebla {
+    background-color: #FFFFFF;
+    background-image: url("../img/mama-puebla/fondo.jpg");
+    background-position: right top;
+    background-repeat: repeat-x;
+}
+.sec-mama-puebla p {
+    color: #072D73;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px;
+    text-align: center;
+}
+.sec-mama-puebla span {
+    color: #F37121;
+    font-size: 24px;
+    font-weight: bold;
+}
+.head-sec-mama-puebla {
+    background-color: #48c5c4;
+    border-bottom: 4px solid #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    margin-top: 14px;
+}
+.titulo-head-sec-mama-puebla {
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sec-mama-puebla-card{
+	display: block;
+	margin: 0 auto;
+}
+
+/* ------- Responsive Mamá Puebla max 1200 ------- */	
+@media (max-width:1199px ) {
+	.sec-mama-puebla p {
+    	font-size: 17px;
+	}
+	.sec-mama-puebla span {
+    	font-size: 21px;
+	}
+	.sec-mama-puebla {
+    background-position: center -16px;
+	}
+}
+
+/* ------- Responsive Plantilla Paquetes max 991 ------- */	
+@media (max-width:991px ) {	
+	.sec-mama-puebla {
+    background-position: center top;
+	}
+	.submenu-mama-puebla li {
+    margin: 0 20px;
+	}
+}
+
+/* ------- Responsive Plantilla Paquetes max 480 ------- */	
+@media (max-width:480px) {
+	.titulo-head-sec-mama-puebla {
+	    font-size: 16px;
+    	margin: 13px 0;
+	}
+	.sec-mama-puebla {
+    background-image: none;
+	}
+}
+
+
+
+/* =======  SECCION MAMÁ PUEBLA =======  */
+.section-mama-puebla {
+    background-image: url("../img/mama-puebla/fondo-mama-puebla.jpg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    margin-top: -170px;
+    padding-bottom: 0;
+    padding-top: 215px;
+    position: relative;
+}
+
+.head-platicas-mama-puebla {
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 58px;
+    margin-top: -45px;
+    overflow: hidden;
+}
+
+.card-mama-puebla {
+    background-image: url("../img/mama-puebla/fondo-card-mama-puebla.jpg");
+    background-size: 100% 100%;
+}
+
+.card-platicas-mama-puebla {
+    background-color:#f9f5ec;
+    margin-bottom: 35px;
+}
+
+.caja-submenu-mama-puebla {
+    background-color: #063377;
+    border-radius: 10px 10px 0 0;
+    height: 60px;
+    position: relative;
+    z-index: 300;
+}
+
+.caja-submenu-platicas-mama-puebla {
+    background-color: #cae2fb;
+    border-radius: 10px 10px 0 0;
+    height: 60px;
+    position: relative;
+    z-index: 300;
+}
+
+.logo-submenu-mama-puebla{
+	display: inline-block;
+	margin: -40px 30px 0;
+}
+.submenu-mama-puebla, .submenu-platicas-mama-puebla {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 16px;
+    vertical-align: top;
+}
+.submenu-mama-puebla li{
+	display: inline-block;
+	margin: 0 35px;
+	color: #fff;
+}
+.submenu-platicas-mama-puebla li{
+	display: inline-block;
+	margin: 0 35px;
+	color: #07529b;
+	text-transform: uppercase;
+}
+.submenu-mama-puebla li a{
+	color: #fff;
+}
+
+.submenu-platicas-mama-puebla li a {
+    color: #07529b;
+    text-transform: uppercase;
+}
+
+.div-textos-mama-puebla {
+    color: #005294;
+    font-size: 17px;
+    padding: 20px 20px 20px 0;
+    text-align: center;
+}
+.div-textos-mama-puebla p {
+    margin: 18px 26px 10px;
+}
+.div-textos-mama-puebla span{
+    color: #F37121;
+    font-size: 30px;
+    font-weight: 600;
+}
+.slogan-platicas{
+	display: block;
+	margin: 80px auto;
+}
+.txt-introducion-platicas {
+    color: #00458a;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.txt-introducion-platicas span{
+    color: #0b61b7;
+    font-size: 600;
+    font-style: italic;
+    font-size: 24px;
+    display: block;
+    margin-top: 20px;
+}
+.platicas-confirma {
+    color: #00458a;
+    font-size: 16px;
+    margin: 50px 30px 0;
+}
+
+.platicas-telefono{
+	color:#00458a;
+	font-size: 32px;
+	font-weight: 600;
+	margin-left:30px;
+}
+.platicas-telefono span{
+	color:#f8862a;
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 500;
+	margin-left:10px;
+}
+
+.platicas-caja-calendario {
+    background-color: #fff;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    box-shadow: 0px 4px 4px #dedede;
+}
+
+.platica-individual {
+    color: #f8862b;
+    display: inline-block;
+    font-size: 12px;
+    margin: 15px 0;
+    padding: 0 10px;
+    width: 49%;
+}
+
+
+.platica-individual img{
+	padding-right: 20px;
+	max-width: 100%;
+	border-right: 1px dashed #57b7b8;
+}
+
+.platica-individual h3{
+	color: #00468a;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.platica-individual h4{
+	color: #666666;
+	font-size: 13px;
+	margin: 0 0 15px;
+}
+
+.platica-individual .platicas-confirma {
+    margin: 10px;
+}
+
+@media (max-width:767px) {	
+	.platica-individual {
+    border-bottom: 1px dashed #dedede;
+    margin-bottom: 15px;
+    padding-bottom: 14px;
+    text-align: center;
+    width: 100%;
+	}
+	.platica-individual img{
+	padding: 0;
+	border-right: none;
+	display: block;
+	margin: 0 auto;
+	}
+}
+
+
+.parrafo-beneficios-mama-puebla {
+    font-size: 20px;
+}
+.parrafo-beneficios-mama-puebla span{
+    font-size: 26px;
+    color: #F37121;
+}
+.lista-beneficios-mama-puebla {
+    display: block;
+    font-size: 20px;
+    line-height: 42px;
+    list-style-image: url("../img/mama-puebla/bullet-beneficios-mama-puebla.png");
+    margin: 40px 100px 0;
+    text-align: left;
+    padding: 30px 26px 30px 60px;
+    background-color: #F37121;
+    border-radius: 15px 15px 15px 15px;
+}
+.exclusiones-mama-puebla{
+	line-height: 28px;
+}
+.notas-mama-puebla{
+	line-height: normal;
+	margin: 0 20px;
+	font-size: 16px;
+}
+.notas-mama-puebla span{
+	font-weight: 600;
+	font-size: 18px;
+}
+.exclusiones-mama-puebla span{
+	color: #F37121;
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0 8px;
+	text-align: left;
+}
+.footer-mama-puebla {
+    background-image: url("../img/mama-puebla/fondo-footer-mama-puebla.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    min-height: 90px;
+    padding-top: 10px;
+}
+.membresia-footer-mama-puebla{
+	margin: -95px auto 0;
+	display: block;
+}
+.texto-footer-mama-puebla {
+    color: #2a76af;
+    display: inline-block;
+    font-size: 15px;
+    line-height: normal;
+    margin-right: 15px;
+}
+.extensiones-footer-mama-puebla {
+    color: #F37121;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+}
+.extensiones-footer-mama-puebla span{
+	font-size: 28px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.marquesina-mama-puebla{
+	border-radius: 20px;
+	background-color: #48d4d3;
+	color: #fff;
+	margin: 20px 0 30px;
+	overflow: hidden;
+}
+.texto-marquesina-mama-puebla {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 42px 0 0;
+}
+.textodos-marquesina-mama-puebla {
+    color: #115857;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+.textotres-marquesina-mama-puebla {
+    font-size: 20px;
+    line-height: normal;
+}
+.img-marquesina-v {
+	display: block;
+}
+.img-marquesina-h {
+	display: none;
+}
+.hashtag-mama-puebla{
+	font-size: 22px;
+	display: block;
+	margin: 3px;
+	text-align: center;
+	font-weight:600;
+	color: #F37121;
+}
+
+
+/* ------- Responsive Info Mamá o menor a 1200------- */
+@media (max-width:1199px) {
+	.lista-beneficios-mama-puebla {
+    font-size: 18px;
+    line-height: 38px;
+    margin: 40px 50px 0;
+    padding: 25px 26px 24px 60px;
+	}
+	
+	
+}
+
+
+/* ------- Responsive Info Mamá Puebla 991 ------- */	
+@media (max-width:991px) {	
+	.section-mama-puebla {
+    margin-top: -250px;
+	}
+	.logo-submenu-mama-puebla {
+    display: inline-block;
+    margin: -41px 0 0 5px;
+	}
+	.caja-submenu-platicas-mama-puebla {
+    height: 155px;
+    text-align: center;
+	}
+
+	.submenu-mama-puebla li, .submenu-platicas-mama-puebla li {
+    margin: 0 25px;
+	}
+	.div-textos-mama-puebla p {
+    margin: 15px 30px;
+	}
+	.footer-mama-puebla {
+    background-size: 100% auto;
+    margin-top: 41px;
+	}
+	.membresia-footer-mama-puebla {
+    margin: -42px auto 0;
+	}
+	.texto-footer-mama-puebla {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 6px;
+	}
+	.extensiones-footer-mama-puebla {
+    font-size: 29px;
+    margin-top: 20px;
+	}
+	.extensiones-footer-mama-puebla span {
+    font-size: 22px;
+    display: block
+    margin-left: 0;
+	}
+	.texto-marquesina-mama-puebla {
+    font-size: 19px;
+    margin: 20px 0 0;
+	}
+	.textodos-marquesina-mama-puebla {
+    font-size: 26px;
+    margin-bottom: 0;
+	}
+	.textotres-marquesina-mama-puebla {
+    font-size: 16px;
+	}
+	.lista-beneficios-mama-puebla {
+    margin: 40px 125px 0;
+	}
+	
+}
+
+/* ------- Responsive Mamá Puebla max 767 ------- */	
+@media (max-width:767px) {	
+	.section-mama-puebla {
+    margin-top: -192px;
+	}
+	.logo-submenu-mama-puebla {
+    display: block;
+    margin: -76px auto;
+    width: 120px;
+	}
+	.submenu-mama-puebla, .submenu-platicas-mama-puebla {
+    display: block;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 77px;
+    text-align: center;
+	}
+	.caja-submenu-mama-puebla {
+	height: 97px;
+	}
+
+	.caja-submenu-platicas-mama-puebla {
+	height: 130px;
+	}
+	.submenu-mama-puebla li, .submenu-platicas-mama-puebla li {
+    margin: 0 15px;
+	}
+	.lista-beneficios-mama-puebla {
+    font-size: 17px;
+    margin: 20px 10% 15px;
+	}
+	.footer-mama-puebla {
+    background-image: none;
+	}
+	.texto-footer-mama-puebla {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+	}
+	.extensiones-footer-mama-puebla {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+	}
+	.extensiones-footer-mama-puebla span {
+    font-size: 21px;
+	}
+	.texto-marquesina-mama-puebla, .textodos-marquesina-mama-puebla {
+    text-align: center;
+	}
+	.textotres-marquesina-mama-puebla {
+    margin-bottom: 27px;
+    text-align: center;
+	}
+	.img-marquesina-h {
+    display: block;
+	}
+	.img-marquesina-v {
+	display: none;
+	width: 100%;
+	}
+}
+
+/* ------- Responsive Mamá Puebla max 480 ------- */	
+@media (max-width:480px) {	
+	.section-mama-puebla {
+    margin-top: -285px;
+	}
+	.caja-submenu-mama-puebla {
+    height: 190px;
+	}
+	.submenu-mama-puebla li, .submenu-platicas-mama-puebla li {
+    margin: 0 27px;
+	}
+	.lista-beneficios-mama-puebla {
+    font-size: 16px;
+    margin: 20px 10% 15px;
+	}
+}
+	
+	
+	
+	
+/* ======= FOOTER ======= */
+
+.footer {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 22.1px;
+	color: #ccc;
+}
+.footer__inner {
+	padding-top: 19px;
+	padding-bottom: 71px;
+	background-color: #072d73;
+	color: #fff;
+}
+.footer__block {
+	margin-top: 49px;
+	margin-bottom: 30px;
+	padding: 37px 0 24px;
+	font-family: 'Raleway';
+	color: #fff;
+	border: 1px solid #444;
+	background-color: #222;
+}
+.footer__block .block__title {
+	margin-left: 53px;
+	font-size: 26px;
+}
+.footer__block .block__text {
+	margin-left: 96px;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 33.6px;
+}
+.footer__block .block__icon {
+	position: relative;
+	top: 3px;
+	margin-right: 18px;
+	font-size: 24px;
+}
+.footer__block .block__btn {
+	width: auto;
+	margin-top: 10px;
+	margin-right: 41px;
+	padding: 7px 31px 16px;
+	font-size: 14px;
+	border-radius: 25px;
+}
+.footer__section {
+	padding-top: 26px;
+}
+.footer__section p {
+	margin-bottom: 25px;
+	display: inline-block;
+    line-height: 15px;
+    margin-top: 0;
+}
+.footer__title {
+	font: 700 16px/19.2px 'Raleway', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer__contacts {
+	display: block;
+	margin-top: 14px;
+	margin-left: 4px;
+	line-height: 1;
+}
+a.footer__contacts {
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(2, 2, 2, 0);
+	transition: all 0.3s;
+}
+a.footer__contacts:hover {
+	color: rgb(41, 134, 226);
+	text-decoration: none;
+}
+.footer__icon {
+	padding-right: 13px;
+	font-size: 16px;
+	vertical-align: top;
+}
+.footer .form {
+	margin-top: 32px;
+	margin-right: 50px;
+}
+.footer .form-control {
+	display: block;
+	margin-bottom: 10px;
+	padding: 11px 23px;
+	font-size: 12px;
+	background-color: rgba(255, 255, 255, 0.07);
+}
+.footer .form .btn {
+	margin-top: 7px;
+	padding: 12px 30px;
+	font-size: 11px;
+}
+.footer__table tr > td {
+	padding-top: 2px;
+	padding-right: 28px;
+}
+.tweets__title {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 15.6px;
+	color: #f37121;
+}
+
+.tweets__title a{
+	color: #f37121;
+}
+
+.tweets__title a:hover{
+	color: #fff;
+}
+
+.tweets__time {
+	font-size: 12px;
+	line-height: 14.4px;
+	color: #888;
+}
+
+.lista-sitemap {
+	line-height: 27px;
+    list-style: none outside none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.lista-sitemap a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.lista-sitemap a:hover{
+	text-decoration: underline;
+	color: #f37121;
+}
+
+.footer__menu {
+	padding-bottom: 20px;
+	background-color: #012e56;
+	border-top: 3px solid #fff;
+}
+.footer__menu ul {
+	margin-top: 45px;
+	margin-right: 15px;
+	list-style-type: none;
+}
+.footer__menu ul > li {
+	float: left;
+}
+.footer__menu ul > li > a {
+	display: block;
+	padding-left: 26px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #ccc;
+}
+.footer .logo {
+	margin-top: 20px;
+}
+
+.sitemap-logo{
+	margin-bottom: 25px;
+}
+.footer .logo__img {
+	position: relative;
+	top: 5px;
+}
+.footer__bottom {
+	padding-top: 56px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.footer__bottom .social-links {
+	display: inline-block;
+	margin-top: 0;
+	margin-left: 34px;
+	vertical-align: middle;
+}
+.footer .social-links li {
+	margin-right: 5px;
+}
+.footer .copyright {
+	color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-top: 40px;
+    text-align: center;
+    vertical-align: right;
+}
+.footer .decor-brand {
+	margin: 19px 0 26px;
+}
+/* ========== SECTION ========== */
+
+.block-hourse {
+	position: relative;
+	top: -10px;
+	color: #fff;
+	border-bottom: 4px solid #f26529;
+	z-index: 100;
+}
+.block-hourse_full {
+	top: 0;
+}
+.block-hourse__inner {
+	padding-top: 37px;
+	padding-bottom: 45px;
+}
+.block-hourse__inner_first {
+	margin-right: -15px;
+	padding-left: 96px;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.block-hourse__inner_second {
+	margin-left: -15px;
+	padding-left: 35px;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.block-hourse_full .block-hourse__inner_first {
+	padding-left: 70px;
+}
+.block-hourse_full .block-hourse__inner_second {
+	padding-left: 80px;
+}
+.block-hourse__text {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font: 400 26px 'Raleway', sans-serif;
+}
+.block-hourse__text .icon {
+	position: relative;
+	top: 2px;
+	margin-right: 15px;
+	margin-left: -42px;
+	font-size: 24px;
+}
+.block-hourse__title {
+	font: 700 30px/1 'Raleway', sans-serif;
+}
+.block-hourse__title-table {
+	margin-top: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	color: #fff;
+}
+.block-hourse__title-table .icon {
+	margin-right: 13px;
+}
+.block-hourse table {
+	margin-top: 28px;
+	font-size: 16px;
+}
+.block-hourse table td {
+	padding-bottom: 13px;
+}
+.block-hourse table .line-bottom {
+	display: block;
+	width: 128px;
+	margin-right: 23px;
+	margin-left: 19px;
+	padding-top: 11px;
+	border-bottom: 1px solid #fff;
+}
+.block-hourse table td:nth-child(3) {
+	font-weight: 700;
+}
+.block-hourse .btn {
+	margin-top: 25px;
+	margin-bottom: 17px;
+	padding: 14px 31px;
+}
+/* --- */
+
+.advantages {
+	padding-top: 42px;
+	padding-bottom: 84px;
+	text-align: center;
+}
+.advantages_2 {
+	padding-top: 62px;
+}
+.advantages_3 {
+	padding-top: 72px;
+}
+.advantages__inner {
+	margin-top: 10px;
+	padding: 0 50px;
+	cursor: default;
+	transition: all 0.3s;
+}
+.advantages__inner:hover .btn {
+	color: #fff;
+	background-color: #f26529;
+}
+.advantages__inner:hover .icon {
+	color: #f26529;
+}
+.advantages__subtitle {
+	margin-top: 34px;
+	margin-bottom: 36px;
+	font: 700 18px 'Raleway', sans-serif;
+	color: #363636;
+}
+.advantages__inner .icon {
+	display: block;
+	margin-bottom: 32px;
+}
+.advantages .icon:before {
+	margin-left: 0;
+	font-size: 72px;
+	transition: all 0.3s;
+}
+/* --- */
+
+/*.bl_2-col_with-fig {
+	position: relative;
+	padding: 48px 0 79px;
+	background: url(../media/home/advantages__bg.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.bl_2-col_with-fig .title {
+	margin-bottom: 6px;
+	font: 300 38px 'Raleway', sans-serif;
+	color: #fff;
+}
+
+.bl_2-col_with-fig .title span {
+	font-weight: 500;
+}
+*/
+/*.bl_2-col_with-fig .subtitle {
+	margin-bottom: 54px;
+	font: 300 20px 'Raleway', sans-serif;
+	color: #ccc;
+	letter-spacing: 0.05em;
+}
+
+.bl_2-col_with-fig .inner {
+	margin-top: 44px;
+}
+
+
+.bl_2-col_with-fig .text {
+	font-weight: 300;
+	line-height: 23.8px;
+	color: #ccc;
+}*/
+
+
+/* --- Banner --- */
+
+.banner {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+.banner_small {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.banner_large {
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.banner__title {
+	margin-bottom: 0;
+	font-size: 30px;
+	font-weight: 600;
+}
+.banner__text {
+	font-size: 18px;
+	font-weight: 300;
+}
+.banner .btn {
+	margin-top: 12px;
+	margin-right: 71px;
+	padding: 8px 30px 15px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+}
+/* --- Subscribe --- */
+
+.subscribe {
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+.subscribe:before {
+	position: absolute;
+	bottom: -14px;
+	width: 100%;
+	height: 28px;
+	background: url('../media/bg/CompositePath.png') 0 0 repeat-x;
+	z-index: 9999;
+	content: '';
+}
+.subscribe__inner {
+	padding: 45px 25px 55px;
+}
+.subscribe__title {
+	font-size: 30px;
+	font-weight: 600;
+}
+.subscribe__text {
+	font-size: 18px;
+	font-weight: 300;
+}
+.subscribe__note {
+	margin-top: 12px;
+	margin-left: 55px;
+	font-size: 10px;
+	font-weight: 300;
+}
+.subscribe .form-group {
+	margin-top: 21px;
+	margin-bottom: 0;
+}
+.subscribe .form-control {
+	width: 415px;
+	margin-right: -40px;
+	margin-bottom: 0;
+	margin-left: 30px;
+	padding: 0 26px;
+	font-weight: 300;
+	border-radius: 25px;
+	height: 52px;
+}
+.subscribe .btn {
+	padding: 18px 31px;
+	font-weight: 700;
+	border-radius: 25px;
+}
+.subscribe.bg_3 .btn {
+	color: #f26529;
+	background-color: #fff;
+}
+.subscribe.bg_3 .form-control {
+	background-color: #f47c49;
+}
+/* ------- */
+
+.icon-round {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color: #072d73;
+	transition: all 0.3s;
+	text-align: center;
+}
+.icon-round_w_border {
+	box-shadow: 0 0 0 3px #fff;
+}
+.icon-round_small {
+	width: 64px;
+	height: 64px;
+}
+.icon-round_top {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -40px;
+}
+.icon-round_grey {
+	color: #888;
+	border: 1px solid #eee;
+	background-color: #fff;
+	box-shadow: 0 0 0 1px #eee;
+}
+.icon-round__wrap {
+	position: relative;
+}
+.icon-round .icon {
+	font-size: 33px;
+}
+.icon-round .icon:before {
+	margin-left: 0;
+}
+.icon-round .icon {
+	vertical-align: middle;
+}
+/* --- Lists --- */
+
+
+.list-icons li {
+	display: inline-block;
+	margin-right: 28px;
+}
+.list-icons .li-last {
+	margin-right: 0;
+}
+.list-icons .icon {
+	font-size: 30px;
+}
+.list-icons .icon-round:hover {
+	background-color: #f26529;
+	box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+}
+.list-icons .icon-round_grey:hover {
+	color: #fff;
+	background-color: #f26529;
+	box-shadow: 0 0 0 5px #eee;
+}
+.list-progress {
+	display: table;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+.list-progress li {
+	display: table-cell;
+}
+.list-progress li .info {
+	margin-left: 90px;
+}
+.list-progress .percent {
+	font-size: 38px;
+	font-weight: 600;
+}
+.list-progress .chart {
+	display: block;
+	line-height: 1;
+}
+.list-progress .label-chart {
+	font-size: 20px;
+	font-weight: 400;
+}
+.list-progress .icon {
+	font-size: 24px;
+}
+.list-progress .icon-round {
+	float: left;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+.list-mark {
+	list-style-type: none;
+}
+.list-mark-cardiopulmonar {
+	margin-top: 30px;
+}
+.list-mark li a {
+	display: block;
+	padding: 6px 20px;
+	font-family: 'Raleway';
+	font-size: 15px;
+	line-height: 1.4;
+	color: #343434;
+}
+.list-mark-cardiopulmonar li a {
+	display: block;
+	padding: 6px 20px;
+	line-height: 1.4;
+	color: #777;
+  	font: 400 14px/23.8px "Lato",sans-serif;
+}
+
+.list-mark li a:hover {
+	color: #2986e2;
+	text-decoration: none;
+}
+.list-mark_big li a {
+	padding-top: 18px;
+	padding-bottom: 17px;
+	font-size: 15px;
+	border-bottom: 1px solid #eee;
+	color: 2452a1;
+}
+.list-mark_small li a {
+	font-family: 'Lato';
+	font-size: 14px;
+	font-weight: 300;
+	color: #777;
+}
+.list-mark .icon:before {
+	padding-right: 17px;
+	font-family: 'Simple-Line-Icons';
+	font-size: 12px;
+	color: #f37121;
+}
+.list-mark .icon:hover:before {
+	color: #f26529;
+}
+.list-services {
+	margin-top: 16px;
+	text-align: center;
+}
+.list-services_vert {
+	margin-top: 47px;
+}
+.list-services__item {
+	cursor: default;
+	text-align: left;
+}
+.list-services__item:hover .title {
+	color: #2986e2;
+}
+.list-services_vert .list-services__item:hover .list-services__title {
+	color: #f26529;
+}
+.list-services__inner {
+	margin-bottom: 55px;
+	padding-bottom: 22px;
+	padding-left: 105px;
+}
+.list-services .title {
+	margin-top: 3px;
+	margin-bottom: 15px;
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #353535;
+	transition: all 0.3s;
+}
+.list-services_vert .list-services__title {
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-weight: 700;
+}
+.list-services .list-services__item:hover .icon-round {
+	background-color: #f26529;
+	box-shadow: 0 0 0 5px #eee;
+}
+.list-services .btn_small {
+	margin-top: 0;
+	border-radius: 20px;
+}
+.list-services .list-services__item:hover .icon-round_grey {
+	color: #fff;
+	background-color: #f26529;
+	box-shadow: 0 0 0 5px #eee;
+}
+.list-services_vert .list-services__inner {
+	margin-bottom: 0;
+	margin-left: 7px;
+	padding-bottom: 15px;
+}
+.list-services .icon-round {
+	float: left;
+}
+.list-services .icon-round .icon {
+	display: inline-block;
+}
+.list-services .icon:before {
+	margin-left: 0;
+	font-size: 37px;
+}
+.list-categories {
+    border-top: 1px solid #EEEEEE;
+    list-style-type: none;
+    margin-bottom: 57px;
+    margin-top: 15px;
+}
+.categorias-turismo {
+    border-top: 1px solid #EEEEEE;
+    list-style-type: none;    
+    margin-top: 15px;
+	margin-bottom: 0px!important;
+}
+.list-categories_widget {
+	margin-top: 0;
+	border-top: none;
+}
+.list-categories li {
+	transition: all 0.3s;
+}
+.list-categories li > a {
+	display: table;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19.6px;
+	color: #353535;
+}
+
+
+
+.list-categories__name {
+	display: table-cell;
+	padding: 16px 5px 15px 15px;
+	font-family: Raleway, sans-serif;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	transition: all 0.3s;
+}
+
+.list-categories__name-turismo {
+	display: table-cell;
+	padding: 16px 5px 15px 15px;
+	font-family: Source Sans Pro, sans-serif;
+	/*border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;*/
+	transition: all 0.3s;
+}
+
+
+
+.list-categories_widget .list-categories__name {
+	border-right: none;
+}
+.list-categories li > a .icon, .list-categories .list-categories__amout {
+	display: table-cell;
+	height: 100%;
+	padding: 15px;
+	font-size: 12px;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	transition: all 0.3s;
+	text-align: center;
+}
+.list-categories .list-categories__amout {
+	width: 50px;
+}
+.list-categories li > a .icon {
+	width: 70px;
+	border-left: 1px solid #fff;
+}
+.list-categories li > a:hover {
+	text-decoration: none;
+}
+.list-categories li > a:hover .icon {
+	color: #353535;
+	border-bottom: 1px solid #f2f7f9;
+	background-color: #f2f7f9;
+}
+.list-categories li > a:hover .list-categories__name {
+	border-bottom: 1px solid #f2f7f9;
+	background-color: #f2f7f9;
+}
+.list-categories li > a:hover .list-categories__amout {
+	background-color: #f2f7f9;
+}
+.list-contacts {
+	display: table;
+	margin: 130px auto 84px;
+	text-align: center;
+}
+.list-contacts li {
+	display: table-cell;
+	width: 350px;
+	padding-bottom: 35px;
+	border: 1px solid #eee;
+	text-align: center;
+}
+.list-contacts li, .list-contacts a {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22.003px;
+	color: #777;
+}
+.list-contacts .icon {
+	position: relative;
+	display: block;
+	width: 80px;
+	margin: -40px auto 40px;
+	padding: 24px 0;
+	font-size: 32px;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #2986e2;
+	box-shadow: 0 0 0 5px #eee;
+}
+/* ------- */
+
+.social-links {
+	margin-top: 16px;
+	margin-bottom: 0;
+	padding-left: 5px;
+}
+.social-links li {
+	display: inline-block;
+	margin-right: 6px;
+}
+.social-links a:hover {
+	text-decoration: none;
+}
+.social-links .social_icons {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 21.6px;
+	color: #fff;
+	transition: all 0.3s;
+}
+.social-links .social_icons:hover {
+	color: #f26529;
+}
+
+
+
+
+.social-links2 {
+	margin-top: 16px;
+	margin-bottom: 0;
+	padding-left: 5px;
+}
+.social-links2 li {
+	display: inline-block;
+	margin-right: 6px;
+}
+.social-links2 a:hover {
+	text-decoration: none;
+}
+
+.social-links2 .social_icons {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 21.6px;
+	color: #072d73;
+	transition: all 0.3s;
+}
+.social-links2 .social_icons:hover {
+	color: #f26529;
+}
+.yamm .dropdown-menu .t1-title .decor-brand {
+	background-image: url("../img/decor-brand.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	height: 15px;
+	margin: 14px 0;
+	width: 46px;
+}
+.decor-brand {
+	display: block;
+	width: 46px;
+	height: 15px;
+	margin: 16px auto;
+	background-image: url(../img/decor-brand.png);
+	background-repeat: no-repeat;
+}
+.decor-brand_title {
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.decor-brand_left {
+	margin-left: 0;
+}
+.decor-brand_mrg-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* --- Buttons --- */
+
+.btn-plus {
+	position: relative;
+	top: 3px;
+	margin-left: 6px;
+	font-size: 26px;
+}
+.btn_transparent {
+	padding: 14px 31px;
+	font-family: 'Raleway', sans-serif;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+.btn_semilla {
+    background: none repeat scroll 0 0 #F37121;
+    border: 1px solid;
+    border-radius: 15px 0 15px 0;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 14px 20px;
+    text-transform: none;
+    margin-top: 10px;
+}
+
+.btn_small {
+	margin-top: 30px;
+	padding: 14px 25px 11px;
+	font: 400 14px 'Raleway', sans-serif;
+	color: #363636;
+	border: 1px solid #f4f4f4;
+	transition: all 0.3s;
+}
+.btn_small:hover {
+	background-color: #f26529;
+}
+.btn_subindex_notasmedicas {
+  background-color: #F37121;
+  	border: none;
+  color: #fff;
+  padding: 10px 22px;
+}
+.btn_subindex_notasmedicas:hover {
+	background-color: #004b8d !important;
+}
+.btn_full {
+	width: 100%;
+	padding: 17px 10px;
+	font-size: 16px;
+	border-radius: 28px;
+	text-align: left;
+}
+.btn_full .icon {
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 22px;
+	vertical-align: middle;
+}
+.btn_full .icon:after {
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.btn_upload {
+	margin-top: 29px;
+	padding: 11px 26px;
+	font-size: 11px;
+	font-weight: 400;
+	border-radius: 25px;
+}
+.btn_upload .icon {
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.btn_upload .icon:after {
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.link-full {
+	display: block;
+	margin-bottom: 100px;
+	padding: 14px 10px;
+	font-family: 'Raleway';
+	font-size: 14px;
+	font-weight: 500;
+	color: #333;
+	background-color: #f2f7f9;
+	box-shadow: inset 0 0 0 0 rgba(0);
+	transition: text-shadow 0.3s;
+	text-align: center;
+}
+.link-full:hover {
+	background: #f26529 none repeat scroll 0 0;
+	border-radius: 20px;
+	box-shadow: 0 -1px 3px 1px rgba(95, 95, 95, 0.88) inset;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(2, 2, 2, 1);
+}
+/* Accordion */
+
+.accordion .panel-body img {
+	float: left;
+}
+.accordion .panel-body .ui-text {
+	margin-left: 145px;
+}
+.accordion .panel-body .link {
+	color: #F37121;
+    display: block;
+    font: 600 13px/13.2px 'Raleway';
+    margin-left: 145px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.accordion .panel-title {
+	display: inline-block;
+	height: 100%;
+	padding: 16px;
+}
+.accordion .panel-heading .icon:before {
+	content: '\f107';
+}
+.accordion .panel-heading .collapsed .icon:before {
+	content: '\f106';
+}
+.accordion .panel .panel-heading .btn-collapse {
+	display: block;
+	float: right;
+	height: 100%;
+	border-left: 1px solid rgba(255, 255, 255, 1);
+}
+.accordion .panel-default .panel-heading .btn-collapse {
+	color: #fff;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: #2986e2;
+}
+.accordion .panel .icon {
+	float: right;
+	width: 48px;
+	height: 100%;
+	padding-top: 16px;
+	font-size: 18px;
+	color: #f37121;
+	border-left: 1px solid rgba(255, 255, 255, 1);
+	box-shadow: -1px 0 #ddd;
+	text-align: center;
+}
+.accordion .panel-default .icon {
+	color: #fff;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: #2452a1;
+	box-shadow: -1px 0 rgba(0, 0, 0, 0.2);
+}
+/* ------- */
+
+.article-short {
+	position: relative;
+	margin-top: 20px;
+	padding-left: 95px;
+}
+.article-short img {
+	display: block;
+}
+.article-short .category, .article-short .autor {
+	font-size: 12px;
+}
+.article-short .category {
+	display: inline-block;
+	margin-top: 36px;
+	padding-right: 15px;
+	border-right: 1px solid #eee;
+}
+.article-short .autor {
+	padding-left: 15px;
+	color: #777;
+}
+.article-short .title {
+	margin-top: 18px;
+	margin-bottom: 21px;
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22.4px;
+	color: #333;
+}
+/* ------- */
+
+.info-post {
+	position: absolute;
+	top: 0;
+	left: 16px;
+	width: 70px;
+	border: 1px solid #eee;
+	background-color: #fff;
+	list-style-type: none;
+	text-align: center;
+}
+.info-post .date, .info-post .month {
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 11px;
+	padding-bottom: 5px;
+}
+.info-post .date {
+	font-size: 26px;
+	font-weight: 700;
+	border-bottom: 1px solid #eee;
+}
+.info-post .month {
+	font-family: 'Raleway';
+	font-size: 14px;
+	font-weight: 600;
+	color: #878787;
+}
+.info-post .comments a {
+	display: block;
+	margin-top: 5px;
+	padding: 27px 0 23px;
+	font-size: 12px;
+	color: #525252;
+	background-color: #f2f7f9;
+}
+.info-post .comments a:hover {
+	text-decoration: none;
+}
+.info-post .comments .icon {
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+	font-size: 16px;
+}
+.subtitle_mod-1 {
+	margin-top: -12px;
+	margin-bottom: 18px;
+	font: 400 22px'Raleway', sans-serif;
+}
+/* --- Scroll Top --- */
+
+html .scroll-top-view {
+	opacity: 1;
+}
+.scroll-top {
+	position: fixed;
+	right: 2%;
+	bottom: 2%;
+	left: auto;
+	display: block;
+	width: 38px;
+	padding: 6px;
+	color: #fff;
+	border-radius: 5px;
+	opacity: 0;
+	z-index: 100000;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+/* ========== Clínica Rehabilitación Cardiopulmonaro =========== */
+.submenu-clinica-rehabilitacion {
+  border: 1px solid #efefef;
+  margin: 30px auto 15px;
+  padding: 13px 0;
+  display: block;
+}
+.submenu-clinica-rehabilitacion li {
+  border-right: 1px solid #bababa;
+  display: inline-block;
+  padding: 8px 0;
+  text-align: center;
+  width: 33%;
+}
+.submenu-clinica-rehabilitacion li:last-child {
+  border-right: 0;
+}
+.submenu-clinica-rehabilitacion a {
+  color: #072d73;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+
+/* ========== SUBMENU LOCALES RAMBLAS =========== */
+.submenu-ramblas {
+  border: 1px solid #efefef;
+  margin: 30px auto 15px;
+  padding: 13px 0;
+  display: block;
+}
+.submenu-ramblas li {
+  border-right: 1px solid #bababa;
+  display: inline-block;
+  padding: 8px 0;
+  text-align: center;
+  width: 23%;
+}
+.submenu-ramblas li:last-child {
+  border-right: 0;
+}
+.submenu-ramblas a {
+  color: #45453b;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Source Sans Pro,  sans-serif;
+}
+
+
+.cita-rehabilitacion-cardiaca {
+  color: #f37121;
+  display: block;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100 !important;
+  margin: 0 15px 30px ;
+}
+.cita-paquete-cardio {
+  background-color: #072d73;
+  border-left: 10px solid #f37121;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 40px;
+  padding: 30px;
+}
+.cita-paquete-cardio span{
+  color: #f37121;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-style: italic; 
+}
+
+.text-cardiopulmonar{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.text-cardiopulmonar  span {
+  color: #072d73;
+  display: block;
+  font-style: italic;
+  margin: 8px 0 0 10px;
+}
+
+.text-cardiopulmonar-rh {
+  border-bottom: 4px double #d4e0f7;
+  color: #f37121;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 44px;
+  margin-bottom: 20px;
+  padding: 0 10px 0 0;
+  text-transform: uppercase;
+}
+.elementos-prhc {
+  margin-top: 30px;
+}
+.contacto-clinica-rehabilitacion {
+  background-image: url("../img/clinica-de-rehabilitacion-cardiopulmonar/fondo-contacto-clinica-rehabilitacion.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #072d73;
+}
+.navegar-cardio {
+  border-top: 1px dashed #dbdbdb;
+  margin: 30px 0;
+  padding-top: 20px;
+}
+.navegar-cardio a{
+  border-top: 1px dashed #dbdbdb;
+  margin: 30px 0;
+  padding-top: 20px;
+}
+.navegar-cardio a {
+  color: #072d73;
+  text-decoration: underline;
+  border: 0;
+}
+.texto-siguiente-rehabilitacion > span {
+  color: #f37121;
+  display: inline-block;
+  margin-left: 10px;
+}
+.texto-anterior-rehabilitacion > span {
+  color: #f37121;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.texto-anterior-rehabilitacion {
+  text-align: left;
+}
+.texto-siguiente-rehabilitacion {
+  text-align: right;
+}
+
+.titulo-prhc-big {
+	display: inline-block !important;
+}
+
+/* ---- Responsive Clinica rehabilitacion max 1199 ---- */	
+@media (max-width:1199px) {	
+	.submenu-clinica-rehabilitacion{
+	  padding: 0;
+	}
+	.submenu-clinica-rehabilitacion li {
+	  width: 49%;
+	  border-left: 1px solid #bababa;
+	  border-right: 0;
+	  line-height: 45px;
+	}
+	.submenu-clinica-rehabilitacion li:first-child {
+	  border: 0
+	}
+	.submenu-clinica-rehabilitacion li:last-child {
+	  width: 100%;
+	  border-left: 0;
+	  border-top: 1px solid #bababa;
+	}
+	
+/* ---- Responsive submenu ramblas max 1199 ---- */		
+   .submenu-ramblas{
+	  padding: 0;
+	}
+	.submenu-ramblas li {
+	  width: 49%;
+	  border-left: 1px solid #bababa;
+	  border-right: 0;
+	  line-height: 45px;
+	}
+	.submenu-ramblas li:first-child {
+	  border: 0
+	}
+	.submenu-ramblas li:last-child {
+	  width: 100%;
+	  border-left: 0;
+	  border-top: 1px solid #bababa;
+	}
+	
+	
+  
+}
+
+/* ---- Responsive Clinica rehabilitacion max 991 ---- */	
+@media (max-width:991px ) {
+	.submenu-clinica-rehabilitacion {
+	  margin-top: 170px;
+	}
+
+	.submenu-clinica-rehabilitacion li {
+	  width: 100%;
+	  border-bottom: 1px solid #bababa !important;
+	  border-left: 0;
+	  border-right: 0;
+	}
+	.submenu-clinica-rehabilitacion li:last-child {
+	  border: 0;
+	}
+	
+	/* ---- Responsivesubmenu ramblas max 991 ---- */
+	.submenu-ramblas {
+	  margin-top: 170px;
+	}
+
+	.submenu-ramblas li {
+	  width: 100%;
+	  border-bottom: 1px solid #bababa !important;
+	  border-left: 0;
+	  border-right: 0;
+	}
+	.submenu-ramblas li:last-child {
+	  border: 0;
+	}
+}
+
+/* ---- Responsive Clinica rehabilitacion max 767 ---- */	
+@media (max-width:767px ) {
+	.elementos-prhc {
+	  margin-top: 30px;
+	  text-align: center;
+	}
+}
+
+/* ========== Sidebar Servicios Info=========== */
+
+.caja-titulo-side-servicio{
+	background-color: #004b8d;
+	color: #fff;
+	padding: 5px 8px;
+	margin-bottom: 7px;
+}
+
+.titulo-side-servicio{
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 10px 8px;
+	display:inline-block;
+	height: 42px;
+}
+
+.titulo-side-servicio span{
+	font-size: 13px;
+	display:inline-block;
+}
+.icon-servicio{
+	margin: 0 10px;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.sidebar-info {
+	margin: 5px 0;
+	padding: 15px 20px;
+	line-height: normal;
+	background-color: #eee;
+	color: #494949;
+	font-size: 14px;
+}
+
+.sidebar-info a{
+	color: #2452A1;
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+.etiqueta-sidebar{
+	font-size: 14px;
+    font-weight: 400;
+    margin: 28px 0 4px;
+}
+
+.telefono-sidebar {
+	display: inline;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.divisor {
+	border-bottom: 1px solid #d6d6d6;
+    margin: 15px 0 15px;
+    display: block;
+    height:1px;
+    }
+
+.etiqueta-extension {
+	display: inline;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.extension-sidebar {
+	display: inline;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+
+/* ========== Sidebar Servicios Form =========== */
+
+.caja-especialidades{
+	background-color: #004B8D;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+    padding: 20px;
+    line-height: normal;
+}
+
+.caja-especialidades h3{
+	color: #e68f1a;
+	font-size: 18px;
+	margin: 4px 0;
+}
+
+.form-especialidades {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 2px solid #BEBEBE;
+    border-radius: 8px 8px 8px 8px;
+    color: #666666;
+    display: block;
+    float: right;
+    height: 36px;
+    margin-top: 15px;
+    padding: 6px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.form-especialidades-index {
+    margin-top:5px;
+}
+
+
+.caja-sidebar-form {
+	margin: 5px 0;
+	padding: 20px;
+	background-color: #004b8d;
+	color: #414141;
+	font-size: 14px;
+	height: 420px;
+}
+
+
+/* ========== Plantilla NOTAS MÉDICAS =========== */
+
+.notas-medicas {
+  color: #979797;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.breadcrumbs-notas-medicas {
+  border-bottom: 1px dashed #e6e6e6;
+  color: #777;
+  font-weight: 300;
+  margin: 20px 0 0;
+  padding-bottom: 7px;
+}
+.breadcrumbs-notas-medicas a {
+  color: #f37121;
+  text-decoration: underline;
+}
+.breadcrumbs-notas-medicas span{
+  color: #072d73;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.notas-medicas-subindex-titulo {
+  font-size: 22px !important;
+  margin-top: 5px;
+}
+
+.notas-medicas-subindex-descripcion {
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.notas-medicas-head h1 {
+  color: #072d73;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.notas-medicas-head p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 200;
+}
+.notas-medicas-autor {
+  border-top: 1px dashed #e1e1e1;
+  margin: 25px 0;
+  padding-top: 20px;
+}
+.notas-medicas-head h3, .notas-medicas-head h3 a {
+  color: #f37121;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 6px;
+  text-decoration: none;
+}
+.notas-medicas-head span {
+  color: #818181;
+  display: block;
+  font-size: 14px;
+  margin: 3px 0;
+} 
+.notas-medicas-head span a {
+  color: #818181;
+  text-decoration: underline;
+}
+.notas-medicas-head .notas-medicas-cedula {
+  color: #4f75bb !important;
+  font-size: 14px;
+  font-weight: 300;
+}
+.bold-notas-medicas-txt {
+	border-left: 4px solid #f37121;
+	color: #004b8d;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 28px 0 8px;
+	padding-left: 6px;
+	text-transform: uppercase;
+}
+.bold-notas-medicas-txt:first-child {
+  margin-top: 0;
+}
+.subtitulo-notas-medicas-txt {
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 26px 0 5px;
+	color: #0a5bb4;
+}
+.notas-medicas-contenido {
+  color: #666;
+  padding: 20px 0;
+  display: inline-block;
+}
+.notas-medicas-contenido p {
+	margin-top: 22px;
+	margin-bottom: 18px;
+}
+
+.notas-medicas-img-middle {
+  margin: 25px 0 40px;
+}
+.notas-medicas-contenido ul {
+	display: block;
+	list-style: inside url("../img/notas-medicas/icon-list.gif") disc;
+	margin: 14px 0 40px 10px;
+	font-weight: 300;
+}
+.notas-medicas-contenido li {
+  margin: 15px 0;
+  line-height: 22px;
+}
+
+blockquote.notas-medicas-cita1{
+margin:10px 38px;
+padding:0 0 0 50px;
+border:none;
+background:url("../img/notas-medicas/quote-top.gif") no-repeat;
+}
+blockquote.notas-medicas-cita1 p {
+color: #4f75bb;
+padding:5px 50px 5px 0;
+border:none;
+background:url("../img/notas-medicas/quote-bottom.gif") no-repeat right bottom;
+}
+.notas-medicas-subtitulo {
+  color: #072d73;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 35px;
+}
+.notas-medicas-subtitulo > span {
+  color: #777;
+  font-weight: 400;
+}
+.notas-medicas-cita2 {
+  background-color: #f37121;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 25px 0 15px;
+  padding: 25px 40px;
+}
+.titulo-notas-medicas-cita2 {
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.bold-notas-medicas-cita2 {
+	font-weight: 500;
+}
+.notas-medicas-cita2 p {
+  border-left: 2px solid rgba(255, 255, 255, 0.77);
+  margin: 0;
+  padding-left: 15px;
+}
+.notas-medicas h4 {
+  border-bottom: 1px dashed #e8e8e8;
+  color: #072d73;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0 22px;
+  padding-bottom: 20px;
+}
+.notas-medicas-titulo-sidebar{
+	text-align: center;
+}
+
+.notas-medicas-titulo-sidebar {
+  background-color: #072d73;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.notas-medicas-sidebar ul {
+  color: #4f75bb;
+  font-size: 14px;
+  font-weight: 300;
+  list-style: outside none none;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.notas-medicas-sidebar li {
+  display: inline-block;
+  margin-right: 3px;
+}
+.notas-medicas-card-medico {
+  border-top: 1px dashed #dddddd;
+  padding: 18px 0;
+  text-align: center !important;
+}
+.notas-medicas-card-medico .nombre-doctor {
+  color: #072d73;
+  font-size: 14px;
+  margin: 0;
+}
+.notas-medicas-card-medico .especialidad-doctor {
+  font-size: 13px;
+  margin: 0 0 7px !important;
+}
+.notas-medicas-card-medico .boton-card-directorio {
+  background-color: #fff;
+  color: #4f75bb;
+  display: block;
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: underline;
+}
+.notas-medicas-referencia-bibliografica {
+  color: #b2b2b2;
+  font-size: 12px;
+  font-weight: 200;
+}
+.insider-clinica-rehabilitacion {
+  background-image: url("../img/clinica-de-rehabilitacion-cardiopulmonar/fondo-contacto-clinica-rehabilitacion.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #072d73;
+  margin: 30px 0;
+  padding: 20px 20px 0;
+}
+
+.insider-paquetes-maternidad {
+  background-image: url("../img/paquetes/fondo-insider-paquetes-maternidad.jpg");
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 991px)  {
+	.insider-clinica-rehabilitacion {
+	min-height: 667px;
+	}
+}
+
+.insider-clinica-rehabilitacion-insider-titulos {
+  font-size: 20px;
+}
+.insider-clinica-rehabilitacion-insider-titulos span {
+  font-size: 25px!important;
+}
+
+.insider-clinica-rehabilitacion p span {
+  color: #f37121;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.insider-clinica-rehabilitacion a {
+  background-color: #f37121;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  display: inline-block;
+  margin: 4px 0 22px;
+  padding: 8px 23px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nota-medica-index {
+  background-color: #fff;
+  border-bottom: 7px solid #e9e9e9;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  padding: 0 0 12px;
+}
+.notas-medicas-index-titulo {
+  background-color: #072d73;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  padding: 14px;
+  text-align: center;
+}
+.notas-medicas-index-titulo span {
+  display: block;
+  float: left;
+}
+.notas-medicas-index-titulo a {
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0 10px;
+  text-align: right;
+  text-decoration: underline;
+}
+.nota-medica-index h4 {
+  color: #072d73;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 20px 20px 18px;
+}
+.nota-medica-index p{
+  margin: 0;
+}
+.nota-medica-index p a {
+  color: #f37121;
+  display: block;
+  text-align: right;
+  margin: 0 20px;
+}
+.nota-medica-index a:hover {
+  text-decoration: none;
+}
+
+
+
+/* ========== Plantilla AREAS =========== */
+
+
+
+.card-info{
+    text-align: center;
+    width: 380px;
+    font-size: 13px;
+    margin-top: 15px;
+    color: #666;
+    overflow: hidden;   
+}
+
+.card-info p{
+    margin: 8px auto;
+}
+
+.card-info a{
+    color: #004b8d;
+}
+
+.titulo-card-area {
+	background-color: #004B8D;
+    border-radius: 10px 10px 0 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.icon-card {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.columna-izq-card, .columna-der-card {
+	background-color: #FFFFFF;
+    border-radius: 0 0 0 10px;
+    color: #666666;
+    height: 224px;
+    margin-right: 1%;
+    padding: 0 10px;
+    width: 49%;
+}
+
+.columna-der-card {
+    border-radius: 0 0 10px 0;
+    margin-right: 0;
+    margin-left: 1%;
+}
+
+
+
+.no-padding{
+	padding: 0;
+}
+
+.area_submenu_li{
+	float: left;
+	margin: 0 19px;
+	display: block;
+}
+
+.area_submenu_li a{
+	color: #fff;
+}
+
+.breadcrumbs_naranjas{
+	color: #E68F1A;
+	text-transform: uppercase;
+    float: left;
+    font-size: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.breadcrumbs_divisor{
+	color: #004b8d;
+	float: left;
+	font-size: 15px;
+	margin: 20px 25px 20px 20px;
+}
+
+.breadcrumbs_azules a{
+	color: #004b8d;
+	float: left;
+	font-size: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+.area-sidebar{
+	display: block;
+	background: #f1f1f1;
+	margin: 15px 0;
+}
+
+.titulo-sidebar {
+    background-color: #004B8D;
+    border-bottom: 4px solid white;
+    color: #E68F1A;
+    padding: 20px 16px;
+}
+
+.icon-sidebar {
+	display: inline-block;
+}
+
+.titulo-sidebar h2{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 0 12px;
+    vertical-align: bottom;
+    width: 70%;
+}
+
+.submenu-vert{
+    margin-bottom: 30px;
+}
+
+.submenu-vert li{
+    border-bottom: 1px solid #c1c1c1;
+    list-style: none outside none;
+    padding: 14px 18px;
+}
+
+.submenu-vert li:nth-child(even) { background: #dedede }
+.submenu-vert li:nth-child(odd) { background: #eee}
+
+.submenu-vert a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.submenu-active {
+    border-left: 3px solid #004B8D;
+    color: #004B8D;
+    display: block;
+    padding-left: 20px;
+}
+
+.submenu-active a{
+    color: #004B8D;
+}
+
+.informacion-main{
+	padding: 0 12px;
+	color: #666;
+}
+
+.informacion-main p{
+	margin-bottom: 36px;
+}
+
+.informacion-main h3{
+	color: #e68f1a;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.informacion-main h4{
+	color: #004B8D;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.main-anterior, .main-siguiente{
+	font-size: 12px;
+	text-align: left;
+	margin-top: 25px;
+}
+
+.main-siguiente{
+	text-align: right;
+}
+
+.main-siguiente a, .main-anterior a{
+	color: #0a80e8;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+.divisor-banner {
+	border-bottom: 1px solid #d3d3d3;
+    margin: 16px 0;
+    display: block;
+    height:1px;
+}
+    
+.informacion-contacto{
+	padding: 10px 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+.informacion-contacto h4{
+	color: #h68f1a;
+	font-weight: 400;
+	margin-bottom: 5px;
+	font-size:15px;
+	margin-top: 0;
+}
+
+
+.sidebar-derecho img{
+	margin-bottom: 6px;
+}
+
+.segundo_nivel, .tercer_nivel {
+	margin: 10px 0;
+}
+
+.segundo_nivel h3{
+	color: #e68f1a;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.segundo_nivel h5{
+	color: #004b8d;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.segundo_nivel a:hover {
+	text-decoration: none;
+}
+
+
+
+.caja_especialistas {
+	padding: 20px 12px;
+	background-color: #004b8d;
+}
+
+
+.caja_especialistas p{
+	color: #fff; 
+}
+
+
+.tercer_nivel h3{
+	font-size: 17px;
+}
+
+.col-eventos h3, .col-notas-relacionadas h3{
+	color: #004B8D;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+.col-notas-index h3 {
+    color: #004B8D;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+
+
+.col-notas-relacionadas h4{
+	font-size: 14px;
+	display:block;
+	margin: 0 0 10px;
+	color: #004b8d;
+}
+
+.mas_info{
+	font-size: 11px;
+	display:block;
+	color: #Fe68f1a;
+}
+
+.col-paquetes h2{
+	font-size: 19px;
+	font-weight: 300;
+	display:block;
+	text-align: center;
+	color: #004b8d;
+}
+
+.dia {
+	border-bottom: 1px solid #bebebe;
+	margin: 15px 0;
+}
+
+.fecha {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #004B8D;
+}
+
+.fecha span {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    color: #2986E2;
+}
+
+.tabla-info-eventos{
+	border-left: 1px solid #BEBEBE;
+	margin-bottom: 15px;
+}
+
+.info-evento {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom:15px;
+    color: #666;
+}
+
+
+/* ======= INDEX ======= */
+.index-cards{
+	overflow: hidden;
+}
+
+.trillizos {
+	margin-top: -58px;
+    position: relative;
+    z-index: 2001;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.nivel_cards{
+	color: #004B8D;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 14px;
+    margin-top: -58px;
+    position: relative;
+    text-align: right;
+    z-index: 2001;
+}
+
+.nivel_cards p {
+	margin-top: 62px;
+	margin-bottom: 0;
+}
+
+.nivel_cards h2 {
+	line-height: 20px;
+	margin-top: 0px;
+	
+}
+
+.nivel_cards h2 a {
+	font: 600 22px 'Raleway',sans-serif;
+	color: #004b8d;
+	text-decoration: none;
+}
+
+.nivel_cards h2 a:hover{
+	text-decoration: underline;
+}
+
+.nivel_cards img{
+	margin: 10px 0 20px;
+}
+
+
+.card-1de4{
+	padding: 0;
+	background-image: url("../img/index/encuentre-un-medico.png");
+	background-size: cover;
+	height: 185px;
+	border-radius: 15px 0 0 15px;
+	overflow: hidden;
+	padding: 20px 15px;
+}
+
+.card-2de4{
+	padding: 0;
+	background-image: url("../img/index/convenios-con-aseguradoras.png");
+	background-size: cover;
+	height: 185px;
+	padding: 20px 15px;
+}
+
+.card-3de4{
+	padding: 0;
+	background-image: url("../img/index/calendario-de-eventos.png");
+	background-size: cover;
+	height: 185px;
+	padding: 20px 15px;
+}
+
+.card-4de4{
+	padding: 0;
+	background-image: url("../img/index/fondo-video-index.png");
+	background-size: cover;
+	height: 185px;
+	border-radius: 0 15px 15px 0;
+	overflow: hidden;
+	padding: 20px 15px;
+}
+
+.nivel_cards .icono-play{
+	margin: 23px auto;
+	display: block;
+	max-width: 100%;
+}
+
+.titulo-card{
+	background-color: #Fe68f1a;
+	text-align: center;
+	padding: 0px 15px;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+.titulo-card h2{
+	display: inline-block;
+    font-size: 14px;
+    margin: 15px 0 15px 14px;
+    text-transform: uppercase;
+}
+
+.card-laboratorio{
+	height: 126px;
+	background-image: url("../img/index/fondo-card-laboratorio.jpg");
+	padding: 15px 6px;
+}
+
+.form-resultados-laboratorio {
+    background-color: #FFFFFF;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    display: inline-block;
+    height: 43px;
+    margin: 8px 14px 0 0;
+    padding: 8px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 68%;
+    color: #606060;
+    font-size: 14px;
+}
+
+.card-directorio{
+	height: 126px;
+	background-image: url("../img/index/fondo-card-directorio.jpg");
+	padding: 26px 20px 0;
+	text-align: left;
+}
+
+.card-directorio p{
+	display: inline-block;
+}
+
+.card-directorio span{
+	font-size: 30px;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.card-directorio .btn{
+	margin-top: 20px;
+}
+
+.card-citas {
+	height: 126px;
+	background-image: url("../img/index/fondo-card-citas.jpg");
+	padding: 26px 20px 0;
+	text-align: left;
+}
+
+.card-citas p{
+	display: inline-block;
+}
+
+.card-citas span{
+	font-size: 30px;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.card-citas .btn{
+	margin-top: 20px;
+}
+
+.col-banners-index img{
+	margin-bottom: 15px;
+}
+
+.col-extensiones-index h3{
+	color: #004b8d;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.col-extensiones-index .divisor{
+	margin-bottom: 0px;
+}
+
+.linea-extension {
+	display: block;
+	color: #666;
+	padding: 15px;
+	border-bottom: 1px solid #dedede;
+	font-size: 15px;
+	text-align: left;
+}
+
+.linea-extension span{
+	color: #Fe68f1a;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.urgencias {
+	color: #b01b02;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.urgencias span{
+	font-size: 20px;
+    font-weight: 700;
+    margin-top: -4px;
+    color: #b01b02;
+}
+
+.conmutador {
+	color: #2986E2;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.conmutador span{
+	font-size: 20px;
+    font-weight: 700;
+    margin-top: -4px;
+    color: #2986E2;
+}
+
+.siguiente_anterior {
+	margin-top: 20px;
+	color: #004b8d;
+	text-align: center;
+}
+
+.siguiente_anterior a{
+	color: #004b8d;
+}
+
+.siguiente_anterior span a{
+	color: #Fe68f1a;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: -13px;
+}
+
+.index-banner-laboratorio {
+	margin-bottom: 5px;
+}
+
+.resultados-laboratorio {
+	background-image: url("../img/index/resultados-laboratorio-fondo.jpg");
+	border: 1px solid #C3C3C3;
+	display: block;
+	height: 180px;
+	border-radius: 15px;
+	padding: 20px 11px 11px 84px;
+	overflow: hiddden;
+	font-size: 13px;
+	color: #666;
+}
+
+.cunero-virtual h3, .resultados-laboratorio h3 {
+	font-size: 18px;
+	color: #004b8d;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.formulario-accesos {
+	background-color: #EFEFEF;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px 8px 8px 8px;
+    float: right;
+    height: 36px;
+    margin: 3px 0 0;
+    padding: 0 10px 0 0;
+    transition: all 0.3s ease-out 0s;
+    width: 169px;
+}
+
+.formulario-accesos input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #666666 !important;
+    height: 36px;
+    outline: medium none !important;
+    padding-left: 8px;
+    padding-right: 0;
+    width: 140px;
+}
+
+.formulario-accesos button {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #666666;
+}
+
+.index-tercer-nivel {
+	margin: 10px 0 30PX;
+}
+
+.col-notas-index h3{
+	font-size: 17px;
+	color: #004b8d;
+	text-transform: uppercase;
+}
+
+.col-notas-index h4 a{
+	color: #004B8D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.col-notas-index h4 a:hover {
+    text-decoration: none;
+}
+
+.nota-index .divisor {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+.index-quinto-nivel{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.servicio-complementario h4 a{
+	color: #004B8D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.servicio-complementario h4 a:hover {
+    text-decoration: none;
+}
+
+.servicio-complementario .divisor {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.tag a{
+    font-size: 13px;
+    list-style: none;
+    display: block;
+    margin-bottom: 4px;
+    opacity: .8;
+    color: #e68f1a;
+}
+
+.tag {
+	float: left;
+    font-style: italic;
+    margin-right: 10px;
+    color: #Fe68f1a;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.txt-nota {
+	color: #666;
+	display: inline-block;
+}
+
+.link-nota-completa a {
+	color: #E68F1A;
+    float: right;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.index-cuarto-nivel {
+	margin: 20px 0 40px;
+}
+
+/* ========== Sliders =========== */
+
+/* --- Home slider --- */
+
+.main-slider .slide-title {
+	color: #004B8D;
+    display: table;
+    font: 500 24px 'Raleway',sans-serif,sans-serif;
+    margin-bottom: 0;
+    padding: 3px 14px;
+    white-space: nowrap;
+}
+
+.main-slider .slide-title_v2 {
+	color: #004B8D;
+    display: table;
+    font: 500 36px 'Raleway',sans-serif,sans-serif;
+    margin-bottom: 0;
+    padding: 3px 14px;
+    white-space: nowrap;
+}
+.main-slider .slide-title_second {
+	display: block;
+	margin-bottom: 8px;
+	padding: 0 10px;
+	font: 700 36px 'Raleway', sans-serif;
+	color: #e68f1a;
+}
+.main-slider .slide-text {
+	color: #004B8D;
+    display: table;
+    font-size: 17px;
+    margin-bottom: 1px;
+    padding: 4px 14px;
+}
+.main-slider .btn {
+	margin-top: 28px;
+	padding: 7px 32px 12px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin-left: 14px;
+}
+.main-slider .btn .btn-plus {
+	margin-left: 8px;
+	font-weight: 400;
+}
+
+
+.main-slider .card-ruta {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.card-ruta a{
+	color: #fff;
+}
+
+.card-ruta span{
+	color: #f37121;
+    margin: 0 7px;
+}
+
+.main-slider .card-titulo {
+	margin:0;
+	padding:0;
+	display: block;
+	font: 600 34px 'Raleway', sans-serif;
+}
+.main-slider .card-titulo_peq {
+	margin:0;
+	padding:0;
+	display: block;
+	font: 600 30px 'Raleway', sans-serif;
+}
+.main-slider .card-titulo-clinica-rehabilitacion-cardio {
+  font-size: 28px;
+}
+
+.card-titulo span{
+	display: inline-block;
+	font: 200 23px 'Raleway', sans-serif;
+}
+
+
+@media (max-width:991px ) {
+	.main-slider .card-ruta {
+	font-size: 18px;
+	}
+}
+
+
+/* --- Reviews --- */
+
+.slider-reviews {
+	position: relative;
+}
+.slider-reviews_2-col {
+	padding-top: 70px;
+	padding-bottom: 160px;
+}
+.slider-reviews_1-col .slide {
+	padding-left: 35px;
+}
+.slider-reviews .info {
+	float: left;
+	text-align: center;
+}
+.slider-reviews_1-col .info .avatar {
+	max-width: 130px;
+}
+.slider-reviews_2-col .avatar {
+	float: left;
+	max-width: 116px;
+}
+.slider-reviews .quote {
+	position: relative;
+}
+.slider-reviews_1-col .quote {
+	padding: 34px 0 35px 271px;
+}
+.slider-reviews_2-col .quote {
+	padding-left: 190px;
+}
+.slider-reviews .quote:before {
+	position: absolute;
+	
+	font: normal normal normal 24px/1 FontAwesome;
+	color: #f37121;
+	content: '\f10d';
+}
+.slider-reviews .quote:after {
+	position: absolute;
+	font: normal normal normal 24px/1 FontAwesome;
+	color: #f37121;
+	content: "\f10e";
+    right: 10px;
+    bottom: 60px;
+	
+}
+.slider-reviews .quote:before {
+	/*top: 60px;*/
+	left: 202px;
+}
+.slider-reviews_2-col .quote:before {
+	top: 0;
+	left: 146px;
+}
+.slider-reviews .decor-brand {
+	margin-top: 0;
+	margin-bottom: 32px;
+}
+.slider-reviews_2-col .decor-brand {
+	margin-bottom: 50px;
+}
+.slider-reviews_1-col .avatar {
+	margin: 37px auto 5px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #f2f7f9;
+}
+.slider-reviews .name {
+	display: block;
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-weight: 600;
+	color: #363636;
+}
+.slider-reviews_1-col .name {
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+.slider-reviews_2-col .name {
+	font-size: 14px;
+}
+.slider-reviews .categories {
+	display: inline-block;
+	font-size: 12px;
+	color: #525252;
+}
+.slider-reviews_1-col .categories {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.slider-reviews_1-col .categories:last-child {
+	border-left: 1px solid #ddd;
+}
+.slider-reviews_1-col .bx-wrapper .bx-pager {
+	left: 300px;
+}
+.slider-reviews .bx-controls {
+	bottom: 110px;
+}
+.slider-reviews_2-col .bx-pager {
+	bottom: -167px;
+	width: 100%;
+	text-align: center;
+}
+/* --- BX Carusel --- */
+
+.bx-controls {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+.bxslider .slide_bg:before, .bxslider .slide_bg:after {
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	z-index: 9999;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.bxslider .slide_bg:before {
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	content: '';
+}
+.bxslider .slide_bg:after {
+	top: 50%;
+	margin-top: -16px;
+	font-family: 'Simple-Line-Icons';
+	font-size: 32px;
+	color: #fff;
+	content: '\e090';
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+.bxslider .slide_bg:hover:before, .bxslider .slide_bg:hover:after {
+	opacity: 1;
+}
+/* Slider_team */
+
+.slider_team {
+	position: relative;
+	padding-top: 65px;
+	padding-bottom: 145px;
+	text-align: center;
+}
+.slider_team-2 {
+	padding-top: 50px;
+	padding-bottom: 115px;
+}
+.slider_team_filter {
+	padding-bottom: 30px;
+}
+.slider_team-2 .ui-subtitle-block {
+	padding-bottom: 68px;
+}
+.slider_team .slide {
+	position: relative;
+	margin-bottom: 65px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eee;
+	cursor: default;
+	transition: all 0.3s;
+}
+.slider_team .name {
+  color: #666;
+  display: block;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.slider_team .category {
+  color: #004b8d;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 15px;
+  height: 60px;
+}
+.slider_team .slide:hover {
+	border-bottom-color: #f2f7f9;
+	background-color: #f2f7f9;
+}
+.slider_team .slide:hover .btn {
+	color: #fff;
+	background-color: #2986e2;
+}
+.slider_team .slide_horiz {
+	margin-bottom: 50px;
+	border-bottom: none;
+}
+.slider_team .slide_horiz:hover {
+	background-color: #fff;
+}
+.slider_team .slide_horiz .name {
+	margin-top: 0;
+	line-height: 1;
+}
+.slider_team .slide_horiz .category {
+	margin-bottom: 16px;
+}
+.slider_team .btn {
+	margin-top: 27px;
+}
+.slider_team .slide__contacts {
+	margin-bottom: 3px;
+}
+.slider_team .slide__contacts a {
+	font-size: 12px;
+	font-weight: 400;
+	color: #525252;
+}
+.slider_team .slide__contacts .icon {
+	display: inline-block;
+	margin-right: 14px;
+	font-size: 16px;
+	color: #ccc;
+	vertical-align: middle;
+}
+.slider_team .slide__info {
+	margin-bottom: 23px;
+}
+.slider_team .social-links {
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	padding: 13px 8px 3px 12px;
+	background-color: rgba(255, 255, 255, 0.6);
+	opacity: 0;
+	transition: all 0.3s;
+}
+.slider_team .social-links_right {
+	right: 35px;
+	left: auto;
+}
+.slider_team .slide:hover .social-links {
+	opacity: 1;
+}
+.slider_team .social-links li {
+	display: block;
+	margin-bottom: 9px;
+}
+.slider_team .social-links .social_icons {
+	color: #888;
+}
+.slider_team .social-links .social_icons:hover {
+	color: #f26529;
+}
+
+
+
+
+.slider_team .social-links2 {
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	padding: 13px 8px 3px 12px;
+	background-color: rgba(255, 255, 255, 0.6);
+	opacity: 0;
+	transition: all 0.3s;
+}
+.slider_team .social-links2_right {
+	right: 35px;
+	left: auto;
+}
+.slider_team .slide:hover .social-links2 {
+	opacity: 1;
+}
+.slider_team .social-links2 li {
+	display: block;
+	margin-bottom: 9px;
+}
+.slider_team .social-links2 .social_icons {
+	color: #888;
+}
+.slider_team .social-links2 .social_icons:hover {
+	color: #f26529;
+}
+
+
+
+
+
+
+
+.slider_team .bx-controls {
+	bottom: 0;
+}
+.slider_team .bx-pager {
+	bottom: -85px;
+	width: 100%;
+	text-align: center;
+}
+.slider_team_horiz {
+	padding-bottom: 0;
+}
+/* --- Business-card --- */
+
+.business-card {
+	margin-bottom: 59px;
+	text-align: center;
+}
+.business-card__title {
+	padding: 30px 10px 52px;
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #353535;
+	background-color: #f2f7f9;
+}
+.business-card__title strong {
+	display: block;
+	margin-top: 12px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.business-card__btm {
+	padding-bottom: 38px;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
+.business-card__phone {
+	display: block;
+	margin-top: -17px;
+	margin-bottom: 9px;
+	padding-top: 52px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28.8px;
+}
+.business-card__phone .icon {
+	margin-right: 12px;
+	font-size: 20px;
+}
+.business-card__info {
+	display: block;
+	font-family: 'Raleway';
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 13.2px;
+	color: #bbb;
+	text-transform: uppercase;
+}
+.business-card .btn {
+	margin-top: -28px;
+	background-color: #fff;
+}
+.business-card .btn:hover {
+	background-color: #2986e2;
+}
+.business-card_blog .business-card__title {
+	padding-right: 50px;
+	padding-left: 50px;
+	font-size: 16px;
+}
+/* --- Breadcrumb --- */
+
+.wrap_breadcrumb {
+	border-bottom: 1px solid #eee;
+}
+.breadcrumb .icon {
+	font-size: 14px;
+}
+.breadcrumb li:first-child a:hover {
+	text-decoration: none;
+}
+/* --- Form-search --- */
+
+.form-search {
+	width: 270px;
+	border: 1px solid #eee;
+	border-radius: 27px;
+	overflow: hidden;
+}
+.form-search__input {
+	width: 190px;
+	padding: 17px 0 17px 28px;
+	font-size: 12px;
+	font-weight: 300;
+	color: #888;
+	border: none;
+	transition: all 0.3s;
+}
+.form-search__input:focus {
+	border: none;
+	outline-style: none;
+	background-color: #eee;
+}
+.form-search__submit {
+	float: right;
+	padding: 18px 30px 13px;
+	border: none;
+	background-color: transparent;
+}
+.form-appointment .jelect {
+	height: 52px;
+	margin-bottom: 26px;
+}
+.form-search__submit .icon {
+	font-size: 16px;
+	color: #363636;
+	transition: all 0.3s;
+}
+.form-search__submit:hover .icon {
+	text-shadow: 0 1px 2px rgba(2, 2, 2, 1);
+}
+/* ======= Other ======= */
+
+.title-steps {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-family: 'Raleway';
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1.3;
+	color: #353535;
+}
+.title-steps .step-1 {
+	display: block;
+	margin-top: 0;
+	font-size: 46px;
+	font-weight: 700;
+}
+.title-steps .step-2 {
+	display: block;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.progress-title {
+	float: left;
+	margin-left: 11px;
+}
+.title-small {
+	margin-top: 60px;
+	margin-bottom: 21px;
+	font: 700 18px 'Raleway', sans-serif;
+	color: #fff;
+}
+.link_on-youtube {
+	position: relative;
+	display: block;
+	margin-top: 80px;
+}
+.link_on-youtube:hover .icon_video-player {
+	background-color: #2986e2;
+}
+.icon_video-player, .link_on-youtube .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	color: #fff;
+	transition: all 0.5s;
+	text-align: center;
+}
+.icon_video-player {
+	border-radius: 50% 50% 50% 50%;
+    font-size: 25px;
+    height: 75px;
+    margin-left: -35px;
+    margin-top: -35px;
+    width: 75px;
+}
+.icon_video-player:before {
+	display: block;
+	padding-top: 22px;
+}
+.link_on-youtube .btn {
+	margin-top: -24px;
+	margin-left: -85px;
+	padding: 14px 25px;
+	border-radius: 25px;
+	box-shadow: 0 0 0 10px rgba(255,255,255,0.55);
+}
+.link_on-youtube .icon {
+	margin-right: 9px;
+	font-size: 20px;
+	vertical-align: sub;
+}
+.form-appointment {
+	margin-top: 33px;
+}
+.form-appointment .input-group {
+	margin-bottom: 26px;
+}
+.form-appointment .input-group:first-child {
+	margin-bottom: 20px;
+}
+.form-appointment .btn {
+	margin-top: 5px;
+	padding: 12px 30px 16px;
+	border-radius: 30px;
+}
+.map {
+	margin-top: -10px;
+	margin-bottom: 60px;
+	height: 400px;
+}
+
+.map-globo-titulo{
+	font-size: 14px;
+	font-weight: bold;
+	color: #004b8d;
+	margin: 10px 0 0;
+}
+
+.map-globo-conmutador {
+	font-size: 13px;
+	font-weight: normal;
+	color: #004b8d;
+	margin-top: 5px;
+}
+.map-globo-conmutador a, .map-globo-descripcion a {
+    color: #f37121;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.map-globo-conmutador a {
+    font-size: 15px;
+}
+
+#message-form .btn {
+	padding: 17px 30px 13px;
+	font-size: 11px;
+}
+
+
+
+
+
+/*Loader*/
+
+
+@-moz-keyframes heartbeat-loader {
+ 0% {
+ -moz-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+ 14% {
+ -moz-transform: rotate(45deg) scale(1.3);
+ transform: rotate(45deg) scale(1.3);
+}
+ 28% {
+ -moz-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+ 42% {
+ -moz-transform: rotate(45deg) scale(1.3);
+ transform: rotate(45deg) scale(1.3);
+}
+ 70% {
+ -moz-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+}
+@-webkit-keyframes heartbeat-loader {
+ 0% {
+ -webkit-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+ 14% {
+ -webkit-transform: rotate(45deg) scale(1.3);
+ transform: rotate(45deg) scale(1.3);
+}
+ 28% {
+ -webkit-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+ 42% {
+ -webkit-transform: rotate(45deg) scale(1.3);
+ transform: rotate(45deg) scale(1.3);
+}
+ 70% {
+ -webkit-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+}
+@keyframes heartbeat-loader {
+ 0% {
+ -moz-transform: rotate(45deg) scale(1);
+ -ms-transform: rotate(45deg) scale(1);
+ -webkit-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+ 14% {
+ -moz-transform: rotate(45deg) scale(1.3);
+ -ms-transform: rotate(45deg) scale(1.3);
+ -webkit-transform: rotate(45deg) scale(1.3);
+ transform: rotate(45deg) scale(1.3);
+}
+ 28% {
+ -moz-transform: rotate(45deg) scale(1);
+ -ms-transform: rotate(45deg) scale(1);
+ -webkit-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+ 42% {
+ -moz-transform: rotate(45deg) scale(1.3);
+ -ms-transform: rotate(45deg) scale(1.3);
+ -webkit-transform: rotate(45deg) scale(1.3);
+ transform: rotate(45deg) scale(1.3);
+}
+ 70% {
+ -moz-transform: rotate(45deg) scale(1);
+ -ms-transform: rotate(45deg) scale(1);
+ -webkit-transform: rotate(45deg) scale(1);
+ transform: rotate(45deg) scale(1);
+}
+}
+/* :not(:required) hides this rule from IE9 and below */
+
+
+.show-loader, .show-loader .spinner-loader {
+	display: block !important;
+}
+#page-preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff none repeat scroll 0 0;
+	z-index: 100500;
+	text-align: center;
+}
+#page-preloader .spinner-loader {
+	position: absolute;
+	text-align: center;
+	display: block;
+	top: 50%;
+	margin-left: -175px;
+	left: 50%;
+	margin-top: -100px;
+	width: 390px;
+}
+.logo__loader {
+	display: block;
+	margin: 20px auto;
+}
+.heartbeat-loader:not(:required) {
+	-moz-animation: heartbeat-loader 1300ms ease 0s infinite normal;
+	-webkit-animation: heartbeat-loader 1300ms ease 0s infinite normal;
+	animation: heartbeat-loader 1300ms ease 0s infinite normal;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 36px;
+	height: 36px;
+	-moz-transform: rotate(45deg) scale(1);
+	-ms-transform: rotate(45deg) scale(1);
+	-webkit-transform: rotate(45deg) scale(1);
+	transform: rotate(45deg) scale(1);
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+.heartbeat-loader:not(:required):after, .heartbeat-loader:not(:required):before {
+	position: absolute;
+	content: "";
+	background: #e87;
+}
+.heartbeat-loader:not(:required):before {
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	top: 12px;
+	left: 0;
+	width: 36px;
+	height: 24px;
+}
+.heartbeat-loader:not(:required):after {
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius: 12px;
+	border-top-right-radius: 12px;
+	top: 0;
+	left: 12px;
+	width: 24px;
+	height: 12px;
+}
+
+
+/*Tabs*/
+
+@media (min-width:991px) {
+.icon-tabs .icon-tabs {
+	position: relative;
+}
+.icon-tabs .tab-info {
+	left: 0;
+	margin-left: -100%;
+	position: absolute;
+	text-align: center;
+	top: 70px;
+	width: 100%;
+}
+}
+
+
+.tab-content {
+    background-color: #FFFFFF;
+    display: block;
+    min-height: auto;
+}
+.icon-tabs .tab-content {
+	text-align: center;
+}
+.icon-tabs .tab-content {
+	padding-top: 20px;
+}
+
+
+.form-group .help-block  ul{
+	    list-style: none;
+    margin-left: 10px;
+}
+
+
+/* ----- css para cada tab de servicio ------ */
+.resonancia-descripcion {
+	background-image: url("../img/servicios/resonancia-magnetica/resonancia-magnetica-descripcion.jpg");
+}
+
+.resonancia-ventajas {
+	background-image: url("../img/servicios/resonancia-magnetica/resonancia-magnetica-ventajas.jpg");
+}
+
+.resonancia-aplicaciones{
+	background-image: url("../img/servicios/resonancia-magnetica/resonancia-magnetica-aplicaciones.jpg");
+}
+
+.resonancia-estudios {
+	background-image: url("../img/servicios/resonancia-magnetica/resonancia-magnetica-estudios.jpg");
+}
+
+/* ----- css para imagenlogia ------ */
+.imagenologia-campo1 {
+	background-image: url("../img/servicios/imagenologia/imagenologia-descripcion.jpg");
+}
+
+.imagenologia-campo2 {
+	background-image: url("../img/servicios/imagenologia/imagenologia-aplicaciones.jpg");
+}
+
+/* ----- css para tomografia ------ */
+.tomografia-campo1 {
+	background-image: url("../img/servicios/tomografia/tomografia-descripcion.jpg");
+}
+
+.tomografia-campo2 {
+	background-image: url("../img/servicios/tomografia/tomografia-ventajas.jpg");
+}
+.tomografia-campo3 {
+	background-image: url("../img/servicios/tomografia/tomografia-aplicaciones.jpg");
+}
+.tomografia-campo4 {
+	background-image: url("../img/servicios/tomografia/tomografia-estudios.jpg");
+}
+
+/* ----- css para patologia ------ */
+.patologia-campo1 {
+	background-image: url("../img/servicios/patologia/patologia-descripcion.jpg");
+}
+
+.patologia-campo2 {
+	background-image: url("../img/servicios/patologia/patologia-ventajas.jpg");
+}
+.patologia-campo3 {
+	background-image: url("../img/servicios/patologia/patologia-aplicaciones.jpg");
+}
+.patologia-campo4 {
+	background-image: url("../img/servicios/patologia/patologia-estudios.jpg");
+}
+
+/* ----- css para hemodialisis ------ */
+.hemodialisis-campo1 {
+	background-image: url("../img/servicios/hemodialisis/hemodialisis-descripcion.jpg");
+}
+
+.hemodialisis-campo2 {
+	background-image: url("../img/servicios/hemodialisis/hemodialisis-ventajas.jpg");
+}
+.hemodialisis-campo4 {
+	background-image: url("../img/servicios/patologia/hemodialisis-estudios.jpg");
+}
+
+/* ----- css para endoscopia ------ */
+.endoscopia-campo1 {
+	background-image: url("../img/servicios/endoscopia/endoscopia-descripcion.jpg");
+}
+
+.endoscopia-campo2 {
+	background-image: url("../img/servicios/endoscopia/endoscopia-ventajas.jpg");
+}
+.endoscopia-campo3 {
+	background-image: url("../img/servicios/endoscopia/endoscopia-alta.jpg");
+}
+.endoscopia-campo4 {
+	background-image: url("../img/servicios/endoscopia/endoscopia-baja.jpg");
+}
+
+
+/* ----- css para transfusion ------ */
+.transfusion-campo1 {
+	background-image: url("../img/servicios/transfusion/transfusion-descripcion.jpg");
+}
+
+.transfusion-campo2 {
+	background-image: url("../img/servicios/transfusion/transfusion-beneficios.jpg");
+}
+.transfusion-campo3 {
+	background-image: url("../img/servicios/transfusion/transfusion-plaquetas.jpg");
+}
+.transfusion-campo4 {
+	background-image: url("../img/servicios/transfusion/transfusion-paquete-globular.jpg");
+}
+
+
+/* ----- css para laboratorio ------ */
+.laboratorio-campo1 {
+	background-image: url("../img/servicios/laboratorio/laboratorio-descripcion.jpg");
+}
+
+.laboratorio-campo2 {
+	background-image: url("../img/servicios/laboratorio/laboratorio-ventajas.jpg");
+}
+.laboratorio-campo3 {
+	background-image: url("../img/servicios/laboratorio/laboratorio-estudios.jpg");
+}
+
+
+/* ----- css para mastografia ------ */
+.mastografia-campo1 {
+	background-image: url("../img/servicios/mastografia/mastografia-descripcion.jpg");
+}
+
+.mastografia-campo2 {
+	background-image: url("../img/servicios/mastografia/mastografia-ventajas.jpg");
+}
+.mastografia-campo3 {
+	background-image: url("../img/servicios/mastografia/mastografia-aplicaciones.jpg");
+}
+
+
+/* ----- css para densitometria osea ------ */
+.densitometria-osea-campo1 {
+	background-image: url("../img/servicios/densitometria-osea/densitometria-osea-descripcion.jpg");
+}
+
+.densitometria-osea-campo2 {
+	background-image: url("../img/servicios/densitometria-osea/densitometria-osea-ventajas.jpg");
+}
+.densitometria-osea-campo3 {
+	background-image: url("../img/servicios/densitometria-osea/densitometria-osea-aplicaciones.jpg");
+}
+
+/* ----- css para rayos x ------ */
+.rayosx-campo1 {
+	background-image: url("../img/servicios/rayosx/rayosx-descripcion.jpg");
+}
+
+.rayosx-campo2 {
+	background-image: url("../img/servicios/rayosx/rayosx-avances.jpg");
+}
+.rayosx-campo3 {
+	background-image: url("../img/servicios/rayosx/rayosx-aplicaciones.jpg");
+}
+
+/* ----- css para ultrasonografia ------ */
+.ultrasonografia-campo1 {
+	background-image: url("../img/servicios/ultrasonografia/ultrasonografia-descripcion.jpg");
+}
+
+.ultrasonografia-campo2 {
+	background-image: url("../img/servicios/ultrasonografia/ultrasonografia-ventajas.jpg");
+}
+.ultrasonografia-campo3 {
+	background-image: url("../img/servicios/ultrasonografia/ultrasonografia-aplicaciones.jpg");
+}
+
+
+/* ----- css para flouroscopia ------ */
+.flouroscopia-campo1 {
+	background-image: url("../img/servicios/flouroscopia/flouroscopia-descripcion.jpg");
+}
+
+.flouroscopia-campo2 {
+	background-image: url("../img/servicios/flouroscopia/flouroscopia-ventajas.jpg");
+}
+.flouroscopia-campo3 {
+	background-image: url("../img/servicios/flouroscopia/flouroscopia-aplicaciones.jpg");
+}
+.flouroscopia-campo4 {
+	background-image: url("../img/servicios/flouroscopia/flouroscopia-estudios.jpg");
+}
+
+/* ----- css para ergoespirometria ------ */
+.ergoesperitometria-campo1 {
+	background-image: url("../img/servicios/ergoespirometria/ergoespirometria-descripcion.jpg");
+}
+
+.ergoesperitometria-campo2 {
+	background-image: url("../img/servicios/ergoespirometria/ergoespirometria-aplicaciones.jpg");
+}
+.ergoesperitometria-campo3 {
+	background-image: url("../img/servicios/ergoespirometria/ergoespirometria-ventajas.jpg");
+}
+
+
+/* ============== DIRECTORIO MÉDICO ============== */
+	.paginador-directorio {
+    background-color: #F6F6F6;
+    display: block;
+    min-height: 26px;
+    margin: 18px auto 0;
+    padding: 15px;
+	}
+	.paginador-centro, .paginador-izq, .paginador-der {
+	padding: 0;
+	}
+	.paginador-centro {
+	text-align:center;
+	}
+	.paginador-der {
+	text-align:right;
+	}
+	.paginador-izq {
+    text-align: left;
+	}
+	.paginador-titulo, .paginas-titulo {
+    color: #072D73;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+	}
+	.paginador-numeros, .paginas-numeros {
+    color: #F37121;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 10px;
+	}
+	.paginas-numeros a {
+    color: #F37121;
+	}
+	
+	.titulo-directorio {
+    background-color: #072D73;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 11px;
+    -moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	}
+	.titulo-subespecialidad {
+    border-bottom: 1px dashed #DEDEDE;
+    color: #F37121;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+	}
+	.sidebar-directorio {
+    color: #666666;
+    margin: 18px 30px 18px 0;
+    padding: 0;
+	}
+	.sidebar-bloque-filtro {
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+	}
+	.sidebar-titulo {
+    background-color: #f37121;
+    border-radius: 10px 10px 0 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 15px;
+	}
+	.sidebar-filtro-ul {
+    list-style: none outside none;
+	}
+	.sidebar-filtro-li {
+    border-bottom: 1px dotted #DEDEDE;
+    line-height: 26px;
+    padding: 15px 18px;
+	}
+	.sidebar-filtro-li a {
+    color: #777;
+    text-decoration: none;
+	}
+	.sidebar-bloque-banners img {
+	margin-bottom: 20px;
+	}
+	.bloque_medicos {
+    margin-bottom: 40px;
+	}
+	.card-doctor {
+    color: #072D73;
+    display: block;
+    font-size: 14px;
+    line-height: 12px;
+    padding: 20px 0 10px;
+	}
+	.foto-dr {
+    margin-top: -10px;
+    margin-bottom: 5px;
+	}
+	.nombre-doctor {
+    margin-top: 0;
+	}
+	.nombre-doctor a {
+    color: #072D73;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+    padding: 0;
+    text-decoration: none;
+	}
+	.especialidad-doctor {
+    color: #F37121;
+    font-size: 13px;
+    line-height: normal;
+    margin-right: 20px;
+	}
+	.datos-card-doctor span {
+    color: #F37121;
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-transform: lowercase;
+	}
+	.info-doctor {
+    display: block;
+	}
+	.icon-card-directorio {
+    margin-right: 8px;
+    vertical-align: middle;
+	}
+	.boton-card-directorio {
+    background-color: #072D73;
+    border-radius: 13px 13px 13px 13px;
+    color: #FFFFFF;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    margin: 0 auto;
+	}
+	
+	.boton-card-ramblas {
+    background-color: #414746;
+    border-radius: 13px 13px 13px 13px;
+    color: #FFFFFF;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    margin: 0 auto;
+	}
+	.tel-doctor {
+    color: #F37121;
+    display: block;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 0;
+	}
+	.col-nombre-dr, .col-consultorio-dr, .col-telefono-dr, .col-masinfo-dr {
+	min-height: 70px;
+	}
+	
+	.col-nombre-dr-ramblas {
+	min-height: 70px;
+	border-right: 1px dashed #DEDEDE;
+	}
+	
+	.col-nombre-dr, .col-consultorio-dr, .col-telefono-dr {
+	border-right: 1px dashed #DEDEDE;
+	}
+	
+	.col-consultorio-dr, .col-telefono-dr {
+	text-align:center;
+	}
+	
+	.footer-azul-card {
+    background-color: #c6d4ee;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+	}
+	
+	.filtros-directorio {
+    background-color: #E5E5E5;
+    background-image: url("../img/directorio-medico/fondo-filtros.jpg");
+    background-repeat: repeat-x;
+    border-bottom: 3px solid #DEDEDE;
+    border-top: 3px solid #DEDEDE;
+    position: relative;
+    z-index: 3000;
+	}
+	
+	
+	
+	.filtros-der{
+	border-right: 1px solid #d6d6d6;
+	overflow: vissible;
+	}
+
+	
+	.filtros-izq .divisor {
+    margin: 15px 0 0;
+	}
+	.img-filtros {
+    display: block;
+    margin: -27px auto 0;
+    vertical-align: bottom;
+	}
+	.texto-filtros-medicos{
+	color: #666;
+	margin: 16px 0 0;
+	font-size: 14px;
+	}
+	.letra-apellido {
+    color: #072D73;
+    display: inline-block;
+    margin: 15px 1.1em 0 0;
+	}
+	.form-filtro-medicos {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 8px 8px 8px 8px;
+    color: #666666;
+    display: block;
+    height: 35px;
+    margin: 20px 0;
+    padding: 8px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+	}
+	.form-filtro-medicos-index {
+    margin: 5px 0 5px;
+	}
+	
+	.ficha-nombre-doctor {
+    background-color: #072D73;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+	}
+	.ficha-nombre-doctor h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+	}
+	.ficha-nombre-doctor h3 {
+    color: #F37121;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+	}
+	.sidebar-ficha {
+    background-color: #DEDEDE;
+	}
+	.ficha-consultorio-doctor {
+    background-color: #F37121;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    padding: 13px;
+    text-align: center;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	}
+	.ficha-consultorio-doctor span {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 7px;   
+	}
+	.ficha-ubicacion-doctor {
+    background-color: #072d73;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    border-bottom:5px solid #fff;
+	}
+	.ficha-ubicacion-doctor span {
+    font-weight: 600;
+    display: inline-block:
+    margin-left: 8px;
+	}
+	.icon-ubicacion-ficha {
+    margin: -6px 10px 0;
+    width: 15px;
+	}
+	.sidebar-datos-ficha {
+    background-color: #FFFFFF;
+    color: #072D73;
+    margin: 0 0 15px;
+    padding: 15px 25px;
+	}
+	.titulo-sidebar-ficha {
+    color: #F37121;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+	}
+	.icon-sidebar-ficha {
+    display: inline-block;
+    margin-left: 5px;
+	}
+	.datos-sidebar {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-left: 17px;
+    vertical-align: top;
+	}
+	.datos-sidebar span, .email-sidebar-ficha a{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #0a46b4;
+	}
+	.horarios-sidebar {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 17px;
+    vertical-align: top;
+    color: #0a46b4;
+	}
+	.horarios-sidebar span {
+	color: #072D73;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 18px 0 0;
+	}
+	.horarios-sidebar span:first-child {
+    margin-top: 0;
+	}
+	.contenidos-ficha-doctor {
+    padding: 20px 40px;
+	}
+	.contenidos-ficha-doctor .divisor {
+    margin: 36px 0;
+	}
+	.titulos-ficha-doctor {
+    border-bottom: 1px dashed #DEDEDE;
+    color: #072D73;
+    font-size: 20px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+	}
+	.subitulo-ficha-doctor {
+    color: #F37121;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+	}
+	.texto-ficha-doctor {
+    color: #666666;
+    display: block;
+    width: 95%;
+	}
+	.certificaciones-ficha-doctor {
+    color: #666666;
+    display: block;
+    list-style: disc inside none;
+    margin-bottom: 11px;
+	}
+	.certificaciones-ficha-doctor li {
+    color: #666666;
+    list-style: disc inside none;
+    margin-bottom: 11px;
+	}
+
+
+/* ------- Responsive Directorio Médico menor a 1200------- */
+@media (max-width:1199px) {
+
+	.img-filtros {
+    margin: -25px 0 0;
+	}
+	.letra-apellido {
+    margin: 15px 0.91em 0 0;
+	}
+	
+}
+
+
+/* ------- Responsive Directorio Médico menor a 991 ------- */
+@media (max-width:991px) {
+
+	.filtros-der{
+	display: none;
+	}
+	.filtros-izq {
+    text-align: center;
+	}
+	
+	.col-nombre-dr {
+	border-right: 0px;
+	border-bottom: 1px dashed #DEDEDE;
+	margin-bottom: 14px;
+	}
+	.col-nombre-dr-ramblas {
+	border-right: 0px;
+	border-bottom: 1px dashed #DEDEDE;
+	margin-bottom: 14px;
+	}
+	.col-consultorio-dr, col-telefono-dr, col-masinfo-dr {
+	height: 48px;
+	}
+	.datos-card-doctor {
+    margin-top: 12px;
+	}
+	.tel-doctor {
+    margin-top: 24px;
+	}
+	.boton-card-directorio {
+    margin-top: 10px auto;
+	}
+	
+
+}
+
+
+/* ------- Responsive Directorio Médico menor 767 ------- */
+@media (max-width:767px) {	
+
+	.letra-apellido {
+    margin: 15px 0.75em 0 0;
+	}
+	.col-nombre-dr {
+	text-align: center;
+	}
+	
+	.col-nombre-dr-ramblas {
+	border-right: 0px;
+	border-bottom: 1px dashed #DEDEDE;
+	margin-bottom: 14px;
+	min-height:auto;!important;
+	}
+	.col-telefono-dr {
+    border: medium none;
+    padding: 0 10px;
+	}
+	.col-masinfo-dr {
+	border-top: 1px dashed #DEDEDE;
+	margin-top: 10px;
+	}
+	.boton-card-directorio {
+    margin-top: 18px;
+	}
+	.sidebar-info-ficha {
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+	}
+	.sidebar-horarios-ficha {
+    display: block;
+    margin: 0 auto;
+	}
+	.titulo-sidebar-ficha {
+    display: block;
+    font-weight: bold;
+    margin: 15px auto 25px;
+    text-align: center;
+	}
+	.sidebar-mail-ficha {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+	}
+}
+
+
+
+/* ------- Responsive Directorio Médico max 487 ------- */	
+@media (max-width:480px) {
+	.paginador-izq, .paginador-der {
+    margin-bottom: 7px;
+    text-align: center;
+	}
+	.sidebar-info-ficha {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+    text-align: center;
+	}
+	.contenidos-ficha-doctor {
+    padding: 20px;
+	}
+	.texto-ficha-doctor {
+    text-align: justify;
+    width: 100%;
+	}
+	.datos-card-doctor {
+    margin-top: 0;
+    text-align: center;
+	}
+	.tel-doctor {
+    font-size: 15px;
+	}
+	.icon-card-directorio {
+    width: 17px;
+	}
+	.col-telefono-dr, .col-consultorio-dr {
+    padding: 0 8px;
+	}
+	.ficha-consultorio-doctor {
+    padding: 8px 4px;
+	}
+	.sidebar-ficha {
+    background-color: #fff;
+	}
+	.datos-sidebar {
+    margin-left: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+	
+/* ============== SERVICIOS COMPLEMENTARIOS ============== */
+	.bloque-servicios-complementarios{
+		padding-top:0;
+	}
+	.sidebar-complementarios, .sidebar-acerca{
+	background-color: #fff;
+	padding:0;
+	min-height: 610px;
+	}
+	
+	.sidebar-complementarios img, .sidebar-acerca img{
+	margin-top: 23px;
+	}
+	
+	.header-sidebar-complementarios {
+    background-color: #072D73;
+    color: #FFFFFF;
+    margin-top: -55px;
+    font-size: 15px;
+	}
+	.header-sidebar-complementarios p {
+    background-color: #F37121;
+    display: block;
+    padding: 16px 20px;
+	}
+	.titulo-sidebar-servicios-complementarios {
+	font-weight: 400;
+	padding: 20px;
+	margin: 0;
+	}
+	.titulo-sidebar-servicios-complementarios span {
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 7px;
+	}
+	.submenu-sidebar-complementarios {
+    list-style: none outside none;
+    margin: 0;
+	}
+	.li-sidebar-complementarios {
+    border-bottom: 1px dashed #DEDEDE;
+    line-height: normal;
+    padding: 20px;
+	}
+	.li-sidebar-complementarios:last-child {
+    border-bottom:none;
+	}
+	.li-sidebar-complementarios a, .li-submenu-horizontal a{
+    color:#666;
+    text-decoration:none;
+	}
+	.li-sidebar-complementarios a:hover{
+    color:#f37121;
+    padding-left:10px;
+    text-decoration:underlined;
+	}
+	.contenido-servicios-complementarios{
+	background-color: #fff;
+	}
+	.contenido-servicios-complementarios{
+	border-left:1px solid #ececec;
+	padding:0;
+	}
+	.submenu-horizontal-complementarios {
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 0;
+	}
+	.li-submenu-horizontal {
+    border-right: 1px dashed #DEDEDE;
+    display: inline-block;
+    margin: 0;
+    padding: 21px 0;
+    text-align: center;
+    width: 24%;
+	}
+	.li-submenu-horizontal:last-child {
+	border-right: none;
+	width:27%;
+	}
+	.titulo-servicios-complementarios {
+	font-size: 24px;
+	color: #072d73;
+	margin: 30px 0;
+	}
+	.col-textos-servicios-complementarios {
+    padding: 0 30px;
+    min-height: 610px;
+	}
+	.col-textos-servicios-complementarios p{
+    color: #666666;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+	}
+	.col-textos-servicios-complementarios span {
+    color: #F37121;
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    margin: 30px 14px;
+	}
+	.col-banners-servicios-complementarios {
+    background-color: #F37121;
+    color: #FFFFFF;
+    font-size: 20px;
+    min-height: 610px;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+	}
+	.img-servicios-hospitalarios-h{
+	display: none;
+	}
+	.col-banners-servicios-complementarios p {
+    display: block;
+    margin: 30px 0 0;
+    padding: 20px;
+    vertical-align: middle;
+	}
+	.bloque-global {
+    background-color: #fff;
+    color: #333333;
+    font-size: 15px;
+    padding-top: 20px
+	}
+	.trio-card {
+    border-radius: 0 0 10px 10px;
+    height: 217px;
+    overflow: hidden;
+	}
+	.banner-trio {
+	display: block;
+	}
+	.banner-trio-h {
+	display: none;
+	}
+
+	/* ------- Responsive Servicios Complementarios menor a 1200------- */
+@media (max-width:1199px) {
+
+	.txt-seleccione-especialidad {
+    display: block;
+	}
+	.bloque-global .trio-index1, .bloque-trio .trio-index1 {
+    background-position: 0 0;
+    height: 170px;
+    padding: 13px 20px 0;
+	}
+	.trio-card {
+    height: 171px;
+	}
+
+}
+
+	
+	/* ------- Responsive Servicios Complementarios ------- */
+@media (max-width:991px) {
+
+	.header-sidebar-complementarios p {
+    display: inline-block;
+    margin: 0;
+	}
+	.titulo-sidebar-servicios-complementarios {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 20px;
+	}
+	.titulo-sidebar-servicios-complementarios span {
+    font-size: 18px;
+    display: inline-block;
+    font-weight:400;
+	}
+	.li-sidebar-complementarios {
+    border-right: 1px dashed #DEDEDE;
+    border-bottom: none;
+    display: inline-block;
+    width: 33%;
+	}
+	.li-sidebar-complementarios:last-child {
+    border-right: none;
+	}
+	.submenu-sidebar-complementarios {
+    border-bottom: 1px solid #DEDEDE;
+	}
+	.sidebar-complementarios {
+    min-height: 20px;
+	}
+	.sidebar-complementarios img {
+    display: none;
+	}
+	.bloque-global .trio-index1, .bloque-trio .trio-index1 {
+    background-image: url("../img/index/fondo-trio1-sm.jpg");
+    height: 226px;
+    margin-bottom: 20px;
+    padding: 60px 30px 0 215px;
+	}
+	.txt-seleccione-especialidad {
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 18px;
+    width: 85%;
+    display: block;
+	}
+	
+	.nombre-directorio {
+    width: 100%;
+	}
+}
+
+/* ------- Responsive Servicios Complementarios max 767 ------- */
+@media (max-width:767px) {
+
+	.header-sidebar-complementarios p {
+    display: block;
+    padding: 10px;
+    text-align: center;
+	}
+	.li-sidebar-complementarios {
+    border-bottom: 1px dashed #DEDEDE;
+    border-right: none;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+	}
+	.titulo-sidebar-servicios-complementarios {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 20px;
+    text-align: center;
+	}
+	.titulo-sidebar-servicios-complementarios span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+	}
+	.col-textos-servicios-complementarios {
+    min-height: auto;
+	}
+	.titulo-servicios-complementarios {
+    text-align: center;
+	}
+	.col-textos-servicios-complementarios p {
+    text-align: justify;
+    margin-bottom: 45px;
+	}
+	.col-banners-servicios-complementarios {
+    min-height: auto;
+	}
+	.img-servicios-hospitalarios{
+	display: none;
+	}
+	.img-servicios-hospitalarios-h{
+	display: block;
+	}
+	.col-banners-servicios-complementarios p {
+    display: block;
+    margin: 30px;
+	}
+	.header-sidebar-complementarios {
+    margin-top: 0;
+	}
+	.bloque-global .trio-index1, .bloque-trio .trio-index1 {
+    padding: 26px 30px 0 170px;
+	}
+	.principal-index {
+	  margin-top: 0;
+	  padding-top: 0;
+	}
+
+	.titulos-trio {
+    text-align: center;
+    height: 60px;
+	}
+	.flag-english{
+	  margin: 10px 0 0 20px !important;
+	  width: 24px !important;
+	}
+	.titulos-trio h3 {
+    margin: 11px auto 0;
+	}
+	.titulos-trio h3 span {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 6px;
+	}
+	.titulos-trio img {
+    width: 28px;
+    margin-right: 15px;
+	}
+	.trio-card {
+    margin-bottom: 20px;
+	}
+	.banner-trio {
+	display: none;
+	}
+	.banner-trio-h {
+	display: block;
+	}
+	.directorio-1-4 h4 {
+    display: inline-block;
+    margin-left: 0;
+	}
+	.directorio-1-4 img {
+    margin-left: 0;
+	}
+	.directorio-nombres {
+    width: 77%;
+	}
+	.directorio-extensiones {
+    width: 13%;
+	}
+	.nombre-directorio {
+    width: 100%;
+    text-align: left;
+	}
+	.extension-directorio {
+    font-size: 1.25em;
+    text-align: center;
+	}
+
+}
+
+/* ------- Responsive Servicios Complementarios max 480 ------- */
+@media (max-width:480px) {
+	.menu-informativo {
+    height: 55px;
+	}
+	.menu-informativo-internacionales {
+    height: 90px;
+	}
+	.bloque-conmutadores {
+	display: none;
+	}
+	.col-banners-servicios-complementarios {
+    min-height: 300px;
+	}
+	.txt-seleccione-especialidad {
+    display: none;
+	}
+
+	.directorio-nombres {
+    width: 73%;
+	}
+	.extension-directorio {
+    font-size: 1.1em;
+	}
+	.titulos-trio {
+    height: 67px;
+    text-align: left;
+	}
+	.titulos-trio h3 {
+    font-size: 14px;
+    margin-top: 5px;
+	}
+	.titulos-trio h3 span {
+    display: block;
+	}
+	.banner-trio {
+	display: block;
+	}
+	.banner-trio-h {
+	display: none;
+	}
+	.trio-card {
+    height: 148px;
+	}
+	.titulos-trio img {
+    margin: 10px 8px 0 5px;
+    width: 27px;
+	}
+	
+}
+
+
+/* ======= GALERIA SERVICIOS HOSPITALARIOS ======= */
+#lightgallery img {
+    margin: 8px 1%;
+    width: 22%;
+}
+
+
+/* ------- Responsive Galeria Servicios Hospitalarios max 767 ------- */
+@media (max-width:767px) {
+
+	#lightgallery img {
+   		margin: 8px 3%;
+   		width: 43%;
+	}
+
+}
+
+
+
+
+
+
+
+/* ============== INFORMACIÓN PARA PACIENTES ============== */
+	.header-sidebar-pacientes, .header-sidebar-acerca {
+    background-color: #f37121;
+    color: #FFFFFF;
+    margin-top: -55px;
+	}
+	.header-sidebar-pacientes h3, .header-sidebar-acerca h3 {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 17px;
+    margin: 0px;
+	}
+	.submenu-sidebar-pacientes, .submenu-sidebar-acerca {
+    list-style: none outside none;
+    margin: 0;
+	}
+	.li-sidebar-pacientes a  {
+    border-bottom: 4px solid #fff;
+    line-height: normal;
+    padding: 20px 18px 20px 20px;
+    background-color: #f2f2f2;
+    display: block;
+    color:#666;
+    text-decoration:none;
+	}
+	.li-sidebar-pacientes a:hover {
+    background-color:#072d73;
+    color:#fff;
+    padding-left:30px;
+    text-decoration: none;
+	}
+	
+
+	.li-sidebar-acerca a  {
+    border-bottom: 4px solid #fff;
+    line-height: normal;
+    padding: 20px 18px 20px 20px;
+    background-color: #50697d;
+    display: block;
+    color:#fff;
+    text-decoration:none;
+	}
+	.li-sidebar-acerca a:hover {
+    padding-right:0px;
+    padding-left:20px;
+    background-color:#243645;
+    color:#f37121;
+    padding-left:30px;
+    text-decoration: none;
+	}
+
+
+
+
+	.li-sidebar-pacientes span{
+    border-left: 3px solid #FFFFFF;
+    display: inline-block;
+    float: right;
+    font-size: 24px;
+    height: 100%;
+    line-height: 58px;
+    margin-top: -20px;
+    padding-left: 15px;
+    text-align: right;
+	}
+	
+	.li-sidebar-acerca span {
+    border-right: 3px solid #FFFFFF;
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    height: 100%;
+    line-height: 58px;
+    margin-top: -20px;
+    margin-right: 20px;
+    padding-right: 15px;
+    text-align: center;
+	}
+	
+	.container-informacion-pacientes {
+	background-color: #fff;
+	}
+	.container-informacion-pacientes {
+    background-color: #FFFFFF;
+	}
+	.card-info-pacientes {
+    margin: 25px 0 0;
+	}
+	.bloque-info-card {
+    background-color: #F2F2F2;
+    border-top: 6px solid #F37121;
+    padding: 15px 22px 25px;
+    text-align: center;
+	}
+	.bloque-info-card h3, .bloque-info-card h3 a{
+    color: #072D73;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 4px 0 15px;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+	}
+	.bloque-info-card span {
+    display: block;
+    text-transform: none;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 400;
+    text-align: left;
+	}
+	.bloque-info-card p {
+    color: #666;
+    text-align: justify;
+	}
+	.thumbnail-pacientes {
+	display: block;
+	}
+	.thumbnail-pacientes-h {
+	display: none;
+	}
+	.boton-mas-info {
+    background-color: #F37121;
+    border-radius: 12px 12px 12px 12px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    text-align: center;
+	}
+	.contenido-informacion-pacientes {
+    padding-bottom: 30px;
+	}
+	.info-pacientes-interior {
+    margin: 25px 0;
+	}
+	.info-pacientes-interior h3{
+    margin: 0 0 10px;
+	}
+	.header-info-interior{
+	margin-bottom: 15px;
+	}
+	.header-info-interiorb{
+	display: none;
+	}
+	.breadcrumb-info-pacientes a{
+    color: #F37121;
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+	}
+
+	.info-pacientes-interior p{
+    color: #666;
+    margin: 30px 0;
+	}
+	.info-pacientes-interior li a{
+    color: #666;
+	}
+	
+	.info-pacientes-interior-subtitulo{
+    color: #F37121;
+	}
+	
+	.info-pacientes-interior-enlace {
+    color: #f37121;
+    display: block;
+    margin: 20px 15px;
+    text-decoration: none;
+	}
+	.info-pacientes-interior-back {
+    color: #0072c0;
+    display: block;
+    font-size: 16px;
+    margin: 30px 0;
+    text-align: right;
+    text-decoration: none;
+	}
+	.bloque-central-enfermeria {
+    margin-bottom: 20px;
+	}
+	.central-enfermeria {
+    color: #072D73;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 19px;
+    padding-left: 15px;
+	}
+	.extensiones-central-enfermeria {
+    color: #F37121;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 15px;
+	}
+	.extensiones-central-enfermeria  span {
+    font-size: 18px;
+	}
+	.img-central-enfermeria{
+	display: block;
+	}
+	.img-central-enfermeria-h{
+	display: none;
+	}
+
+
+
+/* ------- Responsive Info Pacientes max 991 ------- */	
+@media (max-width:991px) {	
+
+	.li-sidebar-pacientes {
+    display: inline-block;
+    text-align: center;
+    width: 49.5%;
+    }
+    .li-sidebar-pacientes span {
+    display: none;
+	}
+	.contenido-informacion-pacientes {
+    padding: 0 0 30px 0;
+	}
+	.thumbnail-pacientes {
+	display: none;
+	}
+	.thumbnail-pacientes-h {
+	display: block;
+	}
+	.img-central-enfermeria{
+	display: none;
+	}
+	.img-central-enfermeria-h{
+	display: block;
+	}
+	.bloque-extension-enfermeria {
+    display: inline-block;
+    margin-top: 24px;
+    text-align: center;
+    width: 32%;
+	}
+
+}
+	
+/* ------- Responsive Info Pacientes max 767 ------- */	
+@media (max-width:767px) {		
+
+	.li-sidebar-pacientes {
+    display: inline-block;
+    text-align: center;
+    width: 49.5%;
+	}
+    .li-sidebar-pacientes span {
+    display: none;
+	}
+	.info-pacientes-interior h3{
+    text-align: left;
+	}
+	.li-sidebar-pacientes a {
+    padding: 18px;
+	}
+	
+	.info-pacientes-interior {
+    padding: 0;
+	}
+
+
+}
+
+/* ------- Responsive Info Pacientes max 480 ------- */	
+@media (max-width:480px) {	
+
+	.header-sidebar-pacientes {
+    margin-top: -1px;
+	}
+	.li-sidebar-pacientes {
+    width: 99.5%;
+	}
+	.header-sidebar-pacientes h3 {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 12px 17px;
+    text-align: center;
+	}
+
+	.header-info-interior{
+	display: none;
+	}
+	.header-info-interiorb{
+	display: block;
+	margin-bottom: 30px;
+	}
+	.bloque-extension-enfermeria {
+    width: 98%;
+	}
+
+
+}
+
+
+/*  SUBINDEX NOTAS MÉDICAS */
+.container-notas-medicas-subindex {
+  display: block;
+  margin-top: -240px;
+}
+.cajatitulo-notas-medicas-subindex{
+	padding: 0 0 30px;
+}
+
+/* ------- Responsive Info Pacientes max 767 ------- */	
+@media (max-width:767px) {	
+	.container-notas-medicas-subindex {
+	  margin-top: -180px;
+	}
+}
+
+/* ------- Responsive Info Pacientes max 480 ------- */	
+@media (max-width:480px) {
+	.container-notas-medicas-subindex {
+	  margin-top: -200px;
+	}
+}
+
+
+
+
+/* ============== ACERCA DEL HOSPITAL ============== */
+	.contenido-acerca {
+	padding: 30px 0 20px;
+	}
+	.title-acerca {
+    background-color: #072D73;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 22px;
+    margin-top: -8px;
+    padding: 20px;
+    position: relative;
+    z-index: 2000;
+	}
+	.title-acerca span {
+    color: #F37121;
+    display: inline;
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 20px;
+	}
+	.title-acerca1 {
+    color: #072d73;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin: 15px 0;
+	}
+	.title-acerca2 {
+    color: #F37121;
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 10px;
+	}
+	.title-acerca1 .title-acerca-2 {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.2;
+	}
+	.slogan-acerca {
+    color: #F37121;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    min-height: 100px;
+    padding: 0 20px 0;
+    text-align: center;
+    vertical-align: middle;
+	}
+	.acerca-text {
+    color: #777777;
+    font: 400 14px/23.8px ;
+    margin-right: 20px;
+    margin-bottom: 30px;
+	}
+	.acerca-text span {
+    color: #1950b6;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 5px;
+	}
+	.no-margin {
+	margin: 0;
+	}
+	.no-padding {
+	padding: 0;
+	}
+	.divisor {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #d3d3d3;
+	}
+	.submenu-acerca {
+	display: none;
+	}
+	.ul-submenu-acerca {
+    margin-bottom: 20px;
+	}
+	.li-submenu-acerca {
+    border: 1px solid #DEDEDE;
+    color: #666666;
+    display: inline-block;
+    font-size: 15px;
+    padding: 20px 0;
+    text-align: center;
+    width: 49.5%;
+	}
+
+	.li-submenu-acerca a {
+    color: #666666;
+    text-decoration: none;
+	}
+	.li-submenu-acerca a:hover {
+    color: #f37121;
+	}
+	.lista-acerca {
+    margin-left: 15px;
+	}
+	.lista-acerca-li, .lista-acerca-li2  {
+    margin-bottom: 12px;
+    color: #F37121;
+    font-size: 15px;
+	}
+	.lista-acerca-li {
+    width: 48%;
+    display: inline-block;
+	}
+	.lista-acerca-li2 {
+    width: 99%;
+    display: block;
+	}
+	
+	.lista-acerca-li2 a {
+    color: #F37121;
+    font-size: 15px;
+    text-decoration: none;
+	}
+	
+	.banner-side {
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+	}
+	
+	.hide-md {
+	display: block;
+	}
+	.hide-lg {
+	display: none;
+	}
+	.show-xs {
+	display: none;
+	}
+
+
+/* ------- Responsive Info Pacientes max 991 ------- */	
+@media (max-width:991px) {	
+	.submenu-acerca {
+	display: block;
+	}
+	.sidebar-acerca{
+	display: none;
+	}
+	.title-acerca {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+	}
+	.title-acerca span {
+    font-size: 16px;
+	}
+	.slogan-acerca {
+    min-height: 46px;
+	}
+	.acerca-text {
+    margin: 0 20px 20px;
+    text-align: justify;
+	}
+	.hide-md {
+	display: none;
+	}
+	.hide-lg {
+	display: block;
+	}
+	
+	
+	
+}
+
+
+
+/* ------- Responsive Info Pacientes max 480------- */	
+@media (max-width:767px) {	
+	.li-submenu-acerca {
+    width: 100%;
+    padding: 15px 0;
+	}
+	.acerca-text {
+    margin: 0 10px 20px;
+	}
+}
+
+
+
+/* ------- Responsive Info Pacientes max 480------- */	
+@media (max-width:480px) {
+	.container-informacion-pacientes .divisor {
+    margin-bottom: 10px;
+	}
+	.show-xs {
+	display: block;
+	}
+	.hide-xs {
+	display: none;
+	}
+
+}
+
+/* ------- 
+==============================================
+BOLSA DE TRABAJO
+==============================================
+------- */
+.card-vacante {
+	min-height: 350px;
+	border-radius: 10px;
+	margin-top: 25px;
+	background-color: #fff;
+	overflow: hidden;
+	box-shadow: 2px 2px 9px -3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 2px 2px 9px -3px rgba(0,0,0,0.5);
+		-moz-box-shadow: 2px 2px 9px -3px rgba(0,0,0,0.5);
+
+}
+.solicita-bolsa-trabajo {
+	color: #004b8d;
+	margin: 16px 20px;
+}
+.card-vacante h4 {
+	color: #f37121;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 10px 20px 15px;
+	height: 32px;
+}
+.card-vacante .textos-bolsa-trabajo {
+	margin: 0 20px;
+}
+.ver-vacante {
+	color: #fff;
+	background-color: #004b8d;
+	padding: 10px;
+	border-radius: 7px;
+	margin: 40px 20px;
+	display: inline-block;
+}
+
+.card-vacante  .divisor-bolsa-trabajo {
+	display: block;
+	height: 1px;
+	border-top: 1px dashed #e6e6e6;
+	margin: 0px 0 10px;
+}
+
+.head-bolsa-trabajo {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 24px;
+	color: #004b8d;
+	padding-bottom: 10px;
+	margin: 31px auto 5px;
+}
+.intro-bolsa-trabajo {
+	color: #666;
+	text-align: center;
+	font-weight: 300;
+	font-size: 15px;
+	margin: 0 0 60px;
+}
+.intro-bolsa-trabajo span {
+	color: #f37121;
+	text-align: center;
+	font-style: italic;
+	font-weight: 200 !important;
+	font-size: 16px;
+	display: block !important;
+	margin: 0 0 5px;
+}
+
+.bloque-vacantes {
+	background-color: #fff;
+	padding: 20px
+}
+.puesto-bolsa-trabajo {
+	border-left: 6px solid #f37121;
+	color: #004b8d;
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	margin: 13px 0;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.divisor-bolsa-trabajo {
+	display: block;
+	height: 1px;
+	border-top: 1px dashed #e6e6e6;
+	margin: 5px 0 25px;
+}
+.subtitulo-bolsa-trabajo {
+	color: #f37121;
+	font-weight: 500;
+	margin: 0 0 5px;
+}
+.textos-bolsa-trabajo {
+	color: #555;
+	font-weight: 400;
+	margin: 0 0 24px;
+}
+.textos-bolsa-trabajo span {
+	margin-right: 3px;
+	color: #0d71c9;
+}
+.textos-bolsa-trabajo a{
+	color: #004b8d;
+	font-weight: 500;
+}
+.documentos-bolsa-trabajo {
+	color: #666;
+	list-style: none;
+}
+.documentos-bolsa-trabajo li{
+	margin-bottom: 5px;
+}
+.documentos-bolsa-trabajo span{
+	color: #f37121;
+	margin-right: 10px;
+}
+.volver-bolsa-trabajo {
+	background-color: #f37121;
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 25px 0 10px;
+	display: inline-block;
+}
+.volver-bolsa-trabajo a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.vacantes-permamentes {
+	color: #004b8d;
+	margin: 18px 14px;
+	line-height: 31px;
+}
+.warning-vacantes-permanentes {
+	color: red;
+	font-style: italic;
+	font-size: 17px;
+	margin: 30px 0;
+	font-weight: 300;
+}
+.vacantes-rojo {
+	color: red;
+}
+.vacantes-titulo-tres {
+	color: #f37121;
+	font-size: 14px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-bottom: 1px solid #f37121;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+/* ------- Responsive Servicios Complementarios menor a 1200------- */
+@media (max-width:1199px) {
+	.hide-md {
+	display: none;
+}
+
+/* ------- Responsive Info Pacientes max 991 ------- */	
+@media (max-width:991px) {
+	
+}
+	
+
+/* ------- Responsive Hide max 767------- */	
+@media (max-width:767px) {	
+
+}
+
+
+/* ------- Responsive Hide max 480------- */	
+@media (max-width:480px) {
+	
+  
+}

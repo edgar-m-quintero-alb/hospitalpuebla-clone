@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "FallingSky";
+  src: url("webchat/fonts/FallingSky.WOFF") format("woff");
+}
+
+@font-face {
+  font-family: "FallingSkyBd";
+  src: url("webchat/fonts/FallingSkyBd.WOFF") format("woff");
+}
+
+@font-face {
+  font-family: "RobotoRegural";
+  src: url("webchat/fonts/Roboto-Regular.woff") format("woff");
+}
